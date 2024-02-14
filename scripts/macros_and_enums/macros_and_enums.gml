@@ -1,0 +1,30 @@
+//MACROS
+#macro ROOM_START r_start
+#macro TILE_SIZE 8
+#macro MSG show_debug_message
+#macro RESOLUTION_W 320
+#macro RESOLUTION_H 180
+#macro ROOM_SPEED 60
+
+//ENUMS
+enum BLUR {
+	RADIAL = 0,
+	MOTION = 1,
+	GAUSSIAN = 2
+}//END ENUM
+
+enum MENU_PAGE {
+	MAIN,
+	OPTIONS,
+	CONTROLS,
+	HEIGHT
+}//END ENUM
+
+enum MENU_ELEMENT_TYPE {
+	SCRIPT_RUNNER,
+	PAGE_TRANSFER,
+	SLIDER,
+	SHIFT,
+	TOGGLE,
+	INPUT
+}//END ENUM
