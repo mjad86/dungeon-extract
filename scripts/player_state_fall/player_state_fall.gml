@@ -2,7 +2,7 @@
 function player_state_fall() {
 
 	//set sprite
-	set_animation_sprite(playerFall, 0, 0);
+	set_animation_sprite(playerFall, 0, 1);
 	
 	//clamp the value so it does not grow infinetly
 	vSpd = clamp(vSpd, jumpForce, -jumpForce);

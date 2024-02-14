@@ -15,10 +15,7 @@
     "name": "Tile Sets",
     "path": "folders/Tile Sets.yy",
   },
-  "spriteId": {
-    "name": "s_tileset_caves",
-    "path": "sprites/s_tileset_caves/s_tileset_caves.yy",
-  },
+  "spriteId": null,
   "spriteNoExport": false,
   "textureGroupId": {
     "name": "Default",

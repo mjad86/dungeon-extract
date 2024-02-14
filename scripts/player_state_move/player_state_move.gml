@@ -30,12 +30,6 @@ function player_state_move() {
 		state = player_state_fall;						//change sat==tate
 	}//end if
 	
-	//change state to crouch
-	if(global.down) {
-		state = player_state_crouch;					//change state
-		mask_index = playerMaskCrouch;					//change mask
-	}//end if
-	
 	//activate things
 	if(global.action) {
 		//1. check for entity to activate

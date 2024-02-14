@@ -1,8 +1,13 @@
 ///@desc player_state_jump()
 function player_state_jump() {
 	
-	//set sprite
-	set_animation_sprite(playerJump, 0, 0);
+	//set sprite	
+	if(!animation_end()) {
+		set_animation_sprite(playerJump, 0, 1);
+	}//end if
+	else {
+		set_animation_sprite(playerJump, floor(sprite_get_number(sprite_index))-1, 0);
+	}//end else
 	
 	if(vSpd < 0 && !global.jumpHold) {
 		//controls jump hight if jump button not held

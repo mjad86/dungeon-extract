@@ -32,12 +32,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "s_goblin_idle",
-    "path": "sprites/s_goblin_idle/s_goblin_idle.yy",
+    "name": "s_figther_idle",
+    "path": "sprites/s_figther_idle/s_figther_idle.yy",
   },
   "spriteMaskId": {
-    "name": "s_goblin_mask",
-    "path": "sprites/s_goblin_mask/s_goblin_mask.yy",
+    "name": "s_figther_mask",
+    "path": "sprites/s_figther_mask/s_figther_mask.yy",
   },
   "visible": true,
 }

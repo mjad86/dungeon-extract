@@ -1,1 +1,1 @@
-visible = false;	//sets walls invisible on creation
+visible = true;	//sets walls invisible on creation

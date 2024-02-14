@@ -1,9 +1,9 @@
 //MACROS
 #macro ROOM_START r_start
-#macro TILE_SIZE 8
+#macro TILE_SIZE 16
 #macro MSG show_debug_message
-#macro RESOLUTION_W 320
-#macro RESOLUTION_H 180
+#macro RESOLUTION_W 640
+#macro RESOLUTION_H 360
 #macro ROOM_SPEED 60
 
 //ENUMS

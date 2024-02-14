@@ -17,13 +17,11 @@ coyoteTimeMax = 6;									//maximun time in frames for player to make a jump wh
 canDust = true;										//particle dust flag when moving
 footstep = noone									//footstep SFX flag, obtained from the parent object we are steping
 //Sprites
-playerIdle = s_goblin_idle;
-playerMove = s_goblin_walk;
-playerJump = s_goblin_jump;
-playerFall = s_goblin_fall;
-playerCrouch = s_goblin_crouch;
-playerMask = s_goblin_mask;
-playerMaskCrouch = s_goblin_mask_crouch;
+playerIdle = s_figther_idle;
+playerMove = s_figther_walk;
+playerJump = s_figther_jump;
+playerFall = s_figther_fall;
+playerMask = s_figther_mask;
 
 mask_index = playerMask;							//setting players sprite mask
 

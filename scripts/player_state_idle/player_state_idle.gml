@@ -2,7 +2,7 @@
 function player_state_idle() {
 	
 	//set sprite
-	set_animation_sprite(playerIdle, 0, 0);
+	set_animation_sprite(playerIdle, 0, 1);
 	
 	//change state to move
 	if(move != 0) {
@@ -23,12 +23,6 @@ function player_state_idle() {
 	//if not touchin ground then change state to fall
 	if(!onGround) {
 		state = player_state_fall;
-	}//end if
-	
-	//change state to crouch
-	if(global.down) {
-		state = player_state_crouch;
-		mask_index = playerMaskCrouch;
 	}//end if
 	
 	//activate things
