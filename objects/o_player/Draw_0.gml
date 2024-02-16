@@ -1,2 +1,2 @@
-draw_self();											//drawing player
+draw_self();	//drawing player
 //draw_sprite_ext(mask_index,0,x,y,1,1,0,c_white,1);	//drawing mask, for debug purposes

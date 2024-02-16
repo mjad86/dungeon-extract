@@ -20,7 +20,10 @@ function __input_config_verbs()
             left:  [input_binding_key(vk_left),  input_binding_key("A")],
             right: [input_binding_key(vk_right), input_binding_key("D")],
 			
-			action: input_binding_key("E"),            
+			action: input_binding_key("F"),   
+			attack: input_binding_key("E"),  
+			dodge: input_binding_key("Q"), 
+			block: input_binding_key("R"), 
             jump:  input_binding_key(vk_space),
             cancel:  input_binding_key(vk_backspace),
             pause:  [input_binding_key(vk_enter), input_binding_key(vk_escape)],
@@ -40,7 +43,10 @@ function __input_config_verbs()
             
             jump:  input_binding_gamepad_button(gp_face1),
             cancel:  input_binding_gamepad_button(gp_face2),
-            action:  input_binding_gamepad_button(gp_face3),
+			attack:  input_binding_gamepad_button(gp_face3),
+            action:  input_binding_gamepad_button(gp_shoulderlb),
+			block:  input_binding_gamepad_button(gp_shoulderrb),
+			dodge:  input_binding_gamepad_button(gp_shoulderr),
             special: input_binding_gamepad_button(gp_face4),
             
             aim_up:    input_binding_gamepad_axis(gp_axisrv, true),

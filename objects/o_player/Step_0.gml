@@ -49,5 +49,5 @@ if(onGround) {
 	}//end if
 }//end if
 #endregion
-	
+
 out_of_camera_bounds();										//controls the out of camera action

@@ -44,5 +44,21 @@ function player_state_idle() {
 		}//end else		
 	}//end if
 	
+	//dodge
+	if(global.dodge) {
+		state = player_state_roll;				//change state to roll
+		moveDistanceRemaining = rollDistance;	//set distance
+	}//end if
+	
+	//attack
+	if(global.attack) {
+		//insert attack script here
+	}//end if
+	
+	//block
+	if(global.block) {
+		//insert block script here
+	}//end if
+	
 	//MSG("IDLE");	
 }//end script

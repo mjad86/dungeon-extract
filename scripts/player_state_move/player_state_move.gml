@@ -37,6 +37,7 @@ function player_state_move() {
 		
 		if(activate == noone || activate.entityActivateScript == -1) {
 			//2. if there is nothing or there is something, but has no script. do xyz
+
 		}//end if
 		else {
 			//3. otherwise there is something with a script, activate it
@@ -48,6 +49,22 @@ function player_state_move() {
 				}//end if
 			}//end if
 		}//end else		
+	}//end if
+	
+	//dodge
+	if(global.dodge) {
+		state = player_state_roll;				//change state to roll
+		moveDistanceRemaining = rollDistance;	//set distance
+	}//end if
+	
+	//attack
+	if(global.attack) {
+		//insert attack script here
+	}//end if
+	
+	//block
+	if(global.block) {
+		//insert block script here
 	}//end if
 	
 	//MSG("MOVING");

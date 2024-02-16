@@ -11,7 +11,7 @@ if(global.gamePaused) {
 		draw_surface(application_surface, 0, 0);			//set surface coordinates
 		surface_reset_target();								//reset surface
 		instance_deactivate_all(true);						//deactivate all instances except this one
-		instance_activate_object(input_controller_object);	//avoid input bug
+		instance_activate_object(input_controller_object);	//avoid input plugin bug
 		instance_activate_object(o_controls);				//allow controllers to be used
 		instance_activate_object(o_gui);					//allow GUI object to function
 }//end if

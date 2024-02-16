@@ -9,3 +9,6 @@ global.jumpHold = input_check("jump");				//jump key hold
 global.pause = input_check_pressed("pause");		//pause key
 global.action = input_check_pressed("action");		//action key
 global.cancel = input_check_pressed("cancel");		//cancel key
+global.attack = input_check_pressed("attack");		//attack key
+global.dodge = input_check_pressed("dodge");		//dodge/roll key
+global.block = input_check("block");				//block key

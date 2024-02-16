@@ -1,12 +1,15 @@
 ///@desc Player Initialize variables
 move = 0;											//move variable for determining inputs
-moveSpdMax = 2;										//move max speed
-accel = 0.1											//acceleration value, the higher it is the faster you gain speed
+moveSpdMax = 3;										//move max speed
+accel = 0.2											//acceleration value, the higher it is the faster you gain speed
 fric = 0.2;											//friction value, the higher it is the faster you stop
-grav = 0.25;										//gravity force
-jumpForce = -4										//jump force value
+grav = 0.5;											//gravity force
+jumpForce = -8										//jump force value
 jumpCount = 0;										//counter for the amount of jumps player can do
 jumpCountMax = 1;									//the maximun amount of jumps the player can do	
+rollDistance = 160;									//rolling distance in pixels
+moveDistanceRemaining = 0							//flag to calcualte rolling distance remaining
+rollSpd = 6;										//how fast we roll
 hSpd = 0;											//Horizontal speed
 vSpd = 0;											//vertical speed
 state = player_state_idle;							//Player state at start
@@ -21,6 +24,7 @@ playerIdle = s_figther_idle;
 playerMove = s_figther_walk;
 playerJump = s_figther_jump;
 playerFall = s_figther_fall;
+playerRoll = s_figther_roll;
 playerMask = s_figther_mask;
 
 mask_index = playerMask;							//setting players sprite mask
@@ -31,6 +35,9 @@ if(global.targetX != -1) {
 	y = global.targetY;
 	image_xscale = global.targetDir;
 }//end if
+
+//create shadow
+instance_create_layer(x, y, "Player", o_player_shadow);
 
 
 
