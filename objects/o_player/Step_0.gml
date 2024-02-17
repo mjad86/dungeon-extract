@@ -6,6 +6,10 @@ if(state != player_state_lock) {
 
 	acceleration_and_friction(move, moveSpdMax, accel, fric);   //acceleration adn friction manager
 }//end if
+
+//update listeners positions
+audio_listener_position(x, y, 0);
+
 #region//COYOTE TIME MANAGER
 if(coyoteTime > 0) {
 	coyoteTime = max(0, coyoteTime-1);

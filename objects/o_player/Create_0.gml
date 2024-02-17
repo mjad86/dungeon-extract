@@ -13,6 +13,8 @@ rollSpd = 6;										//how fast we roll
 hSpd = 0;											//Horizontal speed
 vSpd = 0;											//vertical speed
 state = player_state_idle;							//Player state at start
+stateAttack = attack_slash1							//state of dynamic attacks
+hitByAttack = -1;									//stores a ds_list for entity id's we hit
 lastState = noone									//control players last state
 onGround = place_meeting(x, y+1, o_parent_wall);	//player is touching the ground
 coyoteTime = 0;										//time in frames for player to make a jump when not on grund aka cyote time
@@ -26,6 +28,10 @@ playerJump = s_figther_jump;
 playerFall = s_figther_fall;
 playerRoll = s_figther_roll;
 playerMask = s_figther_mask;
+attack1 = s_figther_attack1
+attack2 = s_figther_attack2;
+attack3 = s_figther_attack3;
+playerBlock = s_figther_block;
 
 mask_index = playerMask;							//setting players sprite mask
 
@@ -38,6 +44,8 @@ if(global.targetX != -1) {
 
 //create shadow
 instance_create_layer(x, y, "Player", o_player_shadow);
+//audio listener orientation
+audio_listener_orientation(0,1,0,0,0,1);
 
 
 

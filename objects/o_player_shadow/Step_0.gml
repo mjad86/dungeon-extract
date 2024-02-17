@@ -27,6 +27,10 @@ if(!o_player.onGround) {
 	image_yscale = _newScale;
 	image_alpha = _newScale;
 }//end if
+else {
+	image_xscale = o_player.image_xscale;
+	image_yscale = 1;
+}//end el;se
 
 
 

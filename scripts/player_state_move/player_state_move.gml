@@ -59,7 +59,8 @@ function player_state_move() {
 	
 	//attack
 	if(global.attack) {
-		//insert attack script here
+		state = player_state_attack;			//set player state to attack
+		stateAttack = attack_slash1;			//set the attack to be done
 	}//end if
 	
 	//block
