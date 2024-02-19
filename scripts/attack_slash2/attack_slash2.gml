@@ -22,6 +22,8 @@ function attack_slash2() {
 	}//end if
 	
 	if(global.attack && image_index >= 3) {
+		//sfx
+		audio_play_sound(choose(swordSwing1, swordSwing2, swordSwing3), 10, false);
 		state = player_state_attack;
 		stateAttack = attack_slash3;
 	}//end if

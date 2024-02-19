@@ -7,9 +7,9 @@ global.pauseSurface = noone;										//surface tos tore our pause screen img
 
 global.iCamera = instance_create_layer(0, 0, layer, o_camera);		//Create camera object
 global.iControl = instance_create_layer(0, 0, layer, o_controls);	//Create control's object
-global.idevTools = instance_create_layer(0, 0, layer, o_devtools);	//Create camera object
-global.imusic = instance_create_layer(0, 0, layer, o_music_and_sfx);		//Create music controller object
-global.igui = instance_create_layer(0, 0, layer, o_gui);			//Create gui controller object
+global.iDevTools = instance_create_layer(0, 0, layer, o_devtools);	//Create camera object
+global.iMusic = instance_create_layer(0, 0, layer, o_music_and_sfx);//Create music controller object
+global.iGui = instance_create_layer(0, 0, layer, o_gui);			//Create gui controller object
 
 global.targetRoom = -1;												//Target room name to go to
 global.targetX = -1;												//target rooms x destination coordinate

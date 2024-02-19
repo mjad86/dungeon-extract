@@ -116,7 +116,7 @@ switch(page) {
 	#endregion
 }//end switch
 
-if(global.action) {
+if(global.action || global.jump) {
 	//interact with menu option
 	switch(_dsGrid[# 1, menuOption[page]]) {
 		case MENU_ELEMENT_TYPE.SCRIPT_RUNNER:
@@ -152,7 +152,15 @@ if(global.cancel) {
 			inputting = false;		//reset inputing flag
 			if(curVal != _dsGrid[# 3, menuOption[page]]) {
 				//if we hit cancel when inputting we revert the changes to the last valued held in memory
-				_dsGrid[# 3, menuOption[page]] = curVal;
+				_dsGrid[# 3, menuOption[page]] = curVal;	
+				switch(_dsGrid[# 1, menuOption[page]]) {
+					//we reverse the change if the action was cancelled by executing the script with the current value stored
+					case MENU_ELEMENT_TYPE.SHIFT:
+					case MENU_ELEMENT_TYPE.SLIDER:
+					case MENU_ELEMENT_TYPE.TOGGLE:
+						script_execute(_dsGrid[# 2, menuOption[page]], curVal);
+					break;
+				}//end switch
 				curVal = noone;
 			}//end if
 		}//end if

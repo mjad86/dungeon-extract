@@ -59,6 +59,8 @@ function player_state_move() {
 	
 	//attack
 	if(global.attack) {
+		//sfx
+		audio_play_sound(choose(swordSwing1, swordSwing2, swordSwing3), 10, false);
 		state = player_state_attack;			//set player state to attack
 		stateAttack = attack_slash1;			//set the attack to be done
 	}//end if

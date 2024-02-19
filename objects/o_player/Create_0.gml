@@ -33,6 +33,11 @@ attack2 = s_figther_attack2;
 attack3 = s_figther_attack3;
 playerBlock = s_figther_block;
 
+//sfx
+swordSwing1 = sfx_sword_swing_1;
+swordSwing2 = sfx_sword_swing_2;
+swordSwing3 = sfx_sword_swing_3;
+
 mask_index = playerMask;							//setting players sprite mask
 
 if(global.targetX != -1) {
@@ -44,6 +49,8 @@ if(global.targetX != -1) {
 
 //create shadow
 instance_create_layer(x, y, "Player", o_player_shadow);
+//create lantern this is momentary
+//instance_create_layer(x, y, "Player", o_lantern);
 //audio listener orientation
 audio_listener_orientation(0,1,0,0,0,1);
 
