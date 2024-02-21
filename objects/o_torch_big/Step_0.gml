@@ -7,3 +7,9 @@ if(audio_group_is_loaded(SFX) && playSfx) {
 	playSfx = false;
 }//end if
 
+if(place_meeting(x, y, o_player)) {
+	depth = o_player.depth+1; //sets light sprite bellow player
+}//end if
+else {
+	depth = myDepth; //original depth
+}//end else

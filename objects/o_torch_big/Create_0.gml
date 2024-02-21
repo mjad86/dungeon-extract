@@ -9,3 +9,4 @@ audio_emitter_position(emitter, x, y, 0);
 audio_emitter_falloff(emitter, audioDropsAt, audioMaxDistance, 1);
 
 playSfx = true;
+myDepth = depth;
