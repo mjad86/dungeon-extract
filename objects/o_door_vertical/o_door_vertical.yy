@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "s_door_vertical",
-    "path": "sprites/s_door_vertical/s_door_vertical.yy",
+    "name": "s_gate_vertical",
+    "path": "sprites/s_gate_vertical/s_gate_vertical.yy",
   },
   "spriteMaskId": null,
   "visible": true,
