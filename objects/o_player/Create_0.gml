@@ -21,6 +21,8 @@ coyoteTime = 0;										//time in frames for player to make a jump when not on 
 coyoteTimeMax = 6;									//maximun time in frames for player to make a jump when not on grund aka cyote time
 canDust = true;										//particle dust flag when moving
 footstep = noone									//footstep SFX flag, obtained from the parent object we are steping
+activateBar = noone									//flag for activating bar
+
 //Sprites
 playerIdle = s_figther_idle;
 playerMove = s_figther_walk;

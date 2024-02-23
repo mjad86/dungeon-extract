@@ -25,7 +25,7 @@ function player_state_idle() {
 		state = player_state_fall;
 	}//end if
 	
-	//activate things
+	//activate scripts on things
 	if(global.action) {
 		//1. check for entity to activate
 		activate = (instance_place(x, y, o_parent_entity));
@@ -42,6 +42,16 @@ function player_state_idle() {
 				}//end if
 			}//end if
 		}//end else		
+	}//end if
+	
+	var _lever = instance_place(x, y, o_parent_lever);
+	if(_lever != noone) && (global.activate) {
+		if(_lever.state != lever_state_using) {
+			activateBar = instance_create_layer(x, y - sprite_height, "Misc", o_activate_bar);
+			activateBar.activationTime = _lever.activateTimer;
+			activateBar.inst = _lever;
+			state = player_state_interacting;
+		}//end if
 	}//end if
 	
 	//dodge

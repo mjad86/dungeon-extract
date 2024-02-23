@@ -4,7 +4,9 @@
   "name": "o_lever",
   "eventList": [],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_parent_lever","path":"objects/o_parent_lever/o_parent_lever.yy",},"propertyId":{"name":"activateTimer","path":"objects/o_parent_lever/o_parent_lever.yy",},"value":"150",},
+  ],
   "parent": {
     "name": "Overworld",
     "path": "folders/Objects/Overworld.yy",
@@ -26,13 +28,11 @@
   "physicsShape": 1,
   "physicsShapePoints": [],
   "physicsStartAwake": true,
-  "properties": [
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"slot","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":true,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":1,},
-  ],
+  "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "s_lever",
-    "path": "sprites/s_lever/s_lever.yy",
+    "name": "s_lever_unused",
+    "path": "sprites/s_lever_unused/s_lever_unused.yy",
   },
   "spriteMaskId": null,
   "visible": true,

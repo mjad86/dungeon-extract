@@ -1,5 +1,6 @@
 ///@desc lever_state_using()
 function lever_state_using() {
+	
 	if(image_speed != 1) {
 		//add SFX here
 		image_speed = 1;
@@ -15,6 +16,5 @@ function lever_state_using() {
 		}//end with	
 		ds_map_replace(o_meta.saveData, key, true);
 		state = lever_state_used;
-		image_speed = 0;
 	}//end if
 }//end script

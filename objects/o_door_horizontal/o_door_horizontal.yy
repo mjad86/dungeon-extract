@@ -9,10 +9,7 @@
     "name": "Overworld",
     "path": "folders/Objects/Overworld.yy",
   },
-  "parentObjectId": {
-    "name": "o_parent_door",
-    "path": "objects/o_parent_door/o_parent_door.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -28,10 +25,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "s_door_horizontal",
-    "path": "sprites/s_door_horizontal/s_door_horizontal.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }
