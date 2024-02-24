@@ -17,8 +17,8 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_light","path":"objects/o_light/o_light.yy",},"propertyId":{"name":"str","path":"objects/o_light/o_light.yy",},"value":"0.5",},
   ],
   "parent": {
-    "name": "Overworld",
-    "path": "folders/Objects/Overworld.yy",
+    "name": "Ilumination",
+    "path": "folders/Objects/Overworld/Ilumination.yy",
   },
   "parentObjectId": {
     "name": "o_light",

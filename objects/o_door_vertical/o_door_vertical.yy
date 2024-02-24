@@ -4,14 +4,16 @@
   "name": "o_door_vertical",
   "eventList": [],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_parent_gate","path":"objects/o_parent_gate/o_parent_gate.yy",},"propertyId":{"name":"sfx","path":"objects/o_parent_gate/o_parent_gate.yy",},"value":"sfx_gate_open",},
+  ],
   "parent": {
-    "name": "Overworld",
-    "path": "folders/Objects/Overworld.yy",
+    "name": "Gates & doors",
+    "path": "folders/Objects/Overworld/Gates & doors.yy",
   },
   "parentObjectId": {
-    "name": "o_parent_door",
-    "path": "objects/o_parent_door/o_parent_door.yy",
+    "name": "o_parent_gate",
+    "path": "objects/o_parent_gate/o_parent_gate.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

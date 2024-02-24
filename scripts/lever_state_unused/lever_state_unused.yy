@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Switches and levers",
-    "path": "folders/Scripts/States/Switches and levers.yy",
+    "name": "Switches & levers",
+    "path": "folders/Scripts/States/Switches & levers.yy",
   },
 }

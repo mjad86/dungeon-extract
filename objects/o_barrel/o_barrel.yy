@@ -14,8 +14,8 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_parent_entity","path":"objects/o_parent_entity/o_parent_entity.yy",},"propertyId":{"name":"hurtSfx","path":"objects/o_parent_entity/o_parent_entity.yy",},"value":"[sfx_crate_impact, sfx_wood_hit, sfx_wood_crackling]",},
   ],
   "parent": {
-    "name": "Overworld",
-    "path": "folders/Objects/Overworld.yy",
+    "name": "Props",
+    "path": "folders/Objects/Overworld/Props.yy",
   },
   "parentObjectId": {
     "name": "o_parent_enemy",

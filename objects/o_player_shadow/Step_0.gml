@@ -18,7 +18,7 @@ platform = noone;
 
 // Find all platforms beneath the player
 var platforms = ds_list_create();
-var num = collision_line_list(o_player.x, o_player.y, o_player.x, room_height, [o_wall, o_oneway_platform], false, false, platforms, false);
+var num = collision_line_list(o_player.x, o_player.y, o_player.x, room_height, [o_wall, o_oneway_platform, o_secret_floor_01], false, false, platforms, false);
 
 // Find the highest platform found
 for (var i = 0; i < num; i++) {
