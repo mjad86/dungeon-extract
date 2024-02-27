@@ -30,6 +30,7 @@ playerJump = s_figther_jump;
 playerFall = s_figther_fall;
 playerRoll = s_figther_roll;
 playerMask = s_figther_mask;
+playerRollMask = s_figther_roll_mask;
 attack1 = s_figther_attack1
 attack2 = s_figther_attack2;
 attack3 = s_figther_attack3;

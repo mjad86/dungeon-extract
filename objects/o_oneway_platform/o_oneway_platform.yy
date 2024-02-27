@@ -4,7 +4,6 @@
   "name": "o_oneway_platform",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -12,10 +11,7 @@
     "name": "Misc",
     "path": "folders/Objects/Misc.yy",
   },
-  "parentObjectId": {
-    "name": "o_parent_wall",
-    "path": "objects/o_parent_wall/o_parent_wall.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -29,7 +25,12 @@
   "physicsShape": 1,
   "physicsShapePoints": [],
   "physicsStartAwake": true,
-  "properties": [],
+  "properties": [
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"footstepSFX","filters":[],"listItems":[
+        "sfx_rock_footstep",
+        "sfx_grass_footstep",
+      ],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"sfx_rock_footstep","varType":6,},
+  ],
   "solid": false,
   "spriteId": {
     "name": "s_oneway_wall",

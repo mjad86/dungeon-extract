@@ -1,7 +1,7 @@
 ///@desc Player state machine
 if(state != player_state_lock) {
 	move = (global.right - global.left);						//input calculation
-	onGround = place_meeting(x, y+1, o_parent_wall);			//verify if player is touching ground	
+	onGround = on_ground();										//verify if on ground
 	vSpd += grav;												//Apply gravity force
 
 	acceleration_and_friction(move, moveSpdMax, accel, fric);   //acceleration adn friction manager
@@ -21,7 +21,10 @@ if(onGround) {
 #endregion
 	
 script_execute(state);										//state machine script execution
-	
+
+if(instance_exists(o_oneway_platform) && !global.down) {
+	jump_through_col(o_oneway_platform);					//controls jump through platform
+}//end if
 collision();												//Apply movement
 	
 //controls facing of the player
@@ -47,9 +50,10 @@ if(state != player_state_dead) {
 	
 #region//OBTAING FOOTSTEP SFX
 if(onGround) {
-	var _floor = instance_place(x, y+1, o_parent_wall);
+	var _floor = instance_place(x, y+1, [o_parent_wall, o_oneway_platform]);
 	if(_floor != noone) {	
 		footstep = _floor.footstepSFX;						//obtain the footstep sfx
+		
 	}//end if
 }//end if
 #endregion

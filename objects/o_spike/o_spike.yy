@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "s_spike",
-    "path": "sprites/s_spike/s_spike.yy",
+    "name": "s_spike_stone_carpet",
+    "path": "sprites/s_spike_stone_carpet/s_spike_stone_carpet.yy",
   },
   "spriteMaskId": null,
   "visible": true,

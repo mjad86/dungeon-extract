@@ -54,6 +54,7 @@ function player_state_move() {
 	//dodge
 	if(global.dodge) {
 		state = player_state_roll;				//change state to roll
+		mask_index = playerRollMask;			//set mask;
 		moveDistanceRemaining = rollDistance;	//set distance
 	}//end if
 	

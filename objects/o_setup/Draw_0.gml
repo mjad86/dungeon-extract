@@ -50,10 +50,10 @@ gpu_set_blendmode_ext(bm_dest_alpha, bm_inv_dest_alpha);
 if(global.gamePaused) {
 	//this if is done to allow the use of blur shaders in pause menu
 	shader_set(sh_shadowSurf)
-	draw_surface(shadowSurf,_vx, _vy); //draw_surface_ext(shadowSurf,_vx, _vy, 1, 1, 0, c_white, intensity); //the intensity value controls the intensity of the light, the higher the value the darker it is; up to 1. OLD
+	draw_surface(shadowSurf, _vx, _vy); //draw_surface_ext(shadowSurf,_vx, _vy, 1, 1, 0, c_white, intensity); //the intensity value controls the intensity of the light, the higher the value the darker it is; up to 1. OLD
 	shader_reset();
 }//end if
 else {
-	draw_surface(shadowSurf,_vx, _vy);
+	draw_surface(shadowSurf, _vx, _vy);
 }//end else
 gpu_set_blendmode(bm_normal);	

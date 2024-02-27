@@ -1,5 +1,3 @@
-///@desc Update Camera
-
 //Update Destination
 if(instance_exists(follow)) {
 	xTo = follow.x;
@@ -22,9 +20,3 @@ shakeRemain = max(0, shakeRemain-((1/shakeLength)*shakeMagnitude)); //reduce the
 
 //set camera position
 camera_set_view_pos(global.cam, x-viewWHalf, y-viewHHalf);
-
-
-
-
-
-

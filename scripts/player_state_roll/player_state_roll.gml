@@ -15,8 +15,9 @@ function player_state_roll() {
 	set_animation_sprite(playerRoll, 0 + min(((1-(moveDistanceRemaining/rollDistance)) * (sprite_get_number(sprite_index))),sprite_get_number(sprite_index)-1),1);
 	
 	if(moveDistanceRemaining <= 0) {
-		//return to idle state
-		state = player_state_idle;
+		state = player_state_idle;			//return to idle state
+		hSpd = 0;							//reset hSpd to avoid sprint bug
+		mask_index = playerMask;			//set mask;
 	}//end if
 	//MSG("ROLL");	
 }//end script
