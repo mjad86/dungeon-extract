@@ -10,21 +10,29 @@ function create_particle_dust(_state) {
 				var _yy = y;
 				canDust = false;	
 				alarm_set(0, 15);
-				var _dust = instance_create_layer(_xx, _yy, "Misc", o_dust);
+				var _dust = instance_create_layer(_xx, _yy, "Particles", o_dust);
 				_dust.addMovement = true;
 				_dust.delay = 2;
 			}//end if
 		break;
 		case 1:
 			repeat(5) {
-				//create 7 particles of dust for jumping/landing
+				//create 5 particles of dust for jumping/landing
 				var _xx = x + random_range(-8, 8);
-				var _yy = y + random_range(-4, 0);
-					
-				var _dust = instance_create_layer(_xx, _yy, "Misc", o_dust);
+				var _yy = y + random_range(-4, 0);					
+				var _dust = instance_create_layer(_xx, _yy, "Particles", o_dust);
 				_dust.addMovement = true;
 				_dust.delay = 0;
 			}//end repeat
+		break;
+		case 2:
+			//create 1 particle when moving
+				//create particles of dust
+				var _xx = x;
+				var _yy = y;	
+				var _dust = instance_create_layer(_xx, _yy, "Particles", o_dust);
+				_dust.addMovement = true;
+				_dust.delay = 0;
 		break;
 	}//end switch
 }//end script

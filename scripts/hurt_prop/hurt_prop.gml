@@ -21,5 +21,4 @@ function hurt_prop() {
 			}//end else
 		}//end if			
 	}//end with	
-
 }//end script

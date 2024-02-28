@@ -14,6 +14,8 @@ if(global.gamePaused) {
 		instance_activate_object(input_controller_object);	//avoid input plugin bug
 		instance_activate_object(o_controls);				//allow controllers to be used
 		instance_activate_object(o_gui);					//allow GUI object to function
+		instance_activate_object(o_setup);					//allow o_setup object to function
+		
 }//end if
 	
 	//apply pause VFX like blurryness or darkness

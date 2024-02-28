@@ -31,8 +31,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Overworld",
-    "path": "folders/Sprites/Overworld.yy",
+    "name": "Levers & Switches",
+    "path": "folders/Sprites/Overworld/Levers & Switches.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

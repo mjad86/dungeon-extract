@@ -5,6 +5,7 @@
 #macro RESOLUTION_W 640
 #macro RESOLUTION_H 360
 #macro ROOM_SPEED 60
+#macro INMUNE_FRAMES 60
 
 //ENUMS
 enum BLUR {
@@ -28,3 +29,8 @@ enum MENU_ELEMENT_TYPE {
 	TOGGLE,
 	INPUT
 }//END ENUM
+
+enum TRAPBEHAVIOR {
+	FALLTIMER,
+	FLOORTIMER
+}//end enum

@@ -12,7 +12,7 @@ function player_state_fall() {
 		jumpCount++;									//increase jump count
 		vSpd = jumpForce;								//set jump height
 		coyoteTime = 0;									//set coyoteTime to 0 to avoid double jumping
-		audio_play_sound(sfx_player_jump, 100, false);  //jumping sfx
+		audio_play_sound(choose(sfx_grunt_human, sfx_grunt_human_2), 100, false);	//jumping sfx grunt
 		create_particle_dust(1);						//create dust particle
 		state = player_state_jump;						//change state
 	}//end if
@@ -20,7 +20,11 @@ function player_state_fall() {
 	if(onGround) {
 		jumpCount = 0;									//reset jump count
 		create_particle_dust(1);						//create dust particle
-		audio_play_sound(sfx_rock_footstep, 100, false);//landing sfx
+		var _floor = instance_place(x, y+1, [o_parent_wall, o_oneway_platform]);
+		if(_floor != noone) {	
+			footstep = _floor.footstepSFX;				//obtain the footstep sfx
+		}//end if
+		audio_play_sound(footstep, 100, false);			//landing sfx
 		state = player_state_idle;						//change state
 	}//end if
 			

@@ -3,7 +3,11 @@ if(state != player_state_lock) {
 	move = (global.right - global.left);						//input calculation
 	onGround = on_ground();										//verify if on ground
 	vSpd += grav;												//Apply gravity force
-
+	
+	if(inmune > 0) {
+		inmune = max(0, inmune - 1);							//resets inmune frames back to 0
+	}//end if
+	
 	acceleration_and_friction(move, moveSpdMax, accel, fric);   //acceleration adn friction manager
 }//end if
 
@@ -53,7 +57,6 @@ if(onGround) {
 	var _floor = instance_place(x, y+1, [o_parent_wall, o_oneway_platform]);
 	if(_floor != noone) {	
 		footstep = _floor.footstepSFX;						//obtain the footstep sfx
-		
 	}//end if
 }//end if
 #endregion

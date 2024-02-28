@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Overworld",
-    "path": "folders/Sprites/Overworld.yy",
+    "name": "Doors & Gates",
+    "path": "folders/Sprites/Overworld/Doors & Gates.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

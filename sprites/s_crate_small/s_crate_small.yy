@@ -26,8 +26,8 @@
   "nineSlice": null,
   "origin": 7,
   "parent": {
-    "name": "Overworld",
-    "path": "folders/Sprites/Overworld.yy",
+    "name": "Props",
+    "path": "folders/Sprites/Overworld/Props.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

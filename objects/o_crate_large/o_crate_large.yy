@@ -3,14 +3,16 @@
   "resourceVersion": "1.0",
   "name": "o_crate_large",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_parent_entity","path":"objects/o_parent_entity/o_parent_entity.yy",},"propertyId":{"name":"entityShadow","path":"objects/o_parent_entity/o_parent_entity.yy",},"value":"True",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_parent_entity","path":"objects/o_parent_entity/o_parent_entity.yy",},"propertyId":{"name":"entityHitScript","path":"objects/o_parent_entity/o_parent_entity.yy",},"value":"hurt_prop",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_parent_entity","path":"objects/o_parent_entity/o_parent_entity.yy",},"propertyId":{"name":"isProp","path":"objects/o_parent_entity/o_parent_entity.yy",},"value":"True",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_parent_entity","path":"objects/o_parent_entity/o_parent_entity.yy",},"propertyId":{"name":"hurtSfx","path":"objects/o_parent_entity/o_parent_entity.yy",},"value":"[sfx_crate_impact, sfx_wood_hit, sfx_wood_crackling]",},
   ],
   "parent": {
@@ -18,8 +20,8 @@
     "path": "folders/Objects/Overworld/Props.yy",
   },
   "parentObjectId": {
-    "name": "o_parent_enemy",
-    "path": "objects/o_parent_enemy/o_parent_enemy.yy",
+    "name": "o_oneway_platform",
+    "path": "objects/o_oneway_platform/o_oneway_platform.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -34,7 +36,12 @@
   "physicsShape": 1,
   "physicsShapePoints": [],
   "physicsStartAwake": true,
-  "properties": [],
+  "properties": [
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"entityHitScript","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"hurt_prop","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"maxHp","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"100","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"hp","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"maxHp","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"hurtSfx","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"[sfx_crate_impact, sfx_wood_hit, sfx_wood_crackling]","varType":0,},
+  ],
   "solid": false,
   "spriteId": {
     "name": "s_crate_large",

@@ -1,6 +1,5 @@
-if(entityShadow) {
-	draw_sprite(shadow, 0, x, y);
-}//end if
+draw_sprite(shadow, 0, x, y);
+
 if(flash != 0) {
 	shader_set(sh_white_flash);
 	shader_set_uniform_f(uFlash, flash);

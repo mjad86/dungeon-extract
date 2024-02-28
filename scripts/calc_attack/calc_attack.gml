@@ -4,7 +4,7 @@ function calc_attack() {
 	mask_index = argument0;
 	var _dmg = argument1;
 	var _hitByAttackNow = ds_list_create();
-	var _hits = instance_place_list(x, y, o_parent_entity, _hitByAttackNow, true);
+	var _hits = instance_place_list(x, y, [o_parent_entity, o_oneway_platform, o_player], _hitByAttackNow, true);
 	if(_hits > 0) {
 		for(var _i=0; _i < _hits; _i++) {
 			//if this instance has not yet been hit by this attack, hit it
@@ -14,15 +14,13 @@ function calc_attack() {
 				ds_list_add(hitByAttack, _hitId);
 				with(_hitId) {
 					//action against attacked instance
-					if(object_is_ancestor(object_index, o_parent_enemy)) {
-						//dmg enemy
-						if(isProp) {
-							hurt_prop(id,_dmg, other.id);
-						}//end if
-						else {
-							hurt_enemy(id,_dmg, other.id);
-						}//end else
+					if(object_is_ancestor(object_index, o_oneway_platform)) {
+						hurt_prop(id,_dmg, other.id);
 					}//end if
+					else if(object_is_ancestor(object_index, o_parent_enemy)) {
+						//dmg enemy
+						hurt_enemy(id,_dmg, other.id);
+					}//end else if
 					else {
 						//execute script
 						if(entityHitScript != -1) {

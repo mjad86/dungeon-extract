@@ -20,7 +20,12 @@ function player_state_move() {
 		jumpCount++;									//increase jump count
 		vSpd = jumpForce;								//set jump height
 		coyoteTime = 0;									//set coyoteTime to 0 to avoid double jumping
-		audio_play_sound(sfx_player_jump, 100, false);  //jumping sfx
+		var _floor = instance_place(x, y+1, [o_parent_wall, o_oneway_platform]);
+		if(_floor != noone) {	
+			footstep = _floor.footstepSFX;				//obtain the footstep sfx
+		}//end if
+		audio_play_sound(choose(sfx_grunt_human, sfx_grunt_human_2), 100, false);	//jumping sfx grunt
+		audio_play_sound(footstep, 100, false);			//jumping sfx
 		create_particle_dust(1);						//create dust aprticles
 		state = player_state_jump;						//change state
 	}//end if
@@ -56,6 +61,8 @@ function player_state_move() {
 		state = player_state_roll;				//change state to roll
 		mask_index = playerRollMask;			//set mask;
 		moveDistanceRemaining = rollDistance;	//set distance
+		audio_play_sound(choose(sfx_grunt_human, sfx_grunt_human_2), 100, false);	//jumping sfx grunt
+		audio_play_sound(sfx_rolling_1, 10, false); //sfx
 	}//end if
 	
 	//attack
@@ -68,7 +75,8 @@ function player_state_move() {
 	
 	//block
 	if(global.block) {
-		//insert block script here
+		//add sfx here
+		state = player_state_block_idle;
 	}//end if
 	
 	//MSG("MOVING");

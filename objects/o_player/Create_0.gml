@@ -9,7 +9,7 @@ jumpCount = 0;										//counter for the amount of jumps player can do
 jumpCountMax = 1;									//the maximun amount of jumps the player can do	
 rollDistance = 100;									//rolling distance in pixels
 moveDistanceRemaining = 0							//flag to calcualte rolling distance remaining
-rollSpd = 4;										//how fast we roll
+rollSpd = 5;										//how fast we roll
 hSpd = 0;											//Horizontal speed
 vSpd = 0;											//vertical speed
 state = player_state_idle;							//Player state at start
@@ -22,6 +22,7 @@ coyoteTimeMax = 6;									//maximun time in frames for player to make a jump wh
 canDust = true;										//particle dust flag when moving
 footstep = noone									//footstep SFX flag, obtained from the parent object we are steping
 activateBar = noone									//flag for activating bar
+inmune = 0											//frames for the player to be inmune
 
 //Sprites
 playerIdle = s_figther_idle;
@@ -34,7 +35,11 @@ playerRollMask = s_figther_roll_mask;
 attack1 = s_figther_attack1
 attack2 = s_figther_attack2;
 attack3 = s_figther_attack3;
+playerBlockIdle = s_figther_block_idle;
 playerBlock = s_figther_block;
+playerHurt = s_figther_hurt;
+playerDead = s_figther_dead;
+playerDeadBlood = s_figther_dead_with_blood;
 
 //sfx
 swordSwing1 = sfx_sword_swing_1;
@@ -56,6 +61,17 @@ instance_create_layer(x, y, "Player", o_player_shadow);
 //instance_create_layer(x, y, "Player", o_lantern);
 //audio listener orientation
 audio_listener_orientation(0,1,0,0,0,1);
+
+//player ingame variables
+strength = 0;		//determines witch weapons/armor you can equip
+vitality = 0;		//determines the amount of health of your character
+dexterity = 0;		//determines how much stamina of your characte
+intelligence = 0;	//determines the amount of max spell your character has and magical dmg
+
+hpMax = 100;		
+hp = hpMax;
+maxStamina = 100;
+stamina = maxStamina;
 
 
 

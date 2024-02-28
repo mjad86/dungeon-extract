@@ -42,4 +42,7 @@ function prop_state_destroy() {
 			}//end if	
 		break;
 	}//end switch
+	if(brokenMask != -1) {
+		mask_index = brokenMask;
+	}//end if
 }//end script
