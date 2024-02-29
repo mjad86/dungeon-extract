@@ -8,5 +8,11 @@ function resume_game() {
 		//makes sure we release the player from pause state
 		global.gamePaused = !global.gamePaused;
 	}//end if
+	with(o_gui) {
+		menuOption[page] = 0;	//reset option
+		lastPage = 0;			//reset flag
+		inputting = false;		//reset inputing flag
+	}//end with
 	//add sfx here
+	audio_play_sound(sfx_gui_pause, 10, false);
 }//end script

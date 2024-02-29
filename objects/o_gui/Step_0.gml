@@ -20,6 +20,7 @@ switch(page) {
 			//move through the menu
 			menuOption[0] += _input;
 			//insert SFX here
+			audio_play_sound(sfx_gui_moving, 10, false);
 			inputBuffer = inputBufferMax; //set input buffer
 			if(menuOption[0] > _dsHeight-1) {
 				//reached bottom of menu options and loop back to top
@@ -44,6 +45,7 @@ switch(page) {
 					_hInput = global.menuRight - global.menuLeft;
 					if(_hInput != 0) {
 						//add SFX here if required when changing the option
+						audio_play_sound(sfx_gui_moving, 10, false);
 						_dsGrid[# 3, menuOption[page]] += _hInput;
 						_dsGrid[# 3, menuOption[page]] = clamp(_dsGrid[# 3, menuOption[page]], 0, array_length(_dsGrid[# 4, menuOption[page]])-1);
 					}//end if
@@ -61,8 +63,8 @@ switch(page) {
 							break;
 							case 1:
 								//SFX
-								if(!audio_is_playing(sfx_rock_footstep)) {
-									audio_play_sound(sfx_rock_footstep, 1, false);
+								if(!audio_is_playing(sfx_gui_moving)) {
+									audio_play_sound(sfx_gui_moving, 1, false);
 								}//end if
 							break;
 						 }//end switch
@@ -77,6 +79,7 @@ switch(page) {
 					_dsHeight = ds_grid_height(_dsGrid[# 3, menuOption[page]]);
 					if(_hInput != 0) {
 						//add SFX here if required when changing the option
+						audio_play_sound(sfx_gui_moving, 10, false);
 						_dsGrid[# 3, menuOption[page]] += _hInput;
 						if(_dsGrid[# 3, menuOption[page]] > _dsHeight-1) {
 							//reached bottom of menu options and loop back to top
@@ -101,6 +104,7 @@ switch(page) {
 				//move through the menu
 				menuOption[page] += _input;
 				//insert SFX here
+				audio_play_sound(sfx_gui_moving, 10, false);
 				inputBuffer = inputBufferMax; //set input buffer
 				if(menuOption[page] > _dsHeight-1) {
 					//reached bottom of menu options and loop back to top
@@ -141,7 +145,8 @@ if(global.action || global.jump) {
 			curVal = _dsGrid[# 3, menuOption[page]]; //store the current value
 		break;
 	}//end switch
-	//insert select SFX here
+	//insert confirm SFX here
+	audio_play_sound(sfx_gui_confirm, 10, false);
 }//end if
 
 if(global.cancel) {
@@ -172,13 +177,11 @@ if(global.cancel) {
 	}//end if
 	else { 
 		//exit menu if in main menu
-		menuOption[page] = 0;	//reset option
-		lastPage = 0;			//reset flag
-		inputting = false;		//reset inputing flag
 		global.gamePaused = !global.gamePaused;
 		resume_game();
 	}//end else
 	//insert cancel SFX here
+	audio_play_sound(sfx_gui_cancel, 10, false);
 }//end if
 
 

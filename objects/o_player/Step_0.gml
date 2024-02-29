@@ -30,7 +30,8 @@ if(instance_exists(o_oneway_platform) && !global.down) {
 	jump_through_col(o_oneway_platform);					//controls jump through platform
 }//end if
 collision();												//Apply movement
-	
+unstuck_player();											//check to unstuck player if overlaping a wall
+
 //controls facing of the player
 if(hSpd != 0) {
 	image_xscale = sign(hSpd);

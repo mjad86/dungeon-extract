@@ -67,11 +67,15 @@ strength = 0;		//determines witch weapons/armor you can equip
 vitality = 0;		//determines the amount of health of your character
 dexterity = 0;		//determines how much stamina of your characte
 intelligence = 0;	//determines the amount of max spell your character has and magical dmg
+luck = 0			//determines drop rate chance of items
 
 hpMax = 100;		
 hp = hpMax;
 maxStamina = 100;
 stamina = maxStamina;
+
+//create player hud
+instance_create_layer(0, 0, "Misc", o_player_healthbar_frame);
 
 
 

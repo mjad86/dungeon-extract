@@ -3,10 +3,6 @@
   "resourceVersion": "1.0",
   "name": "o_crate_large",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
@@ -20,8 +16,8 @@
     "path": "folders/Objects/Overworld/Props.yy",
   },
   "parentObjectId": {
-    "name": "o_oneway_platform",
-    "path": "objects/o_oneway_platform/o_oneway_platform.yy",
+    "name": "o_parent_prop",
+    "path": "objects/o_parent_prop/o_parent_prop.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -37,7 +33,6 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"entityHitScript","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"hurt_prop","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"maxHp","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"100","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"hp","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"maxHp","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"hurtSfx","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"[sfx_crate_impact, sfx_wood_hit, sfx_wood_crackling]","varType":0,},

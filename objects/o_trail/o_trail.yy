@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Misc",
-    "path": "folders/Objects/Misc.yy",
+    "name": "VFX",
+    "path": "folders/Objects/VFX.yy",
   },
   "parentObjectId": null,
   "persistent": false,

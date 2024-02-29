@@ -29,7 +29,7 @@
   "origin": 7,
   "parent": {
     "name": "Dummy",
-    "path": "folders/Sprites/Overworld/Dummy.yy",
+    "path": "folders/Sprites/Enemies/Dummy.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

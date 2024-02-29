@@ -9,7 +9,7 @@ function hurt_player() {
 			//hurt or die?
 			if(hp <= 0) {
 				//player is dead
-				state = player_state_lock;
+				state = player_state_dead;
 			}//end if
 			else {
 				//playe still alive

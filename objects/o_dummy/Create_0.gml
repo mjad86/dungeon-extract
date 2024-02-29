@@ -1,5 +1,5 @@
 event_inherited();
-state = dummy_state_idle;							//state
+state = dummy_state_idle;	//state
 
 dummyIdle = s_dummy_idle;
 dummyHit1 = s_dummy_hit1;

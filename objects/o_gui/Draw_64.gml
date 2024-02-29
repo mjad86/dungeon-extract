@@ -16,6 +16,7 @@ draw_set_alpha(0.5)
 draw_rectangle(8,0,65,RESOLUTION_H,false);
 draw_set_alpha(1);
 
+
 #region//DRAWING MAIN MENU
 //looping and adding space between diferent options of the menu
 for(var _i = 0; _i < _dsHeightMain; _i++) {
