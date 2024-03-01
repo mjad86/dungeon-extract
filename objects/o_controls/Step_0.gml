@@ -1,3 +1,19 @@
+//Fetch the gamepad type when a hotswap event happens
+var _gamepadType = input_player_get_gamepad_type();
+
+if(_gamepadType == "ps4" || _gamepadType == "ps5" || _gamepadType == "psx") {
+	//set controller to playstation flag
+	global.controller = CONTROLLER.PS;
+}//end if
+else if(_gamepadType == "xbox one" || _gamepadType == "xbox 360") {
+	//set controller to xbox flag
+	global.controller = CONTROLLER.XBOX;
+}//end else if
+else {
+	//set controller to pc flag
+	global.controller = CONTROLLER.MOUSE_KEYBOARD;
+}//end else
+
 global.left = input_check("left");					//move left key
 global.right = input_check("right");				//move right key
 global.menuLeft = input_check_pressed("left");		//move left key in menu

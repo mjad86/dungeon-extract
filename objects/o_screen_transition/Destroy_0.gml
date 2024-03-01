@@ -1,0 +1,1 @@
+draw_set_alpha(1);//avoid fade in bug in screen

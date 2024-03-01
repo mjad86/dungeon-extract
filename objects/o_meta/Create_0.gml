@@ -2,6 +2,7 @@
 randomize()	;														//creates a diferent seed and randomization every time game starts
 
 scribble_font_set_default("s_font");								//set the font for scrible to use
+scribble_anim_blink(15, 15, 1);
 global.gamePaused = false;											//controls pause state for the game
 global.pauseSurface = noone;										//surface tos tore our pause screen img
 

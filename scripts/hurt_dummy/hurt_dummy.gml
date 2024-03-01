@@ -14,7 +14,8 @@ function hurt_dummy() {
 			}//end if
 			else {
 				//enemy still alive
-				state = dummy_state_idle;				
+				state = dummy_state_strike;	
+				spr = choose(dummyHit3, dummyHit2, dummyHit1);
 			}//end else
 		}//end if			
 	}//end with	

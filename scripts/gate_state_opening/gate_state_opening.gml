@@ -1,6 +1,11 @@
 ///@desc gate_state_opening()
 function gate_state_opening() {
 	
+	var _shakeDist = point_distance(o_player.x, o_player.y, x, y);
+	var _shakeDistMax = 200;
+	var _magnitude = 1;	//how many pixels will the camera shake
+	var _duration = 30;	//how many frames will it shake for
+	
 	if(previousState == gate_state_closed) {
 		#region//open the gate if its closed
 		if(sprite_height > 32) {
@@ -23,6 +28,10 @@ function gate_state_opening() {
 					_dust.addMovement = true;
 					_dust.delay = 0;
 				}//end reapeat
+				if(_shakeDist < _shakeDistMax) {
+					//screen shake fx
+					screen_shake(_magnitude, _duration);
+				}//end if
 				state = gate_state_open;									//change state
 			}//end else
 			#endregion
@@ -47,6 +56,10 @@ function gate_state_opening() {
 					_dust.addMovement = true;
 					_dust.delay = 0;
 				}//end reapeat
+				if(_shakeDist < _shakeDistMax) {
+					//screen shake fx
+					screen_shake(_magnitude, _duration);
+				}//end if
 				state = gate_state_open;									//change state
 			}//end else
 			#endregion
@@ -77,6 +90,10 @@ function gate_state_opening() {
 					_dust.addMovement = true;
 					_dust.delay = 0;
 				}//end reapeat
+				if(_shakeDist < _shakeDistMax) {
+					//screen shake fx
+					screen_shake(_magnitude, _duration);
+				}//end if
 				state = gate_state_closed;
 			}//end else
 			#endregion
@@ -103,6 +120,10 @@ function gate_state_opening() {
 					_dust.addMovement = true;
 					_dust.delay = 0;
 				}//end reapeat
+				if(_shakeDist < _shakeDistMax) {
+					//screen shake fx
+					screen_shake(_magnitude, _duration);
+				}//end if
 				state = gate_state_closed;
 			}//end else
 			#endregion

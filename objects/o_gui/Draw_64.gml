@@ -23,7 +23,7 @@ for(var _i = 0; _i < _dsHeightMain; _i++) {
 	_msg += "\n";												//add space into display options
 	if(page == 0) {
 		if(_i == menuOption[0]) {
-			_msg += "[wobble]"+_dsGridmain[# 0,  _i]+"[/wobble]";	//add effect to the selected option
+			_msg += "[blink]"+_dsGridmain[# 0,  _i]+"[/blink]";	//add effect to the selected option
 		}//end if
 		else {
 			_msg += _dsGridmain[# 0, _i];							//add menu option to drawing array
@@ -58,7 +58,7 @@ if(page > 0) {
 		_subMsg += "\n\n";	//add space into display options
 		if(!inputting) {
 			if(_i == menuOption[page]) {
-				_subMsg += "[wobble]"+_dsGridsub[# 0,  _i]+"[/wobble]";	//add effect to the selected option
+				_subMsg += "[blink]"+_dsGridsub[# 0,  _i]+"[/blink]";	//add effect to the selected option
 			}//end if
 			else {
 				_subMsg += _dsGridsub[# 0, _i];	//add menu option to drawing array

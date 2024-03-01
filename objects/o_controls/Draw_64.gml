@@ -1,0 +1,1 @@
+//draw_sprite(input_verb_get_icon("jump"), 0, RESOLUTION_W*0.5, RESOLUTION_H*0.5);

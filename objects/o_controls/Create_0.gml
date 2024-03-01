@@ -1,4 +1,6 @@
 ///@desc Input control setup
+global.controller = input_player_get_gamepad_type();
+
 global.left = input_check("left");					//move left key
 global.right = input_check("right");				//move right key
 global.menuLeft = input_check_pressed("left");		//move left key in menu

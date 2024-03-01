@@ -75,8 +75,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "Gui",
-    "path": "folders/Sprites/Misc/Gui.yy",
+    "name": "Hud",
+    "path": "folders/Sprites/Misc/Hud.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -20,17 +20,15 @@ input_icon_empty("Empty");
 //Special case: When a touch binding (virtual button) is being evaluated
 input_icon_touch("Virtual button");
 
-
-
 //Optional remapping for keyboard and mouse
 //This is useful for turning keyboard keys into sprite icons to match other assets, or for returning formatted strings (e.g. for use with Scribble)
 //Any keyboard key label not in this struct will simply fall through and return the key name
 input_icons_keyboard_and_mouse()
 //Put extra .add() commands here to add icons to keyboard and mouse
+.add("space",         s_crate_flat)
 
 
-
-#region Gamepads
+#region GamepadsF
 
 //Xbox One and Series S|X controllers
 input_icons_gamepad(INPUT_GAMEPAD_TYPE_XBOX_ONE)
@@ -72,7 +70,7 @@ input_icons_gamepad(INPUT_GAMEPAD_TYPE_XBOX_ONE)
 
 //PlayStation 5
 input_icons_gamepad(INPUT_GAMEPAD_TYPE_PS5)
-.add("gamepad face south",         "cross")
+.add("gamepad face south",         s_barrel)
 .add("gamepad face east",          "circle")
 .add("gamepad face west",          "square")
 .add("gamepad face north",         "triangle")
@@ -212,7 +210,7 @@ input_icons_gamepad(INPUT_GAMEPAD_TYPE_XBOX_360)
 
 //PlayStation 4
 input_icons_gamepad(INPUT_GAMEPAD_TYPE_PS4)
-.add("gamepad face south",         "cross")
+.add("gamepad face south",         s_barrel)
 .add("gamepad face east",          "circle")
 .add("gamepad face west",          "square")
 .add("gamepad face north",         "triangle")
@@ -243,7 +241,7 @@ input_icons_gamepad(INPUT_GAMEPAD_TYPE_PS4)
 
 //PlayStation 1-3
 input_icons_gamepad(INPUT_GAMEPAD_TYPE_PSX)
-.add("gamepad face south",         "cross")
+.add("gamepad face south",         s_barrel)
 .add("gamepad face east",          "circle")
 .add("gamepad face west",          "square")
 .add("gamepad face north",         "triangle")

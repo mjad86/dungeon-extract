@@ -1,6 +1,6 @@
 ///@desc trigger controller according to slot
 #region//START ROOM
-if(room_get_name(room) == "r_start") && (!triggered) {
+if(!triggered) {
 	switch(behaviour) {
 		case TRAPBEHAVIOR.FALLTIMER:
 			//timer trap falling

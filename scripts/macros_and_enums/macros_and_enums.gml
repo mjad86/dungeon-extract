@@ -6,6 +6,9 @@
 #macro RESOLUTION_H 360
 #macro ROOM_SPEED 60
 #macro INMUNE_FRAMES 60
+#macro TRANSITION_SPEED 0.05
+#macro OUT 0
+#macro IN 1
 
 //ENUMS
 enum BLUR {
@@ -34,3 +37,17 @@ enum TRAPBEHAVIOR {
 	FALLTIMER,
 	FLOORTIMER
 }//end enum
+
+enum CONTROLLER {
+	PS,
+	XBOX,
+	NINTENDO,
+	MOUSE_KEYBOARD,
+	UNKNOWN
+}//end enum
+
+enum TRANS_TYPE {
+	SLIDE,
+	FADE,
+	SQUARE
+}//END ENUM
