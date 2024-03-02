@@ -18,6 +18,7 @@ function player_state_roll() {
 			image_blend = _c;
 			image_alpha = 0.7;
 			image_speed = 0;
+			image_xscale = other.image_xscale;
 			image_index = other.image_index;
 		}//end with
 	}//end if

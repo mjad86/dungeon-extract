@@ -18,5 +18,11 @@ y += random_range(-shakeRemain, shakeRemain);
 
 shakeRemain = max(0, shakeRemain-((1/shakeLength)*shakeMagnitude)); //reduce the remaining of the shake by a fraction of its value until 0
 
+with(o_setup) {
+	//we set this here in order to have same time shadow movement with camera and avoid delay movement bug
+	vx = other.x-other.viewWHalf;
+	vy = other.y-other.viewHHalf;
+}//end with
+
 //set camera position
 camera_set_view_pos(global.cam, x-viewWHalf, y-viewHHalf);

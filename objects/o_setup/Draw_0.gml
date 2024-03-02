@@ -9,7 +9,7 @@ var _vx = vx;
 var _vy = vy;
 
 if(!surface_exists(shadowSurf)) {
-	shadowSurf = surface_create(RESOLUTION_W, RESOLUTION_H);
+	shadowSurf = surface_create(RESOLUTION_W+32, RESOLUTION_H+32);
 }//end if
 
 matrix_set(matrix_world, matrix_build(-_vx, -_vy,0,0,0,0,1,1,1));

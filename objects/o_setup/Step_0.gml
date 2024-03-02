@@ -1,8 +1,9 @@
 vertex_begin(vb, vf);
 var _vb = vb;
 
-vx = camera_get_view_x(global.cam);
-vy = camera_get_view_y(global.cam);
+//set now in object camera
+//vx = camera_get_view_x(global.cam);
+//vy = camera_get_view_y(global.cam);
 
 with(o_wall) {
 	//calculate point of origin of each sprite and runs the quad function to determine shadow's
