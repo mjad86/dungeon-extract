@@ -12,7 +12,6 @@
   "managed": true,
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_light","path":"objects/o_light/o_light.yy",},"propertyId":{"name":"size","path":"objects/o_light/o_light.yy",},"value":"128",},
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_light","path":"objects/o_light/o_light.yy",},"propertyId":{"name":"originalSize","path":"objects/o_light/o_light.yy",},"value":"128",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_light","path":"objects/o_light/o_light.yy",},"propertyId":{"name":"glowSize","path":"objects/o_light/o_light.yy",},"value":"256",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_light","path":"objects/o_light/o_light.yy",},"propertyId":{"name":"str","path":"objects/o_light/o_light.yy",},"value":"0",},
   ],

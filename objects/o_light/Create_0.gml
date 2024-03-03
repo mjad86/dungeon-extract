@@ -1,0 +1,1 @@
+glowGrow = true;

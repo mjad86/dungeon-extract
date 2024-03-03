@@ -27,11 +27,12 @@
   "physicsStartAwake": true,
   "properties": [
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"footstepSFX","filters":[],"listItems":[
-        "sfx_rock_footstep",
-        "sfx_grass_footstep",
-        "sfx_stone_footstep",
-        "sfx_wood_footstep",
-      ],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"sfx_wood_footstep","varType":6,},
+        "[sfx_rock_footstep]",
+        "[sfx_grass_footstep]",
+        "[sfx_stone_footstep]",
+        "[sfx_wood_footstep]",
+        "[sfx_wood_footstep, sfx_wood_squeak_01]",
+      ],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"[sfx_wood_footstep]","varType":6,},
   ],
   "solid": false,
   "spriteId": {

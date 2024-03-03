@@ -14,6 +14,11 @@ function player_state_move() {
 		state = player_state_idle;						//change state
 	}//end if
 	
+	if(global.down) {
+		state = player_state_crouching;	//change player state to crouch
+		mask_index = playerRollMask;	
+	}//end if
+	
 	//players on the ground and change state to jumping
 	if(onGround && global.jump && coyoteTime > 0) {
 		//change player state to jump
@@ -22,7 +27,14 @@ function player_state_move() {
 		coyoteTime = 0;									//set coyoteTime to 0 to avoid double jumping
 		var _floor = instance_place(x, y+1, [o_parent_wall, o_oneway_platform]);
 		if(_floor != noone) {	
-			footstep = _floor.footstepSFX;				//obtain the footstep sfx
+			if(array_length(_floor.footstepSFX) > 1) {
+				//choose random sfx to play if its greater than 1 sfx
+				var _sfx = _floor.footstepSFX[irandom_range(0, array_length(_floor.footstepSFX)-1)];
+				footstep = _sfx;
+			}//end if
+			else {
+				footstep = _floor.footstepSFX[0];						//obtain the footstep sfx
+			}//end else
 		}//end if
 		audio_play_sound(choose(sfx_grunt_human, sfx_grunt_human_2), 100, false);	//jumping sfx grunt
 		audio_play_sound(footstep, 100, false);			//jumping sfx
@@ -63,6 +75,16 @@ function player_state_move() {
 		moveDistanceRemaining = rollDistance;	//set distance
 		audio_play_sound(choose(sfx_grunt_human, sfx_grunt_human_2), 100, false);	//jumping sfx grunt
 		audio_play_sound(sfx_rolling_1, 10, false); //sfx
+	}//end if
+	
+	var _lever = instance_place(x, y, o_parent_lever);
+	if(_lever != noone) && (global.activate) {
+		if(_lever.state != lever_state_using) {
+			activateBar = instance_create_layer(x, y - sprite_height, "Misc", o_activate_bar);
+			activateBar.activationTime = _lever.activateTimer;
+			activateBar.inst = _lever;
+			state = player_state_interacting;
+		}//end if
 	}//end if
 	
 	//attack

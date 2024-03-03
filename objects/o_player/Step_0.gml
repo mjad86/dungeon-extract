@@ -3,7 +3,7 @@ if(state != player_state_lock) {
 	move = (global.right - global.left);						//input calculation
 	onGround = on_ground();										//verify if on ground
 	vSpd += grav;												//Apply gravity force
-	
+		
 	if(inmune > 0) {
 		inmune = max(0, inmune - 1);							//resets inmune frames back to 0
 	}//end if
@@ -26,7 +26,7 @@ if(onGround) {
 	
 script_execute(state);										//state machine script execution
 
-if(instance_exists(o_oneway_platform) && !global.down) {
+if(!goThrough) {
 	jump_through_col(o_oneway_platform);					//controls jump through platform
 }//end if
 collision();												//Apply movement
@@ -47,7 +47,7 @@ if(state != player_state_dead) {
 	}//end repeat
 	var _targetAlpha = 1;
 	if(_fakeTile > 0) {
-		_targetAlpha = 0.3;
+		_targetAlpha = 0;
 	}//end if
 	global.fakeTileAlpha = lerp(global.fakeTileAlpha, _targetAlpha, 0.1);
 }//end if
@@ -57,9 +57,17 @@ if(state != player_state_dead) {
 if(onGround) {
 	var _floor = instance_place(x, y+1, [o_parent_wall, o_oneway_platform]);
 	if(_floor != noone) {	
-		footstep = _floor.footstepSFX;						//obtain the footstep sfx
+		if(array_length(_floor.footstepSFX) > 1) {
+			//choose random sfx to play if its greater than 1 sfx
+			var _sfx = _floor.footstepSFX[irandom_range(0, array_length(_floor.footstepSFX)-1)];
+			footstep = _sfx;
+		}//end if
+		else {
+			footstep = _floor.footstepSFX[0];						//obtain the footstep sfx
+		}//end else
 	}//end if
 }//end if
 #endregion
 
 out_of_camera_bounds();										//controls the out of camera action
+

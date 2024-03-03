@@ -1,6 +1,11 @@
 ///@desc attack_slash1()
 function attack_slash1() {
 	hSpd = 0;	//for this attack we stop player movement	
+	
+	if(mask_index != playerMask) {
+		mask_index = playerMask;	//set player mask to regular mask
+	}//end if
+	
 	if(sprite_index != attack1) {
 		//set animation sprite, image index and image speed
 		sprite_index = attack1;

@@ -13,7 +13,7 @@
   "duration": 1.124989,
   "parent": {
     "name": "Gui",
-    "path": "folders/Sounds/Gui.yy",
+    "path": "folders/Sounds/SFX/Gui.yy",
   },
   "preload": false,
   "sampleRate": 44100,

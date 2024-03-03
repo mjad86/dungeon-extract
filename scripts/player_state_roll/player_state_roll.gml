@@ -8,7 +8,12 @@ function player_state_roll() {
 	create_particle_dust(2);
 	//set animation sprite
 	var _index = 0 + min(((1-(moveDistanceRemaining/rollDistance)) * (sprite_get_number(sprite_index))),sprite_get_number(sprite_index)-1);
-	set_animation_sprite(playerRoll, _index ,1);
+	if(previousState == player_state_crouching || previousState == player_state_crouch || previousState == player_state_standing) {
+		set_animation_sprite(s_figther_roll_from_crouch, _index ,1);
+	}//end if
+	else {
+		set_animation_sprite(playerRoll, _index ,1);
+	}//end else
 	
 	var _shade = round(_index);
 	if(_shade mod 2 <= 0) {
@@ -23,7 +28,13 @@ function player_state_roll() {
 		}//end with
 	}//end if
 	
+	//if not touchin ground then change state to fall
+	if(!onGround) {
+		state = player_state_fall;
+	}//end if
+	
 	if(moveDistanceRemaining <= 0) {
+		previousState = noone;
 		state = player_state_idle;			//return to idle state
 		hSpd = 0;							//reset hSpd to avoid sprint bug
 		mask_index = playerMask;			//set mask;

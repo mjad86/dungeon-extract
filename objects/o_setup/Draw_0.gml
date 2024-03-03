@@ -16,28 +16,31 @@ matrix_set(matrix_world, matrix_build(-_vx, -_vy,0,0,0,0,1,1,1));
 surface_set_target(shadowSurf);
 draw_clear_alpha(c_black, 0);
 draw_surface_ext(application_surface, _vx, _vy, 1, 1, 0, c_white, intensity); //control room intensity here
+
 #region//APPLY ILUMINATION TO OBJECT LIGHT AND CHILD'S
 	with(o_light) {	
-		if(iluminate) {
-				//Setting light point of origin for diferent light emitter
-				var _sWhalf = sprite_width*0.5;		//xoffset
-				var _sHhalf = sprite_height*0.5;	//yoffset		
-				if(object_get_name(object_index) == "o_player") {
-					//players origin in bottom center, so we set the light source at midle center
-					shadow_and_light(_vb, _u_pos, _u_pos2, _u_zz, _u_str, _u_dir, _u_fov, 0, -_sHhalf);
-				}//end if	
-				if(object_get_name(object_index) == "o_torch_big") {
-					//big torch origin in middle center, no offset required
-					shadow_and_light(_vb, _u_pos, _u_pos2, _u_zz, _u_str, _u_dir, _u_fov, 0, 0);
-				}//end if	
-				if(object_get_name(object_index) == "o_lantern") {
-					//lantern origin in middle center, no offset required
-					shadow_and_light(_vb, _u_pos, _u_pos2, _u_zz, _u_str, _u_dir, _u_fov, 0, -_sHhalf);
-				}//end if	
-			//canvas for drawing the light
-			//draw_rectangle_color(_vx, _vy, _vx + RESOLUTION_W, _vy + RESOLUTION_H, color, color, color, color, 0);
-			draw_surface_ext(application_surface, _vx, _vy, 1, 1, 0, color, 1);
-		}//end if
+		//Setting light point of origin for diferent light emitter
+		var _sWhalf = sprite_width*0.5;		//xoffset
+		var _sHhalf = sprite_height*0.5;	//yoffset		
+		if(object_get_name(object_index) == "o_player") {
+			//players origin in bottom center, so we set the light source at midle center
+			shadow_and_light(_vb, _u_pos, _u_pos2, _u_zz, _u_str, _u_dir, _u_fov, 0, -_sHhalf);
+		}//end if	
+		if(object_get_name(object_index) == "o_torch_big" || object_get_name(object_index) == "o_torch_small") {
+			//big torch origin in middle center, no offset required
+			shadow_and_light(_vb, _u_pos, _u_pos2, _u_zz, _u_str, _u_dir, _u_fov, 0, 0);
+		}//end if	
+		if(object_get_name(object_index) == "o_lantern") {
+			//lantern origin in middle center, no offset required
+			shadow_and_light(_vb, _u_pos, _u_pos2, _u_zz, _u_str, _u_dir, _u_fov, 0, -_sHhalf);
+		}//end if	
+		if(object_get_name(object_index) == "o_cone_light") {
+			//lantern origin in middle center, no offset required
+			shadow_and_light(_vb, _u_pos, _u_pos2, _u_zz, _u_str, _u_dir, _u_fov, 0, -_sHhalf);
+		}//end if	
+		//canvas for drawing the light
+		//draw_rectangle_color(_vx, _vy, _vx + RESOLUTION_W, _vy + RESOLUTION_H, color, color, color, color, 0);
+		draw_surface_ext(application_surface, _vx, _vy, 1, 1, 0, color, 1);
 	}//end with
 #endregion
 

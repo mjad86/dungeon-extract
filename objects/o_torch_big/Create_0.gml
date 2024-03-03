@@ -1,3 +1,4 @@
+event_inherited();
 //create audio emiter
 emitter = audio_emitter_create();
 audioMaxDistance = 1000;	//max distance to hear the emiter
