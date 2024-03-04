@@ -15,23 +15,25 @@ function __input_config_verbs()
     return {
         keyboard_and_mouse:
         {
-            up:    [input_binding_key(vk_up),    input_binding_key("W")],
-            down:  [input_binding_key(vk_down),  input_binding_key("S")],
-            left:  [input_binding_key(vk_left),  input_binding_key("A")],
+            up:    [input_binding_key(vk_up), input_binding_key("W")],
+            down:  [input_binding_key(vk_down), input_binding_key("S")],
+            left:  [input_binding_key(vk_left), input_binding_key("A")],
             right: [input_binding_key(vk_right), input_binding_key("D")],
 			
-			action: input_binding_key("F"),   
-			attack: input_binding_key("E"),  
-			dodge: input_binding_key("Q"), 
-			block: input_binding_key("R"), 
+			action: input_binding_key("E"),   
+			attack: input_binding_key("K"),  
+			dodge: input_binding_key(vk_lshift), 
+			block: input_binding_key("J"), 
             jump:  input_binding_key(vk_space),
-            cancel:  input_binding_key(vk_backspace),
+            cancel:  input_binding_key("Q"),
+			
+			cam_up:    input_binding_key(vk_numpad8),
+            cam_down:  input_binding_key(vk_numpad2),
+            cam_left:  input_binding_key(vk_numpad4),
+            cam_right: input_binding_key(vk_numpad6),
+			
             pause:  [input_binding_key(vk_enter), input_binding_key(vk_escape)],
-            special: input_binding_key(vk_shift),
-            
-            //No aiming verbs since we use the mouse for that (see below for aiming verb examples)
-            shoot: input_binding_mouse_button(mb_left),
-            
+                        
         },
         
         gamepad:
@@ -44,16 +46,14 @@ function __input_config_verbs()
             jump:  input_binding_gamepad_button(gp_face1),
             cancel:  input_binding_gamepad_button(gp_face2),
 			attack:  input_binding_gamepad_button(gp_face3),
-            action:  input_binding_gamepad_button(gp_shoulderlb),
-			block:  input_binding_gamepad_button(gp_shoulderrb),
-			dodge:  input_binding_gamepad_button(gp_shoulderr),
-            special: input_binding_gamepad_button(gp_face4),
+            action:  input_binding_gamepad_button(gp_face4),
+			block:  input_binding_gamepad_button(gp_shoulderr),
+			dodge:  input_binding_gamepad_button(gp_shoulderrb),
             
-            aim_up:    input_binding_gamepad_axis(gp_axisrv, true),
-            aim_down:  input_binding_gamepad_axis(gp_axisrv, false),
-            aim_left:  input_binding_gamepad_axis(gp_axisrh, true),
-            aim_right: input_binding_gamepad_axis(gp_axisrh, false),
-            shoot:     [input_binding_gamepad_button(gp_shoulderlb), input_binding_gamepad_button(gp_shoulderrb)],
+            cam_up:    input_binding_gamepad_axis(gp_axisrv, true),
+            cam_down:  input_binding_gamepad_axis(gp_axisrv, false),
+            cam_left:  input_binding_gamepad_axis(gp_axisrh, true),
+            cam_right: input_binding_gamepad_axis(gp_axisrh, false),      
             
             pause: input_binding_gamepad_button(gp_start),
         },

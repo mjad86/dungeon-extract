@@ -15,14 +15,17 @@ dsMenuOptions = create_menu_page(
 				["Sfx", MENU_ELEMENT_TYPE.SLIDER, change_volume, 0.5, [0, 1]],
 				//["Window Size", MENU_ELEMENT_TYPE.SHIFT, change_window_size, 0, ["320x180", "640x360", "1080x720"]],
 				["FullScreen",  MENU_ELEMENT_TYPE.TOGGLE, change_window_mode, 1, [0, 1]],
-				//["Controls", MENU_ELEMENT_TYPE.PAGE_TRANSFER, MENU_PAGE.CONTROLS],
+				["Controls", MENU_ELEMENT_TYPE.PAGE_TRANSFER, MENU_PAGE.CONTROLS],
 				["Back",  MENU_ELEMENT_TYPE.PAGE_TRANSFER, MENU_PAGE.MAIN]);
 				
 dsMenuControls = create_menu_page(
-				 ["Left", MENU_ELEMENT_TYPE.INPUT, "left"],
-				 ["Right", MENU_ELEMENT_TYPE.INPUT, "right"],
-			     ["Jump", MENU_ELEMENT_TYPE.INPUT, "jump"],
-			     ["Crouch",  MENU_ELEMENT_TYPE.INPUT, "crouch"],
+			     ["Attack",  MENU_ELEMENT_TYPE.INPUT, "attack"],
+				 ["Dodge",  MENU_ELEMENT_TYPE.INPUT, "dodge"],
+				 ["Jump", MENU_ELEMENT_TYPE.INPUT, "jump"],
+				 ["Block",  MENU_ELEMENT_TYPE.INPUT, "block"],
+				 ["Interact",  MENU_ELEMENT_TYPE.INPUT, "action"],
+				 ["Cancel",  MENU_ELEMENT_TYPE.INPUT, "cancel"],
+				 ["Pause",  MENU_ELEMENT_TYPE.INPUT, "pause"],
 				 ["Back",  MENU_ELEMENT_TYPE.PAGE_TRANSFER, MENU_PAGE.OPTIONS]);
 
 page = 0;		//flag to jump between menu pages

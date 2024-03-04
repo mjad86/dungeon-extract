@@ -163,11 +163,18 @@ if(page > 0) {
 			#endregion
 			#region//TYPE INPUT
 			case MENU_ELEMENT_TYPE.INPUT:
-				_curVal = _dsGridsub[# 3, _i];
-				switch(_curVal) {
-					case 0:
-					break;
-				}//end switch
+				_curVal = _dsGridsub[# 2, _i];
+				var _button;
+				//_button = input_verb_get_icon(_curVal); 
+				_button = sprite_get_name(input_verb_get_icon(_curVal)); 
+				//var _iconX = 175;
+				//var _iconY = 42 + (19 * _i);
+				
+				//we draw them by hand since icons are to big to arrange in menu
+				//draw_sprite(_button, 0, _iconX, _iconY);
+				
+				_subMsgRight += "["+string(_button)+"]";
+
 			break;
 			#endregion
 		}//end if

@@ -4,7 +4,7 @@ function calc_attack() {
 	mask_index = argument0;
 	var _dmg = argument1;
 	var _hitByAttackNow = ds_list_create();
-	var _hits = instance_place_list(x, y, [o_parent_entity, o_parent_prop], _hitByAttackNow, true);
+	var _hits = instance_place_list(x, y, [o_parent_entity, o_parent_prop, o_parent_gate], _hitByAttackNow, true);
 	if(_hits > 0) {
 		for(var _i=0; _i < _hits; _i++) {
 			//if this instance has not yet been hit by this attack, hit it

@@ -1,5 +1,7 @@
 ///@desc initialize variables
 key = generate_unique_key();	//unique key
+flash = 0;
+uFlash = shader_get_uniform(sh_white_flash, "flash");
 if(sprite_height > 32) {
 	openDist = sprite_get_height(sprite_index);
 }//end if

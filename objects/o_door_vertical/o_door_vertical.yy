@@ -6,6 +6,8 @@
   "managed": true,
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_parent_gate","path":"objects/o_parent_gate/o_parent_gate.yy",},"propertyId":{"name":"sfx","path":"objects/o_parent_gate/o_parent_gate.yy",},"value":"sfx_gate_open",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_parent_gate","path":"objects/o_parent_gate/o_parent_gate.yy",},"propertyId":{"name":"entityHitScript","path":"objects/o_parent_gate/o_parent_gate.yy",},"value":"entity_hit_solid",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_parent_gate","path":"objects/o_parent_gate/o_parent_gate.yy",},"propertyId":{"name":"hurtSfx","path":"objects/o_parent_gate/o_parent_gate.yy",},"value":"[sfx_hit_metal_01, sfx_hit_metal_02, sfx_hit_metal_03, sfx_hit_metal_04]",},
   ],
   "parent": {
     "name": "Gates & doors",

@@ -1,5 +1,5 @@
 //Fetch the gamepad type when a hotswap event happens
-var _gamepadType = input_player_get_gamepad_type();
+var _gamepadType = input_player_get_gamepad_type(); //get controller device
 
 if(_gamepadType == "ps4" || _gamepadType == "ps5" || _gamepadType == "psx") {
 	//set controller to playstation flag
@@ -29,3 +29,7 @@ global.cancel = input_check_pressed("cancel");		//cancel key
 global.attack = input_check_pressed("attack");		//attack key
 global.dodge = input_check_pressed("dodge");		//dodge/roll key
 global.block = input_check("block");				//block key
+global.camLeft = input_check("cam_left");			//move cam left key
+global.camRight = input_check("cam_right");			//move cam right key
+global.camUp = input_check("cam_up");				//move cam up key
+global.camDown = input_check("cam_down");			//move cam down key

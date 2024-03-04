@@ -11,6 +11,7 @@
   "overriddenProperties": [
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_parent_entity","path":"objects/o_parent_entity/o_parent_entity.yy",},"propertyId":{"name":"entityShadow","path":"objects/o_parent_entity/o_parent_entity.yy",},"value":"True",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_parent_entity","path":"objects/o_parent_entity/o_parent_entity.yy",},"propertyId":{"name":"hurtSfx","path":"objects/o_parent_entity/o_parent_entity.yy",},"value":"[sfx_wood_hit_2, sfx_wood_hit_3]",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_parent_entity","path":"objects/o_parent_entity/o_parent_entity.yy",},"propertyId":{"name":"oneRandomSfx","path":"objects/o_parent_entity/o_parent_entity.yy",},"value":"True",},
   ],
   "parent": {
     "name": "Enemy",
