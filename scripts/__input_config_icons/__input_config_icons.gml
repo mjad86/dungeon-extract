@@ -36,13 +36,13 @@ input_icons_keyboard_and_mouse()
 .add("9",         s_pc_9)
 .add("0",         s_pc_0)
 .add("numpad 1",  s_pc_1)
-.add("numpad 2",  s_pc_2)
+.add("numpad 2",  s_pc_numpad2)
 .add("numpad 3",  s_pc_3)
-.add("numpad 4",  s_pc_4)
+.add("numpad 4",  s_pc_numpad4)
 .add("numpad 5",  s_pc_5)
-.add("numpad 6",  s_pc_6)
+.add("numpad 6",  s_pc_numpad6)
 .add("numpad 7",  s_pc_7) 
-.add("numpad 8",  s_pc_8)
+.add("numpad 8",  s_pc_numpad8)
 .add("numpad 9",  s_pc_9)
 .add("numpad 0",  s_pc_0)
 .add("A",	      s_pc_A)
@@ -104,6 +104,7 @@ input_icons_gamepad(INPUT_GAMEPAD_TYPE_XBOX_ONE)
 .add("gamepad trigger r",          s_xbox_R_trigger)
 .add("gamepad select",             s_xbox_select_button)
 .add("gamepad start",              s_xbox_start_button)
+/*UNCOMENT IN THE FUTURE TO ADD THIS CONTROLLERS AND CHANGE SPRITE NAMES IF NECESARY
 .add("gamepad dpad left",          s_xbox_left_gamepad)
 .add("gamepad dpad right",         s_xbox_right_gamepad)
 .add("gamepad dpad up",            s_xbox_up_gamepad)
@@ -120,6 +121,7 @@ input_icons_gamepad(INPUT_GAMEPAD_TYPE_XBOX_ONE)
 .add("gamepad thumbstick r up",    s_xbox_up_rightstick)
 .add("gamepad thumbstick r down",  s_xbox_down_rightstick)
 .add("gamepad thumbstick r click", s_xbox_rightstick_button)
+*/
 
 //Series S|X only
 .add("gamepad misc 1",             "share")
@@ -142,6 +144,7 @@ input_icons_gamepad(INPUT_GAMEPAD_TYPE_PS5)
 .add("gamepad trigger r",          s_ps_R2_trigger)
 .add("gamepad select",             s_ps_select_button)
 .add("gamepad start",              s_ps_start_button)
+/*UNCOMENT IN THE FUTURE TO ADD THIS CONTROLLERS AND CHANGE SPRITE NAMES IF NECESARY
 .add("gamepad dpad left",          s_ps_left_gamepad)
 .add("gamepad dpad right",         s_ps_right_gamepad)
 .add("gamepad dpad up",            s_ps_up_gamepad)
@@ -158,6 +161,7 @@ input_icons_gamepad(INPUT_GAMEPAD_TYPE_PS5)
 .add("gamepad thumbstick r up",    s_ps_up_rightstick)
 .add("gamepad thumbstick r down",  s_ps_down_rightstick)
 .add("gamepad thumbstick r click", s_ps_rightstick_button)
+*/
 
 .add("gamepad touchpad click",     "touchpad click")
 
@@ -253,6 +257,7 @@ input_icons_gamepad(INPUT_GAMEPAD_TYPE_XBOX_360)
 .add("gamepad trigger r",          s_xbox_R_trigger)
 .add("gamepad select",             s_xbox_select_button)
 .add("gamepad start",              s_xbox_start_button)
+/*UNCOMENT IN THE FUTURE TO ADD THIS CONTROLLERS AND CHANGE SPRITE NAMES IF NECESARY
 .add("gamepad dpad left",          s_xbox_left_gamepad)
 .add("gamepad dpad right",         s_xbox_right_gamepad)
 .add("gamepad dpad up",            s_xbox_up_gamepad)
@@ -269,6 +274,7 @@ input_icons_gamepad(INPUT_GAMEPAD_TYPE_XBOX_360)
 .add("gamepad thumbstick r up",    s_xbox_up_rightstick)
 .add("gamepad thumbstick r down",  s_xbox_down_rightstick)
 .add("gamepad thumbstick r click", s_xbox_rightstick_button)
+*/
 
 //PlayStation 4
 input_icons_gamepad(INPUT_GAMEPAD_TYPE_PS4)
@@ -282,6 +288,7 @@ input_icons_gamepad(INPUT_GAMEPAD_TYPE_PS4)
 .add("gamepad trigger r",          s_ps_R2_trigger)
 .add("gamepad select",             s_ps_select_button)
 .add("gamepad start",              s_ps_start_button)
+/*UNCOMENT IN THE FUTURE TO ADD THIS CONTROLLERS AND CHANGE SPRITE NAMES IF NECESARY
 .add("gamepad dpad left",          s_ps_left_gamepad)
 .add("gamepad dpad right",         s_ps_right_gamepad)
 .add("gamepad dpad up",            s_ps_up_gamepad)
@@ -298,7 +305,7 @@ input_icons_gamepad(INPUT_GAMEPAD_TYPE_PS4)
 .add("gamepad thumbstick r up",    s_ps_up_rightstick)
 .add("gamepad thumbstick r down",  s_ps_down_rightstick)
 .add("gamepad thumbstick r click", s_ps_rightstick_button)
-
+*/
 .add("gamepad touchpad click", "touchpad click")
 
 //PlayStation 1-3
@@ -313,6 +320,7 @@ input_icons_gamepad(INPUT_GAMEPAD_TYPE_PSX)
 .add("gamepad trigger r",          s_ps_R2_trigger)
 .add("gamepad select",             s_ps_select_button)
 .add("gamepad start",              s_ps_start_button)
+/*UNCOMENT IN THE FUTURE TO ADD THIS CONTROLLERS AND CHANGE SPRITE NAMES IF NECESARY
 .add("gamepad dpad left",          s_ps_left_gamepad)
 .add("gamepad dpad right",         s_ps_right_gamepad)
 .add("gamepad dpad up",            s_ps_up_gamepad)
@@ -329,6 +337,7 @@ input_icons_gamepad(INPUT_GAMEPAD_TYPE_PSX)
 .add("gamepad thumbstick r up",    s_ps_up_rightstick)
 .add("gamepad thumbstick r down",  s_ps_down_rightstick)
 .add("gamepad thumbstick r click", s_ps_rightstick_button)
+*/
 
 //Nintendo Gamecube
 input_icons_gamepad(INPUT_GAMEPAD_TYPE_GAMECUBE)

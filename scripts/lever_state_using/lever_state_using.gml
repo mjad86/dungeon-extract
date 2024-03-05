@@ -15,6 +15,7 @@ function lever_state_using() {
 				previousState = state;							//set gate previous state
 				ds_map_replace(o_meta.saveData, key, true);		//save state as gate open
 				state = gate_state_opening;						//change state
+				other.activated = true;							//flag to set lever useless until gates finish opening/closing
 			}//end if
 		}//end with	
 		ds_map_replace(o_meta.saveData, key, true);	//save state in ds_map of lever

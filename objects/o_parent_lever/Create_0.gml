@@ -1,7 +1,7 @@
 ///@desc initialize variables
 key = generate_unique_key();	//unique key
+activated = false;
 image_speed = 0;
-
 var _saveData = ds_map_find_value(o_meta.saveData, key);
 
 if(!is_undefined(_saveData) && _saveData == true) {

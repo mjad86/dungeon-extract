@@ -73,6 +73,8 @@
     {"name":"inst_64768AB7","path":"rooms/r_tests_01/r_tests_01.yy",},
     {"name":"inst_142E65D3","path":"rooms/r_tests_01/r_tests_01.yy",},
     {"name":"inst_7C1F89B2","path":"rooms/r_tests_01/r_tests_01.yy",},
+    {"name":"inst_14875A67","path":"rooms/r_tests_01/r_tests_01.yy",},
+    {"name":"inst_1033AB3A","path":"rooms/r_tests_01/r_tests_01.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -109,6 +111,12 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_trigger","path":"objects/o_trigger/o_trigger.yy",},"propertyId":{"name":"behaviour","path":"objects/o_trigger/o_trigger.yy",},"value":"TRAPBEHAVIOR.FLOORTIMER",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_trigger","path":"objects/o_trigger/o_trigger.yy",},"propertyId":{"name":"slot","path":"objects/o_trigger/o_trigger.yy",},"value":"2",},
           ],"rotation":0.0,"scaleX":4.0,"scaleY":0.125,"x":352.0,"y":703.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_14875A67","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"o_tutorial_zone","path":"objects/o_tutorial_zone/o_tutorial_zone.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_tutorial_zone","path":"objects/o_tutorial_zone/o_tutorial_zone.yy",},"propertyId":{"name":"tutorialSprite","path":"objects/o_tutorial_zone/o_tutorial_zone.yy",},"value":"[s_pc_moveLR, s_ps_moveLR, s_xbox_moveLR]",},
+          ],"rotation":0.0,"scaleX":2.0,"scaleY":1.0,"x":192.0,"y":242.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1033AB3A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"o_tutorial_zone","path":"objects/o_tutorial_zone/o_tutorial_zone.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_tutorial_zone","path":"objects/o_tutorial_zone/o_tutorial_zone.yy",},"propertyId":{"name":"tutorialSprite","path":"objects/o_tutorial_zone/o_tutorial_zone.yy",},"value":"[\"attack\"]",},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":320.0,"y":307.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Transition","depth":150,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_53E232C3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"o_transition","path":"objects/o_transition/o_transition.yy",},"properties":[
@@ -213,11 +221,11 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_parent_entity","path":"objects/o_parent_entity/o_parent_entity.yy",},"propertyId":{"name":"entityActivateScript","path":"objects/o_parent_entity/o_parent_entity.yy",},"value":"new_textbox",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_parent_entity","path":"objects/o_parent_entity/o_parent_entity.yy",},"propertyId":{"name":"entityActivateArgs","path":"objects/o_parent_entity/o_parent_entity.yy",},"value":"[\"Dont walk on the [wave][rainbow]grass[/wave][/rainbow], dont walk on the grass, dont walk on the grass pretty please please dont walk on the grass.\", 0]",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-96.0,"y":320.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_443DC842","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"o_lever","path":"objects/o_lever/o_lever.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":501.0,"y":294.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_443DC842","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"o_lever","path":"objects/o_lever/o_lever.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":512.0,"y":308.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_C10446D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"o_lever","path":"objects/o_lever/o_lever.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_parent_lever","path":"objects/o_parent_lever/o_parent_lever.yy",},"propertyId":{"name":"activateTimer","path":"objects/o_parent_lever/o_parent_lever.yy",},"value":"60",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"o_parent_lever","path":"objects/o_parent_lever/o_parent_lever.yy",},"propertyId":{"name":"slot","path":"objects/o_parent_lever/o_parent_lever.yy",},"value":"1",},
-          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":361.0,"y":248.0,},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":385.0,"y":262.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Secrets","depth":650,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":false,"layers":[],"properties":[],"tiles":{"SerialiseHeight":23,"SerialiseWidth":40,"TileCompressedData":[
 -460,-2147483648,-20,31,-20,-2147483648,-20,31,-20,-2147483648,-20,31,-20,-2147483648,-20,31,-20,-2147483648,-20,31,-20,-2147483648,-20,31,-20,-2147483648,-20,31,-20,-2147483648,-20,31,-20,-2147483648,-20,31,-20,-2147483648,-20,31,

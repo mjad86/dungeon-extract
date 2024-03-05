@@ -71,3 +71,36 @@ if(onGround) {
 
 out_of_camera_bounds();										//controls the out of camera action
 
+#region//tutorial zones activation
+var _zone = instance_place(x, y, [o_tutorial_zone, o_parent_lever]);
+	if(_zone != noone) {
+		var _inst = noone;
+		if(!instance_exists(o_button_tutorial)) {
+			_inst = instance_create_layer(_zone.x, y-sprite_height, "Misc", o_button_tutorial);
+		}//end if
+		if(_inst != noone) {
+			with(_inst) {
+				if(array_length(_zone.tutorialSprite) > 1) {
+					for (var _i = 0; _i < array_length(_zone.tutorialSprite); _i++) {
+						//create an array of sprites
+						buttonIndex[_i] = _zone.tutorialSprite[_i];
+					}//end for
+				}//end if
+				else {
+					buttonIndex[0] = _zone.tutorialSprite[0];
+				}//end else
+				image_index = 0;	//set index tos tart
+				image_speed = 1;	//set speed
+				show = true;		//set flag to show icon
+			}//end with
+		}//end if
+	}//end if
+	else {
+		if(instance_exists(o_button_tutorial)) {
+			with(o_button_tutorial) {
+				show = false;
+				destroy = true;
+			}//end with
+		}//end if
+	}//end else
+#endregion

@@ -62,7 +62,7 @@ function player_state_idle() {
 	
 	var _lever = instance_place(x, y, o_parent_lever);
 	if(_lever != noone) && (global.activate) {
-		if(_lever.state != lever_state_using) {
+		if(_lever.state != lever_state_using && !_lever.activated) {
 			activateBar = instance_create_layer(x, y - sprite_height, "Misc", o_activate_bar);
 			activateBar.activationTime = _lever.activateTimer;
 			activateBar.inst = _lever;

@@ -73,7 +73,6 @@ if(page > 0) {
 			}//end else
 		}//end else
 		
-		_subMsgRight += "\n\n";	//add space into display options
 		var _curVal;
 		var _curArray;
 		//setting up options for the right side
@@ -81,6 +80,7 @@ if(page > 0) {
 			//Drawing logic for each type of option
 			#region//TYPE SHIFT
 			case MENU_ELEMENT_TYPE.SHIFT:
+				_subMsgRight += "\n\n";	//add space into display options
 				_curVal = _dsGridsub[# 3, _i];
 				_curArray = _dsGridsub[# 4, _i];
 				if(inputting) {
@@ -122,6 +122,7 @@ if(page > 0) {
 			#endregion
 			#region//TYPE SLIDER
 			case MENU_ELEMENT_TYPE.SLIDER:
+				_subMsgRight += "\n\n";	//add space into display options
 				draw_set_color(c_white);
 				_curVal = _dsGridsub[# 3, _i];
 				_curArray = _dsGridsub[# 4, _i];
@@ -144,6 +145,7 @@ if(page > 0) {
 			#endregion
 			#region//TYPE TOGGLE
 			case MENU_ELEMENT_TYPE.TOGGLE:
+				_subMsgRight += "\n\n";	//add space into display options
 				_curVal = _dsGridsub[# 3, _i];
 				var _img; //refers to sprite img index
 				_img = _curVal; //is either 0 (off) or 1 (on)
@@ -163,18 +165,18 @@ if(page > 0) {
 			#endregion
 			#region//TYPE INPUT
 			case MENU_ELEMENT_TYPE.INPUT:
+				_subMsgRight += "\n";	//add space into display options
 				_curVal = _dsGridsub[# 2, _i];
 				var _button;
-				//_button = input_verb_get_icon(_curVal); 
-				_button = sprite_get_name(input_verb_get_icon(_curVal)); 
-				//var _iconX = 175;
-				//var _iconY = 42 + (19 * _i);
+				_button = input_verb_get_icon(_curVal); 
+				//_button = sprite_get_name(input_verb_get_icon(_curVal)); 
+				var _iconX = 175;
+				var _iconY = 42 + (20 * _i);
 				
 				//we draw them by hand since icons are to big to arrange in menu
-				//draw_sprite(_button, 0, _iconX, _iconY);
+				draw_sprite(_button, 0, _iconX, _iconY);
 				
-				_subMsgRight += "["+string(_button)+"]";
-
+				//_subMsgRight += "[scale, 1]["+string(_button)+"][/scale]";
 			break;
 			#endregion
 		}//end if

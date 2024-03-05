@@ -33,7 +33,13 @@ function gate_state_opening() {
 					screen_shake(_magnitude, _duration);
 				}//end if
 				state = gate_state_open;									//change state
-			}//end else
+				with(o_parent_lever) {
+					if(slot == other.slot) {
+						//reset flag to set lever useable after gates finished opening/closing
+						activated = false;
+					}//end if
+				}//end with
+		}//end else
 			#endregion
 		}//end if
 		else {
@@ -60,7 +66,13 @@ function gate_state_opening() {
 					//screen shake fx
 					screen_shake(_magnitude, _duration);
 				}//end if
-				state = gate_state_open;									//change state
+				state = gate_state_open;	
+				with(o_parent_lever) {
+					if(slot == other.slot) {
+						//reset flag to set lever useable after gates finished opening/closing
+						activated = false;
+					}//end if
+				}//end with//change state
 			}//end else
 			#endregion
 		}//end else
@@ -95,6 +107,12 @@ function gate_state_opening() {
 					screen_shake(_magnitude, _duration);
 				}//end if
 				state = gate_state_closed;
+				with(o_parent_lever) {
+					if(slot == other.slot) {
+						//reset flag to set lever useable after gates finished opening/closing
+						activated = false;
+					}//end if
+				}//end with
 			}//end else
 			#endregion
 		}//end if
@@ -125,6 +143,12 @@ function gate_state_opening() {
 					screen_shake(_magnitude, _duration);
 				}//end if
 				state = gate_state_closed;
+				with(o_parent_lever) {
+					if(slot == other.slot) {
+						//reset flag to set lever useable after gates finished opening/closing
+						activated = false;
+					}//end if
+				}//end with
 			}//end else
 			#endregion
 		}//end else
