@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "BGbegin",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "VFX",
-    "path": "folders/Scripts/VFX.yy",
+  "$GMScript":"",
+  "%Name":"BGbegin",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"BGbegin",
+  "parent":{
+    "name":"VFX",
+    "path":"folders/Scripts/VFX.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

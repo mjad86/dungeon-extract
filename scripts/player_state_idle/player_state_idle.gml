@@ -14,8 +14,9 @@ function player_state_idle() {
 	}//end if
 		
 	//players on the ground and change state to jumping
-	if(onGround && global.jump && jumpCount < jumpCountMax && coyoteTime > 0) {
+	if(onGround && global.jump && jumpCount < jumpCountMax && coyoteTime > 0 && actionBuffer <= 0) {
 		//change player state to jump
+		actionBuffer = ACTION_BUFFER						//set the buffer to 60 frames or 1 second
 		jumpCount++;									//increase jump count
 		vSpd = jumpForce;								//set jump height
 		coyoteTime = 0;									//set coyoteTime to 0 to avoid double jumping
@@ -42,9 +43,10 @@ function player_state_idle() {
 	}//end if
 	
 	//activate scripts on things
-	if(global.action) {
+	if(global.action && actionBuffer <= 0) {
 		//1. check for entity to activate
 		activate = (instance_place(x, y, o_parent_entity));
+		actionBuffer = ACTION_BUFFER;					//set the value for the action buffer
 		if(activate == noone || activate.entityActivateScript == -1) {
 			//2. if there is nothing or there is something, but has no script. do xyz
 		}//end if
@@ -61,7 +63,8 @@ function player_state_idle() {
 	}//end if
 	
 	var _lever = instance_place(x, y, o_parent_lever);
-	if(_lever != noone) && (global.activate) {
+	if(_lever != noone && global.activate && actionBuffer <= 0) {
+		actionBuffer = ACTION_BUFFER;					//set the value for the action buffer
 		if(_lever.state != lever_state_using && !_lever.activated) {
 			activateBar = instance_create_layer(x, y - sprite_height, "Misc", o_activate_bar);
 			activateBar.activationTime = _lever.activateTimer;
@@ -71,7 +74,8 @@ function player_state_idle() {
 	}//end if
 	
 	//dodge
-	if(global.dodge) {
+	if(global.dodge && actionBuffer <= 0) {
+		actionBuffer = ACTION_BUFFER;			//set the value for the action buffer
 		state = player_state_roll;				//change state to roll
 		mask_index = playerRollMask;			//set mask;
 		moveDistanceRemaining = rollDistance;	//set distance
@@ -79,22 +83,25 @@ function player_state_idle() {
 		audio_play_sound(sfx_rolling_1, 10, false); //sfx
 	}//end if
 	
-	if(global.down) {
+	if(global.down && actionBuffer <= 0) {
+		actionBuffer = ACTION_BUFFER;					//set the value for the action buffer
 		state = player_state_crouching;	//change player state to crouch
 		mask_index = playerRollMask;	
 	}//end if
 	
 	//attack
-	if(global.attack) {
+	if(global.attack && actionBuffer <= 0) {
 		//sfx
+		actionBuffer = ACTION_BUFFER;			//set the value for the action buffer
 		audio_play_sound(choose(swordSwing1, swordSwing2, swordSwing3), 10, false);
 		state = player_state_attack;			//set player state to attack
 		stateAttack = attack_slash1;			//set the attack to be done
 	}//end if
 	
 	//block
-	if(global.block) {
+	if(global.block && actionBuffer <= 0) {
 		//add sfx here
+		actionBuffer = ACTION_BUFFER;					//set the value for the action buffer
 		state = player_state_block_idle;
 	}//end if
 	

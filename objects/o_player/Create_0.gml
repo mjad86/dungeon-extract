@@ -1,6 +1,7 @@
 ///@desc Player Initialize variables
+movingPlatform = false;
 move = 0;											//move variable for determining inputs
-moveSpdMax = 3;										//move max speed
+moveSpdMax = 2.5;										//move max speed
 accel = 0.2											//acceleration value, the higher it is the faster you gain speed
 fric = 0.2;											//friction value, the higher it is the faster you stop
 grav = 0.35;										//gravity force
@@ -11,7 +12,7 @@ rollDistance = 100;									//rolling distance in pixels
 moveDistanceRemaining = 0							//flag to calcualte rolling distance remaining
 rollSpd = 5;										//how fast we roll
 hSpd = 0;											//Horizontal speed
-vSpd = 0;											//vertical speed
+vSpd = 0;											//Vertical speed
 vSpdOnImpact = 0;									//flag for determining if player hits ground from high distance
 state = player_state_idle;							//Player state at start
 previousState = noone								//flag for neturning to previous state
@@ -26,7 +27,7 @@ footstep = noone									//footstep SFX flag, obtained from the parent object we
 activateBar = noone									//flag for activating bar
 inmune = 0											//frames for the player to be inmune
 goThrough = false;									//flag to determine if player can go Through some platforms
-
+actionBuffer = 0;									//action buffer to avoid 2 actions atst when 2 buttons are pressed
 //Sprites
 playerIdle = s_figther_idle;
 playerMove = s_figther_walk;

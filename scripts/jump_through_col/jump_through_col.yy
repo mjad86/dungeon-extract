@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "jump_through_col",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Locomotion",
-    "path": "folders/Scripts/Misc/Locomotion.yy",
+  "$GMScript":"",
+  "%Name":"jump_through_col",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"jump_through_col",
+  "parent":{
+    "name":"Locomotion",
+    "path":"folders/Scripts/Misc/Locomotion.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

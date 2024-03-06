@@ -1,6 +1,6 @@
 ///@desc collision()
 function collision() {
-	
+	var _col = false
 	// Vertical
 	repeat(abs(vSpd)) {
 	    if (!place_meeting(x, y + sign(vSpd), o_parent_wall)) {
@@ -8,6 +8,7 @@ function collision() {
 		}//end if
 	    else {
 	        vSpd = 0;
+			_col = true;
 	        break;
 	    }//end else
 	}//end repeat
@@ -27,8 +28,11 @@ function collision() {
 		}//end if
 	    else {
 	        hSpd = 0;
+			_col = true;
 	        break;
 	    }//end else
 	}//end repeat
+	
+	return _col;
 	
 }//end script

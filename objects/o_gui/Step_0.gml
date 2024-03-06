@@ -68,9 +68,16 @@ switch(page) {
 								}//end if
 							break;
 						 }//end switch
-						
-						_dsGrid[# 3, menuOption[page]] += _hInput*0.01;
-						_dsGrid[# 3, menuOption[page]] = clamp(_dsGrid[# 3, menuOption[page]], 0, 1);
+						var _array = _dsGrid[# 4, menuOption[page]];
+						if(_array[1] == 0.2) {
+							//slower slide input for brightness
+							_dsGrid[# 3, menuOption[page]] += _hInput*0.001;
+						}//end if
+						else {
+							//regular other sliders input
+							_dsGrid[# 3, menuOption[page]] += _hInput*0.01;
+						}//end else
+						_dsGrid[# 3, menuOption[page]] = clamp(_dsGrid[# 3, menuOption[page]], _array[0], _array[1]);
 						script_execute(_dsGrid[# 2, menuOption[page]], _dsGrid[# 3, menuOption[page]]); //we execute the script to apply live volumen change
 					}//end if
 				break;

@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "fake_tile_alpha_reset",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "VFX",
-    "path": "folders/Scripts/VFX.yy",
+  "$GMScript":"",
+  "%Name":"fake_tile_alpha_reset",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"fake_tile_alpha_reset",
+  "parent":{
+    "name":"VFX",
+    "path":"folders/Scripts/VFX.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

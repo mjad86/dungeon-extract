@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "create_particle_dust",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "VFX",
-    "path": "folders/Scripts/VFX.yy",
+  "$GMScript":"",
+  "%Name":"create_particle_dust",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"create_particle_dust",
+  "parent":{
+    "name":"VFX",
+    "path":"folders/Scripts/VFX.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

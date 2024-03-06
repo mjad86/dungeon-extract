@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"change_brightness",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"change_brightness",
+  "parent":{
+    "name":"Gui",
+    "path":"folders/Scripts/Misc/Gui.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

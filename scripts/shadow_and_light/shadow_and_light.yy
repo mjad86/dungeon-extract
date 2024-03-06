@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "shadow_and_light",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "VFX",
-    "path": "folders/Scripts/VFX.yy",
+  "$GMScript":"",
+  "%Name":"shadow_and_light",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"shadow_and_light",
+  "parent":{
+    "name":"VFX",
+    "path":"folders/Scripts/VFX.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

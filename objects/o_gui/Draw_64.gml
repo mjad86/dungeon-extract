@@ -126,19 +126,26 @@ if(page > 0) {
 				draw_set_color(c_white);
 				_curVal = _dsGridsub[# 3, _i];
 				_curArray = _dsGridsub[# 4, _i];
-				var _percent = ((_curVal - _curArray[0]) / (_curArray[1] - _curArray[0]));						//calculate percentage value to show on screen
-				var _index = _curVal*(sprite_get_number(s_sound_bar)-1);											//calculate img index correct position percentage wise
-
+				var _percent = floor(((_curVal - _curArray[0]) / (_curArray[1] - _curArray[0]))*100);						//calculate percentage value to show on screen
+				var _index;
+				if(_curArray[1] == 0.2) {
+					//set img index drawing for brightness
+					_index = (_curVal*5)*(sprite_get_number(s_sound_bar)-1);											//calculate img index correct position percentage wise
+				}//end if
+				else {
+					//every other image index slider
+					_index = _curVal*(sprite_get_number(s_sound_bar)-1);
+				}//end else
 				if(inputting) {
 					if(_i == menuOption[page]) {
-						_subMsgRight += "[s_sound_bar,"+string(_index)+"] "+string(floor(_percent*100))+"%";	//assign the text								//assign the text
+						_subMsgRight += "[s_sound_bar,"+string(_index)+"] "+string(_percent)+"%";	//assign the text								//assign the text
 					}//end if
 					else {
-						_subMsgRight += "[alpha, 0.2][s_sound_bar,"+string(_index)+"] "+string(floor(_percent*100))+"%[/alpha, 0.2]";	//assign the text
+						_subMsgRight += "[alpha, 0.2][s_sound_bar,"+string(_index)+"] "+string(_percent)+"%[/alpha, 0.2]";	//assign the text
 					}//end else
 				}//end if
 				else {
-					_subMsgRight += "[s_sound_bar,"+string(_index)+"] "+string(floor(_percent*100))+"%";		//assign the text
+					_subMsgRight += "[s_sound_bar,"+string(_index)+"] "+string(_percent)+"%";		//assign the text
 				}//end else
 				
 			break;

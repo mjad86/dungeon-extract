@@ -1,6 +1,7 @@
 onGround = place_meeting(x, y+1, o_parent_wall);	//player is touching the ground
 vSpd = 0;											//vertical spd
 hSpd = 0;											//horizontal spd
+
 grav = 0.5;											//froce of gravity
 flash = 0;
 uFlash = shader_get_uniform(sh_white_flash, "flash");

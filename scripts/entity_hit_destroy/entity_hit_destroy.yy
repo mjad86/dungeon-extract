@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "entity_hit_destroy",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Data",
-    "path": "folders/Scripts/Misc/Data.yy",
+  "$GMScript":"",
+  "%Name":"entity_hit_destroy",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"entity_hit_destroy",
+  "parent":{
+    "name":"Data",
+    "path":"folders/Scripts/Misc/Data.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

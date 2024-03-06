@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "create_menu_page",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Gui",
-    "path": "folders/Scripts/Misc/Gui.yy",
+  "$GMScript":"",
+  "%Name":"create_menu_page",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"create_menu_page",
+  "parent":{
+    "name":"Gui",
+    "path":"folders/Scripts/Misc/Gui.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -1,10 +1,12 @@
 {
-  "resourceType": "GMShader",
-  "resourceVersion": "1.0",
-  "name": "sh_white_flash",
-  "parent": {
-    "name": "Dmg shaders",
-    "path": "folders/Shaders/Dmg shaders.yy",
+  "$GMShader":"",
+  "%Name":"sh_white_flash",
+  "name":"sh_white_flash",
+  "parent":{
+    "name":"Dmg shaders",
+    "path":"folders/Shaders/Dmg shaders.yy",
   },
-  "type": 1,
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
 }

@@ -3,16 +3,6 @@ y = o_player.y;
 depth = o_player.depth+1;
 
 /*
-with(o_player) {
-	if(place_meeting(x, y+1, o_slope)) {
-		other.visible = false
-	}//end if
-	else {
-		other.visible = true;
-	}//end else
-}//end with
-*/
-
 //start platform with nothing
 platform = noone;
 
@@ -41,6 +31,7 @@ if(!o_player.onGround) {
 else {
 	image_xscale = o_player.image_xscale;
 	image_yscale = 1;
-}//end el;se
+}//end else
+*/
 
 

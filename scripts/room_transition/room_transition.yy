@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "room_transition",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "VFX",
-    "path": "folders/Scripts/VFX.yy",
+  "$GMScript":"",
+  "%Name":"room_transition",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"room_transition",
+  "parent":{
+    "name":"VFX",
+    "path":"folders/Scripts/VFX.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

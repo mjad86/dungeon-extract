@@ -1,14 +1,25 @@
 ///@desc Player state machine
 if(state != player_state_lock) {
-	move = (global.right - global.left);						//input calculation
+	move = (global.right - global.left);						//input calculation	
 	onGround = on_ground();										//verify if on ground
 	vSpd += grav;												//Apply gravity force
 		
 	if(inmune > 0) {
 		inmune = max(0, inmune - 1);							//resets inmune frames back to 0
 	}//end if
+	if(actionBuffer > 0) {
+		actionBuffer = max(0, actionBuffer - 1);							//resets actionBuffer frames back to 0
+	}//end if
 	
-	acceleration_and_friction(move, moveSpdMax, accel, fric);   //acceleration adn friction manager
+	if(movingPlatform) {
+		var _inst = instance_place(x, y+1, o_parent_moving_platform);
+		if(_inst != noone) {
+			acceleration_and_friction(move, moveSpdMax, accel, fric, _inst);
+		}//end if
+	}//end if
+	else {
+		acceleration_and_friction(move, moveSpdMax, accel, fric, noone);   //acceleration adn friction manager
+	}//end else
 }//end if
 
 //update listeners positions
@@ -33,8 +44,8 @@ collision();												//Apply movement
 unstuck_player();											//check to unstuck player if overlaping a wall
 
 //controls facing of the player
-if(hSpd != 0) {
-	image_xscale = sign(hSpd);
+if(move != 0) {
+	image_xscale = sign(move);
 }//end if
 	
 #region//SECRET DEPTH CONTROLLER
@@ -69,7 +80,7 @@ if(onGround) {
 }//end if
 #endregion
 
-out_of_camera_bounds();										//controls the out of camera action
+//out_of_camera_bounds();										//controls the out of camera action
 
 #region//tutorial zones activation
 var _zone = instance_place(x, y, [o_tutorial_zone, o_parent_lever]);

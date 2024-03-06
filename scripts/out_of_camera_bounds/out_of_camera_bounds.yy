@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "out_of_camera_bounds",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Data",
-    "path": "folders/Scripts/Misc/Data.yy",
+  "$GMScript":"",
+  "%Name":"out_of_camera_bounds",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"out_of_camera_bounds",
+  "parent":{
+    "name":"Data",
+    "path":"folders/Scripts/Misc/Data.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

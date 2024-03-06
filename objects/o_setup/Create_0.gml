@@ -10,7 +10,7 @@ vertex_format_begin();
 vertex_format_add_position_3d();
 vf = vertex_format_end();
 vb = vertex_create_buffer();
-intensity = 0.1;	//determines the darkness of the room 1 being the most briht
+intensity = 0.1;	//determines the darkness of the room 1 being the most bright
 vx = camera_get_view_x(global.cam);
 vy = camera_get_view_y(global.cam);
 

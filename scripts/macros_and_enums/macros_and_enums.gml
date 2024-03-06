@@ -9,6 +9,7 @@
 #macro TRANSITION_SPEED 0.05
 #macro OUT 0
 #macro IN 1
+#macro ACTION_BUFFER 5
 
 //ENUMS
 enum BLUR {

@@ -4,13 +4,30 @@ if(instance_exists(follow)) {
 	yTo = follow.y;
 }//end if
 
+global.camMoving = global.camLeft || global.camRight || global.camUp || global.camDown; //returns 1 or 0
+var _freeCamSpd = 4;
+var _moveX = global.camRight - global.camLeft;
+var _moveY = global.camDown - global.camUp;
 //Update object position
-x += (xTo-x)/15;
-y += (yTo-y)/15;
-
-//Restrict camera to room bounds
-x = clamp(x, viewWHalf, room_width-viewWHalf);
-y = clamp(y, viewHHalf, room_height-viewHHalf);
+if(global.camMoving) {
+	//free camera movement
+	x += _moveX * _freeCamSpd;
+	y += _moveY * _freeCamSpd;
+	
+	//Restrict camera to room bounds and players x and y position
+	x = clamp(x, max(viewWHalf, xTo - viewWHalf), min(room_width - viewWHalf, xTo + viewWHalf));
+    y = clamp(y, max(viewHHalf, yTo - viewHHalf), min(room_height - viewHHalf, yTo + viewHHalf));
+	
+}//end if
+else {
+	//camera sets its position to the object is folowwing
+	x += (xTo-x)/15;
+	y += (yTo-y)/15;
+	
+	//Restrict camera to room bounds
+	x = clamp(x, viewWHalf, room_width-viewWHalf);
+	y = clamp(y, viewHHalf, room_height-viewHHalf);
+}//end else
 
 //Apply screen shake if exist's
 x += random_range(-shakeRemain, shakeRemain);

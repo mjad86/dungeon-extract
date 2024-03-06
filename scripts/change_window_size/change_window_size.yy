@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "change_window_size",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Gui",
-    "path": "folders/Scripts/Misc/Gui.yy",
+  "$GMScript":"",
+  "%Name":"change_window_size",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"change_window_size",
+  "parent":{
+    "name":"Gui",
+    "path":"folders/Scripts/Misc/Gui.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

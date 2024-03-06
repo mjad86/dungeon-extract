@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "macros_and_enums",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Data",
-    "path": "folders/Scripts/Misc/Data.yy",
+  "$GMScript":"",
+  "%Name":"macros_and_enums",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"macros_and_enums",
+  "parent":{
+    "name":"Data",
+    "path":"folders/Scripts/Misc/Data.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

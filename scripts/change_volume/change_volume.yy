@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "change_volume",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Gui",
-    "path": "folders/Scripts/Misc/Gui.yy",
+  "$GMScript":"",
+  "%Name":"change_volume",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"change_volume",
+  "parent":{
+    "name":"Gui",
+    "path":"folders/Scripts/Misc/Gui.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

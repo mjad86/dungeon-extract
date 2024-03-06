@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "player_state_crouching",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Player",
-    "path": "folders/Scripts/States/Player.yy",
+  "$GMScript":"",
+  "%Name":"player_state_crouching",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"player_state_crouching",
+  "parent":{
+    "name":"Player",
+    "path":"folders/Scripts/States/Player.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

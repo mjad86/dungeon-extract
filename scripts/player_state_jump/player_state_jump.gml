@@ -10,8 +10,9 @@ function player_state_jump() {
 	}//end else
 	
 	if(vSpd < 0 && !global.jumpHold) {
-		//controls jump hight if jump button not held
-		vSpd = max(vSpd, 0);
+		//controls jump height if jump button not held
+		//vSpd = max(vSpd, 0);
+		vSpd *= 0.25;
 	}//end if
 
 

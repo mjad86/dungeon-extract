@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "dummy_state_idle",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Dummy",
-    "path": "folders/Scripts/States/Dummy.yy",
+  "$GMScript":"",
+  "%Name":"dummy_state_idle",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"dummy_state_idle",
+  "parent":{
+    "name":"Dummy",
+    "path":"folders/Scripts/States/Dummy.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
