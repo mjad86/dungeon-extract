@@ -1,7 +1,7 @@
 ///@desc Player Initialize variables
-movingPlatform = false;
 move = 0;											//move variable for determining inputs
-moveSpdMax = 2.5;										//move max speed
+moveSpdMax = 2.5;									//move max speed
+gravMax = 10;										//max gravity speed
 accel = 0.2											//acceleration value, the higher it is the faster you gain speed
 fric = 0.2;											//friction value, the higher it is the faster you stop
 grav = 0.35;										//gravity force
@@ -28,6 +28,10 @@ activateBar = noone									//flag for activating bar
 inmune = 0											//frames for the player to be inmune
 goThrough = false;									//flag to determine if player can go Through some platforms
 actionBuffer = 0;									//action buffer to avoid 2 actions atst when 2 buttons are pressed
+movingHPlatform = noone;							//flag that stores the id of the moving horizontal platform or noone
+movingVPlatform = noone;							//flag that stores the id of the moving vertical platform or noone
+momentum = 0;										//variable to store the momentum when leaving a platform
+
 //Sprites
 playerIdle = s_figther_idle;
 playerMove = s_figther_walk;

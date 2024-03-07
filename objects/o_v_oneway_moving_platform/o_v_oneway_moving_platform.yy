@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"o_h_moving_platform",
+  "%Name":"o_v_oneway_moving_platform",
   "eventList":[],
   "managed":true,
-  "name":"o_h_moving_platform",
+  "name":"o_v_oneway_moving_platform",
   "overriddenProperties":[],
   "parent":{
-    "name":"Special platforms",
-    "path":"folders/Objects/Overworld/Special platforms.yy",
+    "name":"Oneway",
+    "path":"folders/Objects/Overworld/Special platforms/Oneway.yy",
   },
   "parentObjectId":{
     "name":"o_parent_moving_platform",

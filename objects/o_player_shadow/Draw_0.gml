@@ -6,5 +6,5 @@ if (platform != noone) {
 */
 
 if(o_player.onGround) {
-  draw_sprite(s_figther_shadow, 0, x, y);
+	draw_sprite_ext(s_figther_shadow, 0, x, y, image_xscale, image_yscale, 0, c_white, image_alpha);
 }//end if

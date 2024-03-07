@@ -11,7 +11,7 @@ function player_state_fall() {
 	goThrough = false; //reset oneway platform variable
 	
 	//clamp the value so it does not grow infinetly
-	vSpd = clamp(vSpd, jumpForce, -jumpForce);
+	//vSpd = clamp(vSpd, jumpForce, -jumpForce);
 	vSpdOnImpact += grav;	//flag for determining if impact is from high altitude
 	
 	if(global.jump && coyoteTime > 0) {
@@ -39,7 +39,8 @@ function player_state_fall() {
 			}//end else
 		}//end if
 		audio_play_sound(footstep, 100, false);			//landing sfx
-		if(vSpdOnImpact >= 17) {
+
+		if(vSpdOnImpact >= 16) {
 			//if player reached max vertical velocity on hiting ground do a impact animation and sfx
 			state = player_state_land;
 			create_particle_dust(3);						//create dust particle

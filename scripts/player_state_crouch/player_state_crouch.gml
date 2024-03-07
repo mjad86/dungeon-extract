@@ -2,7 +2,15 @@
 function player_state_crouch() {
 
 	image_speed = 0;
-	hSpd = 0;
+	if(movingHPlatform != noone) {
+		//when in moving platform
+		hSpd = 0 + movingHPlatform.hSpd;
+	}//end if
+	else {
+		//regular movement
+		hSpd = 0;
+	}//end else
+	
 	
 	//if not touchin ground then change state to fall
 	if(!onGround) {

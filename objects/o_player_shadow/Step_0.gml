@@ -1,6 +1,7 @@
 x = o_player.x;
 y = o_player.y;
 depth = o_player.depth+1;
+image_xscale = o_player.image_xscale;
 
 /*
 //start platform with nothing

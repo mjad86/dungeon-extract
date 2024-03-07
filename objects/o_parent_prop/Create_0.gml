@@ -1,13 +1,13 @@
 onGround = place_meeting(x, y+1, o_parent_wall);	//player is touching the ground
 vSpd = 0;											//vertical spd
 hSpd = 0;											//horizontal spd
-
 grav = 0.5;											//froce of gravity
 flash = 0;
 uFlash = shader_get_uniform(sh_white_flash, "flash");
 shadow = s_dummy_shadow;
 state = prop_state_idle;
 brokenMask = noone;
+movingVPlatform = noone;
 
 //create audio emiter
 emitter = audio_emitter_create();

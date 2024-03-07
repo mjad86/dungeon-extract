@@ -11,10 +11,9 @@ function player_state_jump() {
 	
 	if(vSpd < 0 && !global.jumpHold) {
 		//controls jump height if jump button not held
-		//vSpd = max(vSpd, 0);
-		vSpd *= 0.25;
+		vSpd = max(vSpd, 0);
+		//vSpd *= 0.25;
 	}//end if
-
 
 	//Change state to falling
 	if(vSpd > 0) {

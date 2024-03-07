@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"o_v_moving_platform",
+  "%Name":"o_h_solid_moving_platform",
   "eventList":[],
   "managed":true,
-  "name":"o_v_moving_platform",
+  "name":"o_h_solid_moving_platform",
   "overriddenProperties":[],
   "parent":{
-    "name":"Special platforms",
-    "path":"folders/Objects/Overworld/Special platforms.yy",
+    "name":"Solid",
+    "path":"folders/Objects/Overworld/Special platforms/Solid.yy",
   },
   "parentObjectId":{
-    "name":"o_parent_moving_platform",
-    "path":"objects/o_parent_moving_platform/o_parent_moving_platform.yy",
+    "name":"o_parent_moving_platform_solid",
+    "path":"objects/o_parent_moving_platform_solid/o_parent_moving_platform_solid.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

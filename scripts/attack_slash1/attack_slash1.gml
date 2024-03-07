@@ -1,6 +1,13 @@
 ///@desc attack_slash1()
 function attack_slash1() {
-	hSpd = 0;	//for this attack we stop player movement	
+	if(movingHPlatform != noone) {
+		//when in moving platform
+		hSpd = 0 + movingHPlatform.hSpd;
+	}//end if
+	else {
+		//regular movement
+		hSpd = 0;
+	}//end else
 	
 	if(mask_index != playerMask) {
 		mask_index = playerMask;	//set player mask to regular mask

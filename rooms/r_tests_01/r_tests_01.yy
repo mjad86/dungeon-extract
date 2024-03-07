@@ -74,7 +74,7 @@
     {"name":"inst_7C1F89B2","path":"rooms/r_tests_01/r_tests_01.yy",},
     {"name":"inst_14875A67","path":"rooms/r_tests_01/r_tests_01.yy",},
     {"name":"inst_1033AB3A","path":"rooms/r_tests_01/r_tests_01.yy",},
-    {"name":"inst_4F33474A","path":"rooms/r_tests_01/r_tests_01.yy",},
+    {"name":"inst_2626C9D0","path":"rooms/r_tests_01/r_tests_01.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -228,7 +228,7 @@
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_parent_lever","path":"objects/o_parent_lever/o_parent_lever.yy",},"propertyId":{"name":"activateTimer","path":"objects/o_parent_lever/o_parent_lever.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"60",},
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_parent_lever","path":"objects/o_parent_lever/o_parent_lever.yy",},"propertyId":{"name":"slot","path":"objects/o_parent_lever/o_parent_lever.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":385.0,"y":262.0,},
-        {"$GMRInstance":"","%Name":"inst_4F33474A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4F33474A","objectId":{"name":"o_h_moving_platform","path":"objects/o_h_moving_platform/o_h_moving_platform.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":416.0,"y":128.0,},
+        {"$GMRInstance":"","%Name":"inst_2626C9D0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2626C9D0","objectId":{"name":"o_v_oneway_moving_platform","path":"objects/o_v_oneway_moving_platform/o_v_oneway_moving_platform.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":320.0,"y":224.0,},
       ],"layers":[],"name":"Interactables","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Secrets","depth":650,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":false,"layers":[],"name":"Secrets","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":23,"SerialiseWidth":40,"TileCompressedData":[
           -460,-2147483648,-20,31,-20,-2147483648,-20,31,-20,-2147483648,-20,31,-20,-2147483648,-20,31,-20,-2147483648,

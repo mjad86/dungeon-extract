@@ -1,29 +1,9 @@
 ///@desc Player state machine
 if(state != player_state_lock) {
-	move = (global.right - global.left);						//input calculation	
-	onGround = on_ground();										//verify if on ground
-	vSpd += grav;												//Apply gravity force
-		
-	if(inmune > 0) {
-		inmune = max(0, inmune - 1);							//resets inmune frames back to 0
-	}//end if
-	if(actionBuffer > 0) {
-		actionBuffer = max(0, actionBuffer - 1);							//resets actionBuffer frames back to 0
-	}//end if
+	move = (global.right - global.left);					//input calculation	
 	
-	if(movingPlatform) {
-		var _inst = instance_place(x, y+1, o_parent_moving_platform);
-		if(_inst != noone) {
-			acceleration_and_friction(move, moveSpdMax, accel, fric, _inst);
-		}//end if
-	}//end if
-	else {
-		acceleration_and_friction(move, moveSpdMax, accel, fric, noone);   //acceleration adn friction manager
-	}//end else
+	acceleration_and_friction(move, moveSpdMax, accel, fric, movingHPlatform);	//calculate acceleration and frictiom
 }//end if
-
-//update listeners positions
-audio_listener_position(x, y, 0);
 
 #region//COYOTE TIME MANAGER
 if(coyoteTime > 0) {
@@ -35,13 +15,13 @@ if(onGround) {
 }//end if
 #endregion
 	
-script_execute(state);										//state machine script execution
+script_execute(state);								//state machine script execution
 
 if(!goThrough) {
-	jump_through_col(o_oneway_platform);					//controls jump through platform
+	jump_through_col(o_oneway_platform);			//controls jump through platform
 }//end if
-collision();												//Apply movement
-unstuck_player();											//check to unstuck player if overlaping a wall
+collision();										//Apply movement
+unstuck_player();									//check to unstuck player if overlaping a wall
 
 //controls facing of the player
 if(move != 0) {
@@ -80,7 +60,7 @@ if(onGround) {
 }//end if
 #endregion
 
-//out_of_camera_bounds();										//controls the out of camera action
+//out_of_camera_bounds();									//controls the out of camera action
 
 #region//tutorial zones activation
 var _zone = instance_place(x, y, [o_tutorial_zone, o_parent_lever]);

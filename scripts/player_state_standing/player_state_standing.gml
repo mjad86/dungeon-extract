@@ -1,7 +1,14 @@
 ///@desc player_state_standing()
 function player_state_standing() {
 	
-	hspd = 0;
+	if(movingHPlatform != noone) {
+		//when in moving platform
+		hSpd = 0 + movingHPlatform.hSpd;
+	}//end if
+	else {
+		//regular movement
+		hSpd = 0;
+	}//end else
 	
 	if(round(image_index) <= 0) {
 		state = player_state_idle;	//change player state

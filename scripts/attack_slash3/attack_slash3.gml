@@ -1,6 +1,15 @@
 ///@desc attack_slash3()
 function attack_slash3() {
-	hSpd = 0;	//for this attack we stop player movement							
+	
+	if(movingHPlatform != noone) {
+		//when in moving platform
+		hSpd = 0 + movingHPlatform.hSpd;
+	}//end if
+	else {
+		//regular movement
+		hSpd = 0;
+	}//end else
+	
 	if(sprite_index != attack3) {
 		//set animation sprite, image index and image speed
 		sprite_index = attack3;
