@@ -1,5 +1,5 @@
 ///@desc moving platform behavior
-var _col = false;
+col = false;
 // Vertical collition
 repeat(abs(vSpd)) {
 	if (!place_meeting(x, y + sign(vSpd), o_parent_wall)) {
@@ -7,7 +7,7 @@ repeat(abs(vSpd)) {
 	}//end if
 	else {
 	    vSpd = 0;
-		_col = true;
+		col = true;
 	    break;
 	}//end else
 }//end repeat
@@ -19,7 +19,7 @@ repeat(abs(hSpd)) {
 	}//end if
 	else {
 	    hSpd = 0;
-		_col = true;
+		col = true;
 	    break;
 	}//end else
 }//end repeat
@@ -28,38 +28,14 @@ switch(object_index) {
 	#region//horizontal platform
 	case o_h_solid_moving_platform:	
 		hSpd = approach(hSpd, moveSpdMax*move, accel);  //acceleration
-		if(_col) {
-			//when collided with a o_parent_wall it changes directions
-			move *= -1;
-			if(place_meeting(x, y-1, o_player)) {
-				//avoid player sliding on platform when colliding with wall
-				o_player.hSpd = 0;
-			}//end if
-		}//end if
+		script_execute(state);							//state behavior
 		with(o_player) {
 			if(place_meeting(x, y+1, other) && !place_meeting(x, y, other)) {
+				//send id for player to handle its curernt acceleration
 				movingHPlatform = other.id;
 			}//end if
 			else {
 				movingHPlatform = noone;
-			}//end else
-		}//end with
-	break;
-	#endregion
-	#region//vertical platform
-	case o_v_solid_moving_platform:
-		vSpd = approach(vSpd, moveSpdMax*move, accel);  //acceleration adn friction manager
-		if(_col) {
-			//when collided with a o_parent_wall it changes directions
-			move *= -1;
-		}//end if
-		with(o_player) {
-			if(place_meeting(x, y+5, other) && !place_meeting(x, y, other)) {
-				//we give the player room to detect if touching the platform to avoid the downward bug
-				movingVPlatform = other.id;
-			}//end if
-			else {
-				movingVPlatform = noone;
 			}//end else
 		}//end with
 	break;

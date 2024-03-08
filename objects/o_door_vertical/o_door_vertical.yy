@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_gate_vertical_02",
-    "path":"sprites/s_gate_vertical_02/s_gate_vertical_02.yy",
+    "name":"s_gate_vertical",
+    "path":"sprites/s_gate_vertical/s_gate_vertical.yy",
   },
   "spriteMaskId":null,
   "visible":true,

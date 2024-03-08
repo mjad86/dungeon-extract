@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"s_tileset_castle",
   "bboxMode":0,
-  "bbox_bottom":422,
+  "bbox_bottom":424,
   "bbox_left":2,
   "bbox_right":577,
   "bbox_top":2,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"2cbd07f6-bf1b-42ca-9acf-7e4df2a00e4e","name":"2cbd07f6-bf1b-42ca-9acf-7e4df2a00e4e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"b524f266-8fe6-4004-9bc0-da28ba7d9084","name":"b524f266-8fe6-4004-9bc0-da28ba7d9084","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":600,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"00a85721-42d6-451d-b753-52fb80542618","blendMode":0,"displayName":"default","isLocked":false,"name":"00a85721-42d6-451d-b753-52fb80542618","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"4decc4e0-6805-4007-9a49-4fc0dccb88cb","blendMode":0,"displayName":"default","isLocked":false,"name":"4decc4e0-6805-4007-9a49-4fc0dccb88cb","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"s_tileset_castle",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2cbd07f6-bf1b-42ca-9acf-7e4df2a00e4e","path":"sprites/s_tileset_castle/s_tileset_castle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"73670053-b894-401f-bf7b-fe8f2e407c7e","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b524f266-8fe6-4004-9bc0-da28ba7d9084","path":"sprites/s_tileset_castle/s_tileset_castle.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"c28f0e59-fac9-4d45-8d72-2d3a49647356","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

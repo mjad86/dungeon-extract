@@ -57,3 +57,10 @@ enum LIGHTFX {
 	NOONE,
 	FLICKER
 }//end enum
+
+enum MOVE {
+	UP,
+	DOWN, 
+	LEFT,
+	RIGHT
+}//end enum

@@ -32,6 +32,7 @@
         "[sfx_stone_footstep]",
         "[sfx_wood_footstep]",
         "[sfx_wood_footstep, sfx_wood_squeak_01]",
+        "[sfx_stone_footstep_01, sfx_stone_footstep_02, sfx_stone_footstep_03, sfx_stone_footstep_04]",
       ],"multiselect":false,"name":"footstepSFX","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"[sfx_wood_footstep]","varType":6,},
   ],
   "resourceType":"GMObject",

@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_secret_floor_01",
-    "path":"sprites/s_secret_floor_01/s_secret_floor_01.yy",
+    "name":"s_oneway_moving_platform",
+    "path":"sprites/s_oneway_moving_platform/s_oneway_moving_platform.yy",
   },
   "spriteMaskId":null,
   "visible":true,

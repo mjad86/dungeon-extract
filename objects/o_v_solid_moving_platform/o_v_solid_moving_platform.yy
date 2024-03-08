@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"o_v_oneway_moving_platform",
+  "%Name":"o_v_solid_moving_platform",
   "eventList":[],
   "managed":true,
-  "name":"o_v_oneway_moving_platform",
+  "name":"o_v_solid_moving_platform",
   "overriddenProperties":[],
   "parent":{
-    "name":"Oneway",
-    "path":"folders/Objects/Overworld/Special platforms/Oneway.yy",
+    "name":"Solid",
+    "path":"folders/Objects/Overworld/Special platforms/Solid.yy",
   },
   "parentObjectId":{
     "name":"o_parent_moving_platform",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_secret_floor_01",
-    "path":"sprites/s_secret_floor_01/s_secret_floor_01.yy",
+    "name":"s_elevator_02",
+    "path":"sprites/s_elevator_02/s_elevator_02.yy",
   },
   "spriteMaskId":null,
   "visible":true,

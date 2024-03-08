@@ -7,7 +7,9 @@
   ],
   "managed":true,
   "name":"o_parent_moving_platform_solid",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_parent_wall","path":"objects/o_parent_wall/o_parent_wall.yy",},"propertyId":{"name":"footstepSFX","path":"objects/o_parent_wall/o_parent_wall.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"[sfx_stone_footstep_01, sfx_stone_footstep_02, sfx_stone_footstep_03, sfx_stone_footstep_04]",},
+  ],
   "parent":{
     "name":"Parents",
     "path":"folders/Objects/Parents.yy",
@@ -29,7 +31,17 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"","%Name":"slot","filters":[],"listItems":[],"multiselect":false,"name":"slot","rangeEnabled":true,"rangeMax":50.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
+    {"$GMObjectProperty":"","%Name":"state","filters":[],"listItems":[],"multiselect":false,"name":"state","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"platform_state_idle","varType":0,},
+    {"$GMObjectProperty":"","%Name":"distanceToMove","filters":[],"listItems":[],"multiselect":false,"name":"distanceToMove","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"","%Name":"startMove","filters":[],"listItems":[
+        "MOVE.UP",
+        "MOVE.DOWN",
+        "MOVE.LEFT",
+        "MOVE.RIGHT",
+      ],"multiselect":false,"name":"startMove","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"MOVE.UP","varType":6,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
