@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sfx_elevator_moving",
+  "audioGroupId":{
+    "name":"SFX",
+    "path":"audiogroups/SFX",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":29.408005,
+  "name":"sfx_elevator_moving",
+  "parent":{
+    "name":"Overworld",
+    "path":"folders/Sounds/SFX/Overworld.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sfx_elevator_moving.wav",
+  "type":0,
+  "volume":1.0,
+}

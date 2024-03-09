@@ -6,14 +6,12 @@ function screen_shake() {
 	var _magnitude = argument0;
 	var _frames = argument1;
 	
-	with(global.iCamera) {
-		
+	with(global.iCamera) {		
 		if(_magnitude > shakeRemain) {
 			shakeMagnitude = _magnitude;
 			shakeRemain = shakeMagnitude;
 			shakeLength = _frames;
-		}//end if
-		
+		}//end if		
 	}//end witdh	
 
 }//end script

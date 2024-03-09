@@ -1,5 +1,5 @@
 //MACROS
-#macro ROOM_START r_tests_01 //r_start
+#macro ROOM_START r_start //r_start
 #macro TILE_SIZE 32
 #macro MSG show_debug_message
 #macro RESOLUTION_W 640

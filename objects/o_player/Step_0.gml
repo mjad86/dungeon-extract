@@ -67,7 +67,7 @@ var _zone = instance_place(x, y, [o_tutorial_zone, o_parent_lever]);
 	if(_zone != noone) {
 		var _inst = noone;
 		if(!instance_exists(o_button_tutorial)) {
-			_inst = instance_create_layer(_zone.x, y-sprite_height, "Misc", o_button_tutorial);
+			_inst = instance_create_layer(_zone.x, _zone.y-(sprite_height*0.6), "Misc", o_button_tutorial);
 		}//end if
 		if(_inst != noone) {
 			with(_inst) {

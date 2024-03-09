@@ -1,4 +1,11 @@
 ///@desc moving platform behavior
+audio_emitter_position(emitter, x, y, 0); //update emitter position
+
+if(delay > 0) {
+	//reset delay to 0
+	delay = max(0, delay - 1);
+}//end if
+
 col = false;
 // Vertical collition
 repeat(abs(vSpd)) {
@@ -26,8 +33,10 @@ repeat(abs(hSpd)) {
 
 switch(object_index) {
 	#region//horizontal platform
-	case o_h_oneway_moving_platform:	
-		hSpd = approach(hSpd, moveSpdMax*move, accel);  //acceleration
+	case o_h_oneway_moving_platform:
+		if(delay <= 0) {
+			hSpd = approach(hSpd, moveSpdMax*move, accel);  //acceleration
+		}//end if
 		script_execute(state);
 		with(o_player) {
 			if(place_meeting(x, y+1, other) && !place_meeting(x, y, other)) {
@@ -41,7 +50,9 @@ switch(object_index) {
 	#endregion
 	#region//vertical platform
 	case o_v_solid_moving_platform:
-		vSpd = approach(vSpd, moveSpdMax*move, accel);  //acceleration adn friction manager
+		if(delay <= 0) {
+			vSpd = approach(vSpd, moveSpdMax*move, accel);  //acceleration adn friction manager
+		}
 		script_execute(state);
 		with(o_player) {
 			if(place_meeting(x, y+5, other) && !place_meeting(x, y, other)) {

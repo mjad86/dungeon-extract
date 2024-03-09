@@ -1,7 +1,7 @@
 //drawing the msg's content
 var _c = c_white;
-var _xx = 180;
-var _yy = 200;
+var _xx = 140;
+var _yy = 250;
 var _msg = "Controller is recommended for this game experience, but keyboard will work too.";
 
 if(room_get_name(room) == "r_start") {
