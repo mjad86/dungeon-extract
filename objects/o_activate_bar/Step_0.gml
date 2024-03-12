@@ -8,7 +8,7 @@ if(!audio_is_playing(sfx_interacting)) {
 	audio_play_sound(sfx_interacting, false, 10);
 }//end if
 
-if(activationTime <= 0 || !global.activate) {
+if(activationTime <= 0 || !global.activate || !o_player.onGround) {
 	//if player no longer is interacting or timer reached zero we destroy instance
 	instance_destroy();
 }//end if

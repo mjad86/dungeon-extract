@@ -35,7 +35,7 @@ switch(object_index) {
 	#region//horizontal platform
 	case o_h_oneway_moving_platform:
 		if(delay <= 0) {
-			hSpd = approach(hSpd, moveSpdMax*move, accel);  //acceleration
+			hSpd = approach(hSpd, hSpdMax*move, accel);  //acceleration
 		}//end if
 		script_execute(state);
 		with(o_player) {
@@ -51,8 +51,8 @@ switch(object_index) {
 	#region//vertical platform
 	case o_v_solid_moving_platform:
 		if(delay <= 0) {
-			vSpd = approach(vSpd, moveSpdMax*move, accel);  //acceleration adn friction manager
-		}
+			vSpd = approach(vSpd, hSpdMax*move, accel);  //acceleration adn friction manager
+		}//end if
 		script_execute(state);
 		with(o_player) {
 			if(place_meeting(x, y+5, other) && !place_meeting(x, y, other)) {
@@ -60,7 +60,9 @@ switch(object_index) {
 				movingVPlatform = other.id;
 			}//end if
 			else {
-				movingVPlatform = noone;
+				if(movingVPlatform == other.id) {
+					movingVPlatform = noone;
+				}//end if
 			}//end else
 		}//end with
 	break;

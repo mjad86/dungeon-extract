@@ -15,5 +15,6 @@ function player_state_land() {
 	if(animation_end()) {
 		state = player_state_standing;
 	}//end if
-
+		
+	//MSG("LAND");
 }//end script

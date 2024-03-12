@@ -16,9 +16,9 @@ function player_state_idle() {
 	//players on the ground and change state to jumping
 	if(onGround && global.jump && jumpCount < jumpCountMax && coyoteTime > 0 && actionBuffer <= 0) {
 		//change player state to jump
-		actionBuffer = ACTION_BUFFER						//set the buffer to 60 frames or 1 second
+		actionBuffer = ACTION_BUFFER					//set the buffer to 60 frames or 1 second
 		jumpCount++;									//increase jump count
-		vSpd = jumpForce;								//set jump height
+		vSpd = -jumpForce								//set jump height
 		coyoteTime = 0;									//set coyoteTime to 0 to avoid double jumping
 		var _floor = instance_place(x, y+1, [o_parent_wall, o_oneway_platform]);
 		if(_floor != noone) {	
@@ -63,7 +63,7 @@ function player_state_idle() {
 	}//end if
 	
 	var _lever = instance_place(x, y, o_parent_lever);
-	if(_lever != noone && global.activate && actionBuffer <= 0) {
+	if(_lever != noone && global.activate && actionBuffer <= 0 && onGround) {
 		actionBuffer = ACTION_BUFFER;					//set the value for the action buffer
 		if(_lever.state != lever_state_using && !_lever.activated) {
 			activateBar = instance_create_layer(x, y - sprite_height, "Misc", o_activate_bar);

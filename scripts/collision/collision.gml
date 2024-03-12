@@ -2,16 +2,16 @@
 function collision() {
 	var _col = false
 	// Vertical
-	repeat(abs(vSpd)) {
-	    if (!place_meeting(x, y + sign(vSpd), o_parent_wall)) {
-	        y += sign(vSpd); 
-		}//end if
-	    else {
-	        vSpd = 0;
-			_col = true;
-	        break;
-	    }//end else
-	}//end repeat
+    repeat(abs(vSpd)) {
+        if(!place_meeting(x, y + sign(vSpd), o_parent_wall)) {
+			y += sign(vSpd); 
+        }//end if
+        else {
+            vSpd = 0;
+            _col = true;
+            break;
+        }//end else
+    }//end repeat
 
 	// Horizontal
 	repeat(abs(hSpd)) {

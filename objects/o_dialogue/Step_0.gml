@@ -13,7 +13,7 @@ if(global.action) {
 		}//end if
 		else {
 			with(o_player) {
-				state = lastState;
+				state = previousState;
 			}//end with
 		}//end else
 	}//end if

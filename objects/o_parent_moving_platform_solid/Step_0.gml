@@ -35,7 +35,7 @@ switch(object_index) {
 	#region//horizontal platform
 	case o_h_solid_moving_platform:	
 		if(delay <= 0) {
-			hSpd = approach(hSpd, moveSpdMax*move, accel);  //acceleration
+			hSpd = approach(hSpd, hSpdMax*move, accel);  //acceleration
 		}//end if
 		script_execute(state);							//state behavior
 		with(o_player) {

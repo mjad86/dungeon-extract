@@ -28,3 +28,5 @@ if(array_length(buttonIndex) > 1) {
 else {
 	sprite_index = input_verb_get_icon(buttonIndex[0]);
 }//end else
+
+depth = -9999; //ensures the icon is in front of everything except the GUI

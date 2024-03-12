@@ -11,16 +11,16 @@ function player_state_crouching() {
 	}//end else
 	
 	set_animation_sprite(playerCrouch, 0, 1);
-	
-	if(global.jump) {
-		//go through one way platforms
-		goThrough = true;
-	}//end if
-	
+		
 	if(animation_end()) {
 		state = player_state_crouch;	//change player state
 		image_index = sprite_get_number(playerCrouch) - 1;
 		image_speed = 0;
+	}//end if
+
+	if(global.jump) {
+		//go through one way platforms
+		goThrough = true;
 	}//end if
 	
 	//dodge
@@ -37,5 +37,6 @@ function player_state_crouching() {
 	if(!onGround) {
 		state = player_state_fall;
 	}//end if
+	
 	//MSG("Crouching");
 }//end script

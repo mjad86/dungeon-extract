@@ -11,22 +11,16 @@ function player_state_crouch() {
 		hSpd = 0;
 	}//end else
 	
-	
 	//if not touchin ground then change state to fall
 	if(!onGround) {
 		state = player_state_fall;
 	}//end if
-	
+		
 	if(!global.down) {
 		state = player_state_standing;	//change player state
 		image_speed = -1;
 	}//end if
-	
-	if(global.jump) {
-		//go through one way platforms
-		goThrough = true;
-	}//end if
-	
+		
 	//dodge
 	if(global.dodge) {
 		previousState = state;
@@ -43,6 +37,11 @@ function player_state_crouch() {
 		audio_play_sound(choose(swordSwing1, swordSwing2, swordSwing3), 10, false);
 		state = player_state_attack;			//set player state to attack
 		stateAttack = attack_slash1;			//set the attack to be done
+	}//end if
+	
+	if(global.jump) {
+		//go through one way platforms
+		goThrough = true;
 	}//end if
 	
 	//MSG("Crouch");

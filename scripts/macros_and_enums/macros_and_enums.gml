@@ -1,5 +1,5 @@
 //MACROS
-#macro ROOM_START r_start //r_start
+#macro ROOM_START r_tests_01 //r_start
 #macro TILE_SIZE 32
 #macro MSG show_debug_message
 #macro RESOLUTION_W 640
@@ -9,7 +9,7 @@
 #macro TRANSITION_SPEED 0.05
 #macro OUT 0
 #macro IN 1
-#macro ACTION_BUFFER 3
+#macro ACTION_BUFFER 2
 
 //ENUMS
 enum BLUR {

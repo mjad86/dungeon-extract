@@ -11,7 +11,6 @@ function player_state_fall() {
 	goThrough = false; //reset oneway platform variable
 	
 	//clamp the value so it does not grow infinetly
-	//vSpd = clamp(vSpd, jumpForce, -jumpForce);
 	vSpdOnImpact += grav;	//flag for determining if impact is from high altitude
 	
 	if(global.jump && coyoteTime > 0) {

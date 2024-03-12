@@ -2,7 +2,18 @@
 if(state != player_state_lock) {
 	move = (global.right - global.left);					//input calculation	
 	
-	acceleration_and_friction(move, moveSpdMax, accel, fric, movingHPlatform);	//calculate acceleration and frictiom
+	var tempAccel, tempFric;
+	// Apply the correct form of acceleration and friction
+	if (onGround) {
+	    tempAccel = groundAccel;
+	    tempFric  = groundFric;
+	}//end if
+	else {
+	    tempAccel = airAccel;
+	    tempFric  = airFric;
+	}//end else
+	
+	acceleration_and_friction(move, hSpdMax, tempAccel, tempFric, movingHPlatform);	//calculate acceleration and frictiom
 }//end if
 
 #region//COYOTE TIME MANAGER
@@ -27,7 +38,7 @@ unstuck_player();									//check to unstuck player if overlaping a wall
 if(move != 0) {
 	image_xscale = sign(move);
 }//end if
-	
+
 #region//SECRET DEPTH CONTROLLER
 if(state != player_state_dead) {
 	var _i = 0;

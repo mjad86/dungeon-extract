@@ -9,7 +9,7 @@ if(movingVPlatform != noone) {
 }//end if
 else {
 	//regular gravity force
-	vSpd = approach(vSpd, gravMax, grav);					
+	vSpd = approach(vSpd, vSpdMax, grav);	
 }//end else
 
 if(inmune > 0) {

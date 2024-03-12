@@ -2,17 +2,22 @@
 function player_state_jump() {
 	
 	//set sprite	
-	if(!animation_end()) {
-		set_animation_sprite(playerJump, 0, 1);
+	if(animation_end()) {
+		sprite_index = playerJump;
+		image_index = floor(sprite_get_number(sprite_index))-1;
+		image_speed = 0;
 	}//end if
 	else {
-		set_animation_sprite(playerJump, floor(sprite_get_number(sprite_index))-1, 0);
+		sprite_index = playerJump;
+		image_index = 0;
+		image_speed = 1;
 	}//end else
 	
-	if(vSpd < 0 && !global.jumpHold) {
-		//controls jump height if jump button not held
-		vSpd = max(vSpd, 0);
-		//vSpd *= 0.25;
+	if(global.jumpRelease) {
+		if(vSpd < 0) {
+			//controls jump height if jump button not held
+			vSpd *= 0.25;
+		}//end if
 	}//end if
 
 	//Change state to falling

@@ -15,11 +15,11 @@ function player_state_move() {
 	}//end if
 		
 	//players on the ground and change state to jumping
-	if(onGround && global.jump && coyoteTime > 0 && actionBuffer <= 0) {
+	if(onGround && global.jump && jumpCount < jumpCountMax && coyoteTime > 0 && actionBuffer <= 0) {
 		//change player state to jump
 		actionBuffer = ACTION_BUFFER;					//set the value for the action buffer
 		jumpCount++;									//increase jump count
-		vSpd = jumpForce;								//set jump height
+		vSpd = -jumpForce;								//set jump height
 		coyoteTime = 0;									//set coyoteTime to 0 to avoid double jumping
 		var _floor = instance_place(x, y+1, [o_parent_wall, o_oneway_platform]);
 		if(_floor != noone) {	

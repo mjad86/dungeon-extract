@@ -10,7 +10,7 @@ function on_ground() {
 	
 	if(movingVPlatform != noone) {
 		with(o_oneway_platform) {	
-			//if the player is on top we give it a lot of pixel room do avoid the going down bug
+			//if the player is on top we give it a lot of pixel room to avoid the going down bug
 			if(place_meeting(x, y-10, other) && !place_meeting(x, y, other)) {
 				_onGround = true;	
 			}//end if		
@@ -18,13 +18,13 @@ function on_ground() {
 	}//end if
 	else {
 		with(o_oneway_platform) {		
-			//regular behaviour
-		if(place_meeting(x, y-1, other) && !place_meeting(x, y, other)) {
-			_onGround = true;	
-		}//end if		
-	}//end with
+				//regular behaviour
+			if(place_meeting(x, y-1, other) && !place_meeting(x, y, other)) {
+				_onGround = true;	
+			}//end if		
+		}//end with
 	}//end else
-	
-	return _onGround;
 
+	return _onGround;
+	
 }//end script

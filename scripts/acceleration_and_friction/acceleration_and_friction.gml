@@ -14,7 +14,7 @@ function acceleration_and_friction() {
 	
 	if(_inst != noone) {
 		//accelerate using both spds from player and platform if we are moving
-		hSpd = approach(hSpd, (_maxSpd*_move)+(_inst.moveSpdMax*_inst.move), _tempAccel);
+		hSpd = approach(hSpd, (_maxSpd*_move)+(_inst.hSpdMax*_inst.move), _tempAccel);
 		momentum = abs(_inst.hSpd);	//setting the momentum
 	}//end if
 	else {
