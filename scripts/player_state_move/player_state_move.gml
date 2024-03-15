@@ -9,18 +9,41 @@ function player_state_move() {
 		create_particle_dust(0);
 	}//end if
 	
+	//manual = !down - automatic = !onGround
+	if(crouching) && (vSpd > 0) {
+		//check if theres room to uncrouch
+		mask_index = playerMask;
+		//uncrouch if no solid wall
+		if(!place_meeting(x, y, o_parent_wall)) {
+			state = player_state_standing;	//change player state
+			image_speed = -1;
+			crouching = false;
+		}//end if
+		else {
+			//cant uncrouch since there is a wall
+			mask_index = playerRollMask;
+			if(sprite_index != playerCrouch) {
+				sprite_index = playerCrouch;
+				image_index =  sprite_get_number(playerCrouch) - 1;
+				image_speed = 0;
+			}//end if
+			state = player_state_crouch()
+		}//end else
+	}//end if
+	
 	//change state to idle
 	if(move == 0) {
 		state = player_state_idle;						//change state
 	}//end if
 		
 	//players on the ground and change state to jumping
-	if(onGround && global.jump && jumpCount < jumpCountMax && coyoteTime > 0 && actionBuffer <= 0) {
+	if(global.jump && jumpCount < jumpMax && actionBuffer <= 0) {
 		//change player state to jump
-		actionBuffer = ACTION_BUFFER;					//set the value for the action buffer
+		actionBuffer = ACTION_BUFFER					//set the buffer to 60 frames or 1 second
 		jumpCount++;									//increase jump count
-		vSpd = -jumpForce;								//set jump height
-		coyoteTime = 0;									//set coyoteTime to 0 to avoid double jumping
+		jumpHoldTimer = jumpHoldFrames[jumpCount-1];	//set jumphold timer
+		set_on_ground(false);
+		#region//SFX
 		var _floor = instance_place(x, y+1, [o_parent_wall, o_oneway_platform]);
 		if(_floor != noone) {	
 			if(array_length(_floor.footstepSFX) > 1) {
@@ -32,6 +55,7 @@ function player_state_move() {
 				footstep = _floor.footstepSFX[0];						//obtain the footstep sfx
 			}//end else
 		}//end if
+		#endregion
 		audio_play_sound(choose(sfx_grunt_human, sfx_grunt_human_2), 100, false);	//jumping sfx grunt
 		audio_play_sound(footstep, 100, false);			//jumping sfx
 		create_particle_dust(1);						//create dust aprticles
@@ -39,8 +63,8 @@ function player_state_move() {
 	}//end if
 	
 	//if not touchin ground then change state to fall
-	if(!onGround) {
-		state = player_state_fall;						//change sat==tate
+	if(vSpd > 0) {
+		state = player_state_fall;
 	}//end if
 	
 	//activate things
@@ -85,10 +109,14 @@ function player_state_move() {
 		}//end if
 	}//end if
 	
-	if(global.down && actionBuffer <= 0) {
-		actionBuffer = ACTION_BUFFER;		//set the value for the action buffer
-		state = player_state_crouching;		//change player state to crouch
+	//crouching
+	//transition to crouch
+	//manual = down - automatic = wall collision
+	if(onGround) && actionBuffer <= 0 && (global.down || place_meeting(x, y, o_parent_wall)) {
+		actionBuffer = ACTION_BUFFER;
 		mask_index = playerRollMask;	
+		crouching = true;
+		state = player_state_crouching;	//change player state to crouch
 	}//end if
 	
 	//attack

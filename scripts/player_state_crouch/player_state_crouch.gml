@@ -2,23 +2,28 @@
 function player_state_crouch() {
 
 	image_speed = 0;
-	if(movingHPlatform != noone) {
-		//when in moving platform
-		hSpd = 0 + movingHPlatform.hSpd;
-	}//end if
-	else {
-		//regular movement
-		hSpd = 0;
-	}//end else
+	//regular movement
+	hSpd = 0;
+	move = (global.right - global.left); //just to set the facing
 	
 	//if not touchin ground then change state to fall
-	if(!onGround) {
+	if(vSpd > 0) {
 		state = player_state_fall;
 	}//end if
 		
-	if(!global.down) {
-		state = player_state_standing;	//change player state
-		image_speed = -1;
+	if(crouching) && (!global.down || vSpd > 0) {
+		//check if theres room to uncrouch
+		mask_index = playerMask;
+		//uncrouch if no solid wall
+		if(!place_meeting(x, y, o_parent_wall)) {
+			state = player_state_standing;	//change player state
+			image_speed = -1;
+			crouching = false;
+		}//end if
+		else {
+			//cant uncrouch since there is a wall
+			mask_index = playerRollMask;
+		}//end else
 	}//end if
 		
 	//dodge
@@ -38,11 +43,6 @@ function player_state_crouch() {
 		state = player_state_attack;			//set player state to attack
 		stateAttack = attack_slash1;			//set the attack to be done
 	}//end if
-	
-	if(global.jump) {
-		//go through one way platforms
-		goThrough = true;
-	}//end if
-	
+		
 	//MSG("Crouch");
 }//end script

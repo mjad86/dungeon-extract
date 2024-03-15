@@ -1,43 +1,59 @@
 ///@desc Player state machine
-if(state != player_state_lock) {
-	move = (global.right - global.left);					//input calculation	
-	
-	var tempAccel, tempFric;
-	// Apply the correct form of acceleration and friction
-	if (onGround) {
-	    tempAccel = groundAccel;
-	    tempFric  = groundFric;
+if(state == player_state_idle || state == player_state_jump || 
+   state == player_state_fall || state == player_state_move) {
+	 //NOTE: roll handles its movement in its own state
+	run = 0; //add to controllers as a global.run key and set it there if you wish to apply a diference between walk and run spd
+	move = (global.right - global.left);	//input calculation/Direction
+	//get hSpd with variable spd's if implemented
+	runType = run;
+	hSpd = move * moveSpd[runType];
+}//end if
+
+unstuck_player();
+
+#region JUMP VARIABLES RESET
+	if(coyoteHangTimer > 0) {
+		coyoteHangTimer--; //reset timer
 	}//end if
 	else {
-	    tempAccel = airAccel;
-	    tempFric  = airFric;
+		//Apply gravity
+		vSpd += grav;
+		set_on_ground(false); //not on the ground
 	}//end else
-	
-	acceleration_and_friction(move, hSpdMax, tempAccel, tempFric, movingHPlatform);	//calculate acceleration and frictiom
-}//end if
 
-#region//COYOTE TIME MANAGER
-if(coyoteTime > 0) {
-	coyoteTime = max(0, coyoteTime-1);
-}//end if
-		
-if(onGround) {
-	coyoteTime = coyoteTimeMax;
-}//end if
+	if(jumpHoldTimer > 0) {
+		//jump based on the time the button is held
+		vSpd = -jSpd[jumpCount-1];		//set vSpd
+		jumpHoldTimer--;				//reset timer
+	}//end if
+
+	//cut of time of the jump
+	if(!global.jumpRelease) {
+		jumpHoldTimer = 0;
+	}//end if
 #endregion
-	
-script_execute(state);								//state machine script execution
 
-if(!goThrough) {
-	jump_through_col(o_oneway_platform);			//controls jump through platform
-}//end if
-collision();										//Apply movement
-unstuck_player();									//check to unstuck player if overlaping a wall
+collision();
 
 //controls facing of the player
 if(move != 0) {
 	image_xscale = sign(move);
 }//end if
+	
+script_execute(state);								//state machine script execution
+
+/*
+//crushed death code
+if(place_meeting(x, y, o_parent_wall)) {
+	crushTimer++;
+	if(crushTimer > crushDeathTime) {
+		instance_destroy();
+	}//end if
+}//end if
+else {
+	crushTimer = 0;
+}//end else
+*/
 
 #region//SECRET DEPTH CONTROLLER
 if(state != player_state_dead) {
@@ -71,9 +87,7 @@ if(onGround) {
 }//end if
 #endregion
 
-//out_of_camera_bounds();									//controls the out of camera action
-
-#region//tutorial zones activation
+#region//TUTORIAL ZONES ACTIVATION
 var _zone = instance_place(x, y, [o_tutorial_zone, o_parent_lever]);
 	if(_zone != noone) {
 		var _inst = noone;

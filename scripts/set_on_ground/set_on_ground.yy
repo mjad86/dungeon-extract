@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"set_on_ground",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"set_on_ground",
+  "parent":{
+    "name":"Locomotion",
+    "path":"folders/Scripts/Misc/Locomotion.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -11,6 +11,18 @@ with(o_wall) {
 	quad(_vb, x+sprite_width, y, x, y+sprite_height);
 }//end with
 
+with(o_secret_floor_01) {
+	//calculate point of origin of each sprite and runs the quad function to determine shadow's
+	quad(_vb, x, y, x+sprite_width, y+sprite_height);
+	quad(_vb, x+sprite_width, y, x, y+sprite_height);
+}//end with
+
+with(o_secret_wall_01) {
+	//calculate point of origin of each sprite and runs the quad function to determine shadow's
+	quad(_vb, x, y, x+sprite_width, y+sprite_height);
+	quad(_vb, x+sprite_width, y, x, y+sprite_height);
+}//end with
+
 /*
 with(o_slope) {
 	//calculate point of origin of each sprite and runs the quad function to determine shadow's

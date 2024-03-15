@@ -1,37 +1,56 @@
 ///@desc Player Initialize variables
-movingHPlatform = noone;							//flag that stores the id of the moving horizontal platform or noone
-movingVPlatform = noone;							//flag that stores the id of the moving vertical platform or noone
+//moving
+move = 0;
+runType = 0;
+moveSpd[0] = 2.5;
+moveSpd[1] = 4;
+hSpd = 0;
+vSpd = 0;						
+vSpdOnImpact = 0;				//flag for determining if player hits ground from high distance
+crouching = false;
+//jumping
+grav = 0.5;
+gravMax = 10;
+jumpMax = 1;
+jumpCount = 0;
+jumpHoldTimer = 0;
+onGround = true;
+//first jump
+jumpHoldFrames[0] = 12;
+jSpd[0] = 5;
+//second jump (the lower the values the less strength)
+jumpHoldFrames[1] = 10;
+jSpd[1] = 4;
+//coyote time
+//hanged based
+coyoteHangFrames = 4;
+coyoteHangTimer = 0;
+//frame based
+coyoteJumpFrames = 4;
+coyoteJumpTimer = 0;
+//rolling/dodging
+rollDistance = 100;									//rolling distance in pixels
+moveDistanceRemaining = 0							//flag to calcualte rolling distance remaining
+rollSpd[0] = 5;										//how fast we roll
+//moving Platforms
+myMovingPlat = noone;
+earlyMovePlathSpd = false;
+downSlopeSemiSolid = noone;
+forgetSemiSolid = noone;
+movePlathSpd = 0;
+crushTimer = 0;
+crushDeathTime = 3;
+//states
 state = player_state_idle;							//Player state at start
 previousState = noone								//flag for neturning to previous state
 stateAttack = attack_slash1							//state of dynamic attacks
 hitByAttack = -1;									//stores a ds_list for entity id's we hit
-onGround = on_ground();								//player is touching the ground
-move = 0;											//move variable for determining inputs
-groundAccel = 1.0;									//ground acceleration value, the higher it is the faster you start moving
-groundFric = 1.9;									//ground friction value, the higher it is the faster you stop
-airAccel = 0.75;									//air acceleration value, the higher it is the faster you start moving
-airFric = 0.1;										//air friction value, the higher it is the faster you stop
-grav = 0.3;											//gravity force
-rollDistance = 100;									//rolling distance in pixels
-moveDistanceRemaining = 0							//flag to calcualte rolling distance remaining
-rollSpd = 5;										//how fast we roll
-hSpd = 0;											//Horizontal speed
-hSpdMax = 2.5;										//move max speed
-vSpd = 0;											//Vertical speed
-vSpdMax = 10.0;										//max gravity speed
-vSpdOnImpact = 0;									//flag for determining if player hits ground from high distance
-jumpForce = 7;										//jump force value
-jumpCount = 0;										//counter for the amount of jumps player can do
-jumpCountMax = 1;									//the maximun amount of jumps the player can do	
-coyoteTime = 0;										//time in frames for player to make a jump when not on grund aka cyote time
-coyoteTimeMax = 7;									//maximun time in frames for player to make a jump when not on grund aka cyote time
+//VFX and Misc
 canDust = true;										//particle dust flag when moving
 footstep = noone									//footstep SFX flag, obtained from the parent object we are steping
 activateBar = noone									//flag for activating bar
 inmune = 0											//frames for the player to be inmune
-goThrough = false;									//flag to determine if player can go Through some platforms
 actionBuffer = 0;									//action buffer to avoid 2 actions atst when 2 buttons are pressed
-momentum = 0;										//variable to store the momentum when leaving a platform
 
 //Sprites
 playerIdle = s_figther_idle;
@@ -86,9 +105,6 @@ stamina = maxStamina;
 
 //create player hud
 instance_create_layer(0, 0, "Misc", o_player_healthbar_frame);
-
-
-
 
 
 

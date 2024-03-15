@@ -9,7 +9,7 @@
 #macro TRANSITION_SPEED 0.05
 #macro OUT 0
 #macro IN 1
-#macro ACTION_BUFFER 2
+#macro ACTION_BUFFER 3
 
 //ENUMS
 enum BLUR {
@@ -60,7 +60,12 @@ enum LIGHTFX {
 
 enum MOVE {
 	UP,
-	DOWN, 
+	DOWN,
 	LEFT,
-	RIGHT
+	RIGHT,
+	VERTICAL,
+	HORIZONTAL,
+	CIRCULAR,
+	BUMPER_VERTICAL,
+	BUMPER_HORIZONTAL
 }//end enum

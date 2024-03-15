@@ -8,14 +8,8 @@ function player_state_block_idle(){
 		//create block object here
 	}//end if
 	
-	if(movingHPlatform != noone) {
-		//if on moving platform
-		hSpd = 0 + movingHPlatform.hSpd;
-	}//end if
-	else {
-		//regular speed
-		hSpd = 0;
-	}//end else
+	//regular speed
+	hSpd = 0;
 	
 	if(!global.block) {
 		state = player_state_idle;

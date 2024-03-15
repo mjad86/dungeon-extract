@@ -1,21 +1,15 @@
 ///@desc player_state_standing()
 function player_state_standing() {
 	
-	if(movingHPlatform != noone) {
-		//when in moving platform
-		hSpd = 0 + movingHPlatform.hSpd;
-	}//end if
-	else {
-		//regular movement
-		hSpd = 0;
-	}//end else
+	//regular movement
+	hSpd = 0;
 	
 	if(round(image_index) <= 0) {
 		state = player_state_idle;	//change player state
 	}//end if
 	
 	//if not touchin ground then change state to fall
-	if(!onGround) {
+	if(vSpd > 0) {
 		state = player_state_fall;
 	}//end if
 	

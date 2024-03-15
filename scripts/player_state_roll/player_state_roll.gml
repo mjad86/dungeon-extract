@@ -1,9 +1,9 @@
 ///@desc player_state_roll()
 function player_state_roll() {
 	//movement
-	hSpd = image_xscale * rollSpd;
+	hSpd = image_xscale * rollSpd[runType];
 
-	moveDistanceRemaining = max(0, moveDistanceRemaining - rollSpd);	//slowly decrease the distance remaining by amount = to roll spd until it reaches 0
+	moveDistanceRemaining = max(0, moveDistanceRemaining - rollSpd[runType]);	//slowly decrease the distance remaining by amount = to roll spd until it reaches 0
 	//create dustparticles
 	create_particle_dust(2);
 	//set animation sprite
@@ -29,7 +29,7 @@ function player_state_roll() {
 	}//end if
 	
 	//if not touchin ground then change state to fall
-	if(!onGround) {
+	if(vSpd > 0) {
 		state = player_state_fall;
 	}//end if
 	

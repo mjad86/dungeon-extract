@@ -21,21 +21,20 @@ function lever_state_using() {
 		}//end with	
 		#endregion
 		#region//ONEWAY MOVING PLATFORM
-		with(o_parent_moving_platform) {
+		with(o_oneway_move) {
 			if(slot == other.slot) {
 				//add sfx of activation here
 				previousState = state;							//set gate previous state
-				state = platform_state_decide_movement;					//change state
+				state = platform_state_decide_movement;			//change state
 				other.activated = true;							//flag to set lever useless until platform finish movement
 			}//end if
 		}//end with
 		#endregion
 		#region//SOLID MOVING PLATFORM
-		with(o_parent_moving_platform_solid) {
+		with(o_wall_move) {
 			if(slot == other.slot) {
-			//add sfx of activation here
 				previousState = state;							//set gate previous state
-				state = platform_state_decide_movement;					//change state
+				state = platform_state_decide_movement;			//change state
 				other.activated = true;							//flag to set lever useless until platform finish movement		
 			}//end if
 		}//end with

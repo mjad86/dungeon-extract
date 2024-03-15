@@ -1,14 +1,36 @@
 ///@desc initialize variables
 image_speed = 0;
 image_index = 0;
+//moving
+facing = 1;
+move = 0;
+moveSpd = 2;										//move speed
+hSpd = 0;
+vSpd = 0;
+crouching = false;
+//jumping
+grav = 0.5;
+gravMax = 10;
+jumpMax = 1;
+jumpCount = 0;
+jumpHoldTimer = 0;
+onGround = true;
+//hanged based
+coyoteHangFrames = 4;
+coyoteHangTimer = 0;
+//frame based
+coyoteJumpFrames = 4;
+coyoteJumpTimer = 0;
+//moving Platforms
+myMovingPlat = noone;
+earlyMovePlathSpd = false;
+downSlopeSemiSolid = noone;
+forgetSemiSolid = noone;
+movePlathSpd = 0;
+//states and misc
 activated = false;									//to determine if trap is activated
 timer = 0;											//timer to activate
 activateSlot = noone;								//trap slot behave to activate
-hSpd = 0;											//horizontal speed
-vSpd = 0;											//vertical speed
-moveSpd = 2;										//move speed
-grav = 0.25;										//gravity force
-onGround = place_meeting(x, y+1, o_parent_wall);	//player is touching the ground
 state = noone;
 hitByAttack = -1;	
 dmg = 25;											//default dmg the trap does
@@ -28,6 +50,7 @@ audioDropsAt = 100;			//distance that starts to drop off
 audio_falloff_set_model(audio_falloff_linear_distance);
 audio_emitter_position(emitter, x, y, 0);
 audio_emitter_falloff(emitter, audioDropsAt, audioMaxDistance, 1);
+
 
 
 

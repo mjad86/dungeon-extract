@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"check_for_oneway",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"check_for_oneway",
+  "parent":{
+    "name":"Locomotion",
+    "path":"folders/Scripts/Misc/Locomotion.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

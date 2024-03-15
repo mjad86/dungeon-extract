@@ -20,6 +20,7 @@
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"389d6109-14e0-4650-946d-7b87ba381f0c","blendMode":0,"displayName":"default","isLocked":false,"name":"389d6109-14e0-4650-946d-7b87ba381f0c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"8a06684d-398e-4786-a87e-cd4a18decf97","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"8a06684d-398e-4786-a87e-cd4a18decf97","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"s_tutorial_zone",
   "nineSlice":null,
