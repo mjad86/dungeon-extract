@@ -100,6 +100,32 @@ switch(page) {
 					}//end if	
 				break;
 				case MENU_ELEMENT_TYPE.INPUT:
+				if(!input_binding_scan_in_progress()) {
+					switch(menuOption[page]) {
+		                case 0: rebindingVerb = "attack"; break;
+		                case 1: rebindingVerb = "dodge";  break;
+		                case 2: rebindingVerb = "jump";   break;
+		                case 3: rebindingVerb = "block";  break;
+		                case 4: rebindingVerb = "action"; break;
+						case 5: rebindingVerb = "cancel"; break;
+		            }//end switch
+
+					//Ensure we don't scan for vk_escape as that is used for the "pause" verb (which cancels rebinding)
+					input_binding_scan_params_set([vk_escape, vk_enter, vk_left, vk_right, vk_up, vk_down, "A", "S", "D", "W", gp_padl, gp_padr, gp_padd, gp_padu, gp_axislh, gp_axislv, gp_start]);
+				
+				    //Start binding. We specify some code to execute when a new binding is inputted by the player
+			        //We use the basic input_binding_set_safe() function here but input_binding_set() can be used too for more complex situations
+			        input_binding_scan_start(function(_binding) {
+			            input_binding_set_safe(rebindingVerb, _binding);
+						inputting = !inputting;				//reset inputting after succesfull binding
+						audio_play_sound(sfx_gui_confirm, 10, false);
+			        }, function(_result) { 
+						input_binding_scan_abort();
+						inputting = !inputting;				//reset inputting after error or timeout
+					    MSG("Failed to set binding"); 		//On failure, show negative feedback
+						audio_play_sound(sfx_gui_cancel, 10, false);
+					});	
+				}//end if
 				break;
 			}//end switch
 		}//end if
@@ -134,7 +160,7 @@ if(global.action || global.jump) {
 			script_execute(_dsGrid[# 2, menuOption[page]]);
 		break;
 		case MENU_ELEMENT_TYPE.PAGE_TRANSFER:
-			lastPage = page;						//set previous page flag	
+			//lastPage = page;						//set previous page flag	
 			page = _dsGrid[# 2, menuOption[page]];	//switch page	
 			if(page > 0) {
 				//resets seleccion when hit back option in page transfer if not in main menu
@@ -153,7 +179,9 @@ if(global.action || global.jump) {
 		break;
 	}//end switch
 	//insert confirm SFX here
-	audio_play_sound(sfx_gui_confirm, 10, false);
+	if(!input_binding_scan_in_progress()) {
+		audio_play_sound(sfx_gui_confirm, 10, false);
+	}//end if
 }//end if
 
 if(global.cancel) {
@@ -178,8 +206,8 @@ if(global.cancel) {
 		}//end if
 		else {
 			menuOption[page] = 0;	//reset option
-			page = lastPage;		//set to previous page
-			lastPage -= 1;			//deduct previous page flag
+			page -= 1;				//set to previous page
+			//lastPage -= 1;		//deduct previous page flag
 		}//end else
 	}//end if
 	else { 
@@ -188,7 +216,10 @@ if(global.cancel) {
 		resume_game();
 	}//end else
 	//insert cancel SFX here
-	audio_play_sound(sfx_gui_cancel, 10, false);
+	if(!input_binding_scan_in_progress()) {
+		audio_play_sound(sfx_gui_cancel, 10, false);
+	}//end if
+	
 }//end if
 
 

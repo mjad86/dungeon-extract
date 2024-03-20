@@ -15,9 +15,8 @@ if(global.camMoving) {
 	y += _moveY * _freeCamSpd;
 	
 	//Restrict camera to room bounds and players x and y position
-	x = clamp(x, max(viewWHalf, xTo - viewWHalf), min(room_width - viewWHalf, xTo + viewWHalf));
-    y = clamp(y, max(viewHHalf, yTo - viewHHalf), min(room_height - viewHHalf, yTo + viewHHalf));
-	
+	x = clamp(x, max(viewWHalf, xTo - (viewWHalf)), min(room_width - viewWHalf, xTo + viewWHalf));
+    y = clamp(y, max(viewHHalf, yTo - (viewHHalf)), min(room_height - viewHHalf, yTo + viewHHalf));
 }//end if
 else {
 	//camera sets its position to the object is folowwing

@@ -29,6 +29,7 @@ dsMenuControls = create_menu_page(
 				 ["Pause",  MENU_ELEMENT_TYPE.INPUT, "pause"],
 				 ["Back",  MENU_ELEMENT_TYPE.PAGE_TRANSFER, MENU_PAGE.OPTIONS]);
 
+rebindingVerb = undefined	//variable to store the key to be bind
 page = 0;		//flag to jump between menu pages
 lastPage = 0;	//flag to track previous menu pages for cancel button
 menuPage = [dsMenuMain, dsMenuOptions, dsMenuControls];

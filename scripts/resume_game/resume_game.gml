@@ -5,14 +5,19 @@ function resume_game() {
 	instance_activate_all();					//reactivate all instances again
 	audio_resume_all();							//resume all audio
 	if(global.gamePaused) {
-		//makes sure we release the player from pause state
-		global.gamePaused = !global.gamePaused;
+		if(input_binding_scan_in_progress()) {
+			//we check if there is any binding in progress first. if there we abort the rebinding process
+			input_binding_scan_abort();
+	    }//end if
+	    else {
+			audio_play_sound(sfx_gui_pause, 10, false);		//pause sfx
+			global.gamePaused = !global.gamePaused;		//change variable value to oposite
+		}//end else
 	}//end if
 	with(o_gui) {
 		menuOption[page] = 0;	//reset option
-		lastPage = 0;			//reset flag
+		lastPage = 0;			//reset last page flag
+		page = 0;				//reset page flag
 		inputting = false;		//reset inputing flag
 	}//end with
-	//add sfx here
-	audio_play_sound(sfx_gui_pause, 10, false);
 }//end script
