@@ -177,7 +177,7 @@ if(page > 0) {
 				var _button;
 				_button = input_verb_get_icon(_curVal); 
 				//_button = sprite_get_name(input_verb_get_icon(_curVal)); 
-				var _iconX = 175;
+				var _iconX = 200;
 				var _iconY = 42 + (20 * _i);
 				
 				//we draw them by hand since icons are to big to arrange in menu

@@ -23,10 +23,10 @@ jumpHoldFrames[1] = 10;
 jSpd[1] = 4;
 //coyote time
 //hanged based
-coyoteHangFrames = 4;
+coyoteHangFrames = 5;
 coyoteHangTimer = 0;
 //frame based
-coyoteJumpFrames = 4;
+coyoteJumpFrames = 5;
 coyoteJumpTimer = 0;
 //rolling/dodging
 rollDistance = 100;									//rolling distance in pixels

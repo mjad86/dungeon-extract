@@ -83,6 +83,7 @@ function player_state_move() {
 				//4. if an NPC face the player
 				with(activate) {
 					//face the player
+					image_xscale = o_player.image_xscale * -1;
 				}//end if
 			}//end if
 		}//end else		

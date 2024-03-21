@@ -1,17 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"o_slab",
-  "eventList":[],
+  "%Name":"o_adventurer_npc",
+  "eventList":[
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"o_slab",
+  "name":"o_adventurer_npc",
   "overriddenProperties":[],
   "parent":{
-    "name":"Overworld",
-    "path":"folders/Objects/Overworld.yy",
+    "name":"Npc",
+    "path":"folders/Objects/Npc.yy",
   },
   "parentObjectId":{
-    "name":"o_parent_entity",
-    "path":"objects/o_parent_entity/o_parent_entity.yy",
+    "name":"o_parent_npc",
+    "path":"objects/o_parent_npc/o_parent_npc.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -31,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"s_slab",
-    "path":"sprites/s_slab/s_slab.yy",
+    "name":"s_adventurer_idle",
+    "path":"sprites/s_adventurer_idle/s_adventurer_idle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -15,10 +15,10 @@ function __input_config_verbs()
     return {
         keyboard_and_mouse:
         {
-            up:    [input_binding_key(vk_up), input_binding_key("W")],
-            down:  [input_binding_key(vk_down), input_binding_key("S")],
-            left:  [input_binding_key(vk_left), input_binding_key("A")],
-            right: [input_binding_key(vk_right), input_binding_key("D")],
+            up:    [input_binding_key("W")],
+            down:  [input_binding_key("S")],
+            left:  [input_binding_key("A")],
+            right: [input_binding_key("D")],
 			
 			action: input_binding_key("E"),   
 			attack: input_binding_key("K"),  
@@ -38,10 +38,15 @@ function __input_config_verbs()
         
         gamepad:
         {
-            up:    [input_binding_gamepad_axis(gp_axislv, true),  input_binding_gamepad_button(gp_padu)],
-            down:  [input_binding_gamepad_axis(gp_axislv, false), input_binding_gamepad_button(gp_padd)],
-            left:  [input_binding_gamepad_axis(gp_axislh, true),  input_binding_gamepad_button(gp_padl)],
-            right: [input_binding_gamepad_axis(gp_axislh, false), input_binding_gamepad_button(gp_padr)],
+            //up:    [input_binding_gamepad_axis(gp_axislv, true),  input_binding_gamepad_button(gp_padu)],
+            //down:  [input_binding_gamepad_axis(gp_axislv, false), input_binding_gamepad_button(gp_padd)],
+            //left:  [input_binding_gamepad_axis(gp_axislh, true),  input_binding_gamepad_button(gp_padl)],
+            //right: [input_binding_gamepad_axis(gp_axislh, false), input_binding_gamepad_button(gp_padr)],
+			
+			up:    [input_binding_gamepad_button(gp_padu)],
+            down:  [input_binding_gamepad_button(gp_padd)],
+            left:  [input_binding_gamepad_button(gp_padl)],
+            right: [input_binding_gamepad_button(gp_padr)],
             
             jump:  input_binding_gamepad_button(gp_face1),
             cancel:  input_binding_gamepad_button(gp_face2),

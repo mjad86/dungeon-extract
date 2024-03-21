@@ -13,6 +13,7 @@ else {
 }//end else
 
 if(array_length(buttonIndex) > 1) {
+	/*
 	switch(global.controller) {
 		case CONTROLLER.MOUSE_KEYBOARD:
 			sprite_index = buttonIndex[0];
@@ -24,6 +25,7 @@ if(array_length(buttonIndex) > 1) {
 			sprite_index = buttonIndex[2];
 		break;
 	}//end switch
+	*/
 }//end if
 else {
 	sprite_index = input_verb_get_icon(buttonIndex[0]);

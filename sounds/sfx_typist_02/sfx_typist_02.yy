@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sfx_typist_02",
+  "audioGroupId":{
+    "name":"SFX",
+    "path":"audiogroups/SFX",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.248435,
+  "name":"sfx_typist_02",
+  "parent":{
+    "name":"Gui",
+    "path":"folders/Sounds/SFX/Gui.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sfx_typist_02.wav",
+  "type":0,
+  "volume":1.0,
+}

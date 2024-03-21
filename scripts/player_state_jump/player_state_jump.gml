@@ -17,6 +17,10 @@ function player_state_jump() {
 	if(vSpd > 0) {
 		state = player_state_fall;
 	}//end if
+	
+	if(onGround) {
+		state = player_state_idle;
+	}//end if
 		
 	//MSG("JUMPING");
 }//end script

@@ -20,13 +20,21 @@ dsMenuOptions = create_menu_page(
 				["Back",  MENU_ELEMENT_TYPE.PAGE_TRANSFER, MENU_PAGE.MAIN]);
 				
 dsMenuControls = create_menu_page(
+				 ["Move left",  MENU_ELEMENT_TYPE.INPUT, "left"],
+				 ["Move right",  MENU_ELEMENT_TYPE.INPUT, "right"],
+				 ["Climb down / Crouch", MENU_ELEMENT_TYPE.INPUT, "down"],
+				 ["Climb up",  MENU_ELEMENT_TYPE.INPUT, "up"],
 			     ["Attack",  MENU_ELEMENT_TYPE.INPUT, "attack"],
 				 ["Dodge",  MENU_ELEMENT_TYPE.INPUT, "dodge"],
 				 ["Jump", MENU_ELEMENT_TYPE.INPUT, "jump"],
 				 ["Block",  MENU_ELEMENT_TYPE.INPUT, "block"],
 				 ["Interact",  MENU_ELEMENT_TYPE.INPUT, "action"],
 				 ["Cancel",  MENU_ELEMENT_TYPE.INPUT, "cancel"],
-				 ["Pause",  MENU_ELEMENT_TYPE.INPUT, "pause"],
+				 ["Move cam left",  MENU_ELEMENT_TYPE.INPUT, "cam_left"],
+				 ["Move cam right",  MENU_ELEMENT_TYPE.INPUT, "cam_right"],
+				 ["Move cam down", MENU_ELEMENT_TYPE.INPUT, "cam_down"],
+				 ["Move cam up",  MENU_ELEMENT_TYPE.INPUT, "cam_up"],
+				 //["Pause",  MENU_ELEMENT_TYPE.INPUT, "pause"],
 				 ["Back",  MENU_ELEMENT_TYPE.PAGE_TRANSFER, MENU_PAGE.OPTIONS]);
 
 rebindingVerb = undefined	//variable to store the key to be bind

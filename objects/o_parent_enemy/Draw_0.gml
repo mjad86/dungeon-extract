@@ -10,10 +10,23 @@ if(hp < maxHp) {
 	//draw bg
 	draw_sprite(s_enemy_healthbar_bg, 0, _x, _y);
 	
+	var _hp = currentHp;
+	
+	for(var _i = 1; _i <= _hp; _i++) {
+		draw_sprite(s_enemy_healthbar, 0, _x+_i, _y);
+	}//end for
+	/*
 	//draw health
 	for(var _i = 1; _i <= _displayHp; _i++) {
 		draw_sprite(s_enemy_healthbar, 0, _x+_i, _y);
 	}//end for	
+		*/
+	if(hp < currentHp && hp > 0) {
+		for(var _i = 1; _i <= _hp - hp; _i++) {
+			//health yellow dmg indicator
+			draw_sprite(s_enemy_healthbar_dmg, 0, _x+hp+_i, _y);
+		}//end for
+	}//end if
 	
 	//draw healthbar frame	
 	draw_sprite(s_enemy_healthbar_frame, 0, _x, _y);

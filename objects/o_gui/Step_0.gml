@@ -102,16 +102,24 @@ switch(page) {
 				case MENU_ELEMENT_TYPE.INPUT:
 				if(!input_binding_scan_in_progress()) {
 					switch(menuOption[page]) {
-		                case 0: rebindingVerb = "attack"; break;
-		                case 1: rebindingVerb = "dodge";  break;
-		                case 2: rebindingVerb = "jump";   break;
-		                case 3: rebindingVerb = "block";  break;
-		                case 4: rebindingVerb = "action"; break;
-						case 5: rebindingVerb = "cancel"; break;
+						case 0: rebindingVerb = "left";		  break;
+		                case 1: rebindingVerb = "right";	  break;
+		                case 2: rebindingVerb = "down";		  break;
+		                case 3: rebindingVerb = "up";		  break;
+		                case 4: rebindingVerb = "attack";	  break;
+		                case 5: rebindingVerb = "dodge";	  break;
+		                case 6: rebindingVerb = "jump";		  break;
+		                case 7: rebindingVerb = "block";	  break;
+		                case 8: rebindingVerb = "action";	  break;
+						case 9: rebindingVerb = "cancel";	  break;
+						case 10: rebindingVerb = "cam_left";  break;
+		                case 11: rebindingVerb = "cam_right"; break;
+		                case 12: rebindingVerb = "cam_down";  break;
+		                case 13: rebindingVerb = "cam_up";    break;
 		            }//end switch
 
 					//Ensure we don't scan for vk_escape as that is used for the "pause" verb (which cancels rebinding)
-					input_binding_scan_params_set([vk_escape, vk_enter, vk_left, vk_right, vk_up, vk_down, "A", "S", "D", "W", gp_padl, gp_padr, gp_padd, gp_padu, gp_axislh, gp_axislv, gp_start]);
+					input_binding_scan_params_set([vk_escape, vk_enter, gp_start]);
 				
 				    //Start binding. We specify some code to execute when a new binding is inputted by the player
 			        //We use the basic input_binding_set_safe() function here but input_binding_set() can be used too for more complex situations

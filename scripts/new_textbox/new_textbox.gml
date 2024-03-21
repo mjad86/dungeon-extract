@@ -45,9 +45,9 @@ function new_textbox(){
 	}//end with
 	
 	with(o_player) {
-		if(state != player_state_lock) {
+		if(state != player_state_interacting) {
 			previousState = state;
-			state = player_state_lock;
+			state = player_state_interacting;
 		}//end if
 	}//end with
 }//end script
