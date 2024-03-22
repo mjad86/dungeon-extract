@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"on_wall",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"on_wall",
+  "parent":{
+    "name":"Locomotion",
+    "path":"folders/Scripts/Misc/Locomotion.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

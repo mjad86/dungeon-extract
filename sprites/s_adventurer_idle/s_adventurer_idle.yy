@@ -30,8 +30,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"Npc",
-    "path":"folders/Sprites/Npc.yy",
+    "name":"Humanoid",
+    "path":"folders/Sprites/Npc/Humanoid.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

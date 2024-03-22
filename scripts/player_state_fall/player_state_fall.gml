@@ -9,9 +9,12 @@ function player_state_fall() {
 	set_animation_sprite(playerFall, 0, 1);
 	
 	//clamp the value so it does not grow infinetly
+	vSpd = clamp(vSpd, grav, gravMax);
+	/*
 	if(vSpd > gravMax) {
 		vSpd = gravMax;
 	}//end if
+	*/
 	vSpdOnImpact += grav;	//flag for determining if impact is from high altitude
 	
 	/*
@@ -56,6 +59,15 @@ function player_state_fall() {
 			state = player_state_idle;						//change state
 		}//end else
 	}//end if
-			
+	
+	onWall = on_wall();
+	var _instWall = instance_place(x+onWall, y, o_parent_wall);
+	
+	if(onWall != 0) && (_instWall != noone && bbox_top >= _instWall.bbox_top) {
+		grav = wallSlideGrav;
+		image_xscale = onWall;
+		state = player_state_wall_slide;
+	}//end if
+	
 	//MSG("FALLING");
 }//end script

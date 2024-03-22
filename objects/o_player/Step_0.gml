@@ -1,6 +1,7 @@
 ///@desc Player state machine
 if(state == player_state_idle || state == player_state_jump || 
-   state == player_state_fall || state == player_state_move) {
+   state == player_state_fall || state == player_state_move ||
+   state == player_state_wall_slide) {
 	 //NOTE: roll handles its movement in its own state
 	run = 0; //add to controllers as a global.run key and set it there if you wish to apply a diference between walk and run spd
 	move = (global.right - global.left);	//input calculation/Direction

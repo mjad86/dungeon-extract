@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"rat_state_move",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"rat_state_move",
+  "parent":{
+    "name":"Animal",
+    "path":"folders/Scripts/States/Npc/Animal.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

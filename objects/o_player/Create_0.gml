@@ -10,11 +10,14 @@ vSpdOnImpact = 0;				//flag for determining if player hits ground from high dist
 crouching = false;
 //jumping
 grav = 0.5;
+wallSlideGrav = 0.1;
 gravMax = 10;
+wallSlideGravMax = 5;
 jumpMax = 1;
 jumpCount = 0;
 jumpHoldTimer = 0;
 onGround = true;
+onWall = 0;
 //first jump
 jumpHoldFrames[0] = 12;
 jSpd[0] = 5;
@@ -51,6 +54,7 @@ footstep = noone									//footstep SFX flag, obtained from the parent object we
 activateBar = noone									//flag for activating bar
 inmune = 0											//frames for the player to be inmune
 actionBuffer = 0;									//action buffer to avoid 2 actions atst when 2 buttons are pressed
+wallSlideDust = 0;
 
 //Sprites
 playerIdle = s_figther_idle;
@@ -58,8 +62,6 @@ playerMove = s_figther_walk;
 playerJump = s_figther_jump;
 playerFall = s_figther_fall;
 playerRoll = s_figther_roll;
-playerMask = s_figther_mask;
-playerRollMask = s_figther_roll_mask;
 attack1 = s_figther_attack1
 attack2 = s_figther_attack2;
 attack3 = s_figther_attack3;
@@ -69,6 +71,10 @@ playerHurt = s_figther_hurt;
 playerDead = s_figther_dead;
 playerDeadBlood = s_figther_dead_with_blood;
 playerCrouch = s_figther_crouch;
+playerWallSlide = s_figther_wall_slide;
+//masks
+playerMask = s_figther_mask;
+playerRollMask = s_figther_roll_mask;
 
 //sfx
 swordSwing1 = sfx_sword_swing_1;

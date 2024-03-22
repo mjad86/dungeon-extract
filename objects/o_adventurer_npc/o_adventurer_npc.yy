@@ -8,8 +8,8 @@
   "name":"o_adventurer_npc",
   "overriddenProperties":[],
   "parent":{
-    "name":"Npc",
-    "path":"folders/Objects/Npc.yy",
+    "name":"Humanoid",
+    "path":"folders/Objects/Npc/Humanoid.yy",
   },
   "parentObjectId":{
     "name":"o_parent_npc",

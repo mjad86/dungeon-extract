@@ -1,5 +1,5 @@
 if(entityShadow) {
-	draw_sprite(shadow, 0, x, y);
+	draw_sprite_ext(shadow, 0, x, y, image_xscale, image_yscale, 0, c_white, 1);
 }//end if
 if(flash != 0) {
 	shader_set(sh_white_flash);

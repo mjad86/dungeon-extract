@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sfx_rat_01",
+  "audioGroupId":{
+    "name":"SFX",
+    "path":"audiogroups/SFX",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":2.561678,
+  "name":"sfx_rat_01",
+  "parent":{
+    "name":"Animal",
+    "path":"folders/Sounds/SFX/Npc/Animal.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sfx_rat_01.wav",
+  "type":0,
+  "volume":1.0,
+}
