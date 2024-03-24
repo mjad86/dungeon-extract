@@ -453,8 +453,8 @@
   "swatchColours":null,
   "swfPrecision":2.525,
   "textureGroupId":{
-    "name":"Default",
-    "path":"texturegroups/Default",
+    "name":"Dialogue",
+    "path":"texturegroups/Dialogue",
   },
   "type":0,
   "VTile":false,

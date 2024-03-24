@@ -42,6 +42,7 @@
     {"$GMObjectProperty":"","%Name":"hp","filters":[],"listItems":[],"multiselect":false,"name":"hp","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"maxHp","varType":0,},
     {"$GMObjectProperty":"","%Name":"oneRandomSfx","filters":[],"listItems":[],"multiselect":false,"name":"oneRandomSfx","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":3,},
     {"$GMObjectProperty":"","%Name":"hurtSfx","filters":[],"listItems":[],"multiselect":false,"name":"hurtSfx","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"[sfx_crate_impact, sfx_wood_hit, sfx_wood_crackling]","varType":0,},
+    {"$GMObjectProperty":"","%Name":"propShadow","filters":[],"listItems":[],"multiselect":false,"name":"propShadow","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"True","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

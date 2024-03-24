@@ -1,11 +1,6 @@
 audio_emitter_position(emitter, x, y, 0); //update emitter position
 
-if(!onGround) {
-	vSpd += grav;												//Apply gravity force
-}//end if
-else {
-	vSpd = 0;
-}//end else
+vSpd += grav;												//Apply gravity force
 
 collision();												//Apply movement
 

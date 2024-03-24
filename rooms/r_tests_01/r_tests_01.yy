@@ -80,6 +80,8 @@
     {"name":"inst_112BD684","path":"rooms/r_tests_01/r_tests_01.yy",},
     {"name":"inst_315BDEBB","path":"rooms/r_tests_01/r_tests_01.yy",},
     {"name":"inst_18C9E071","path":"rooms/r_tests_01/r_tests_01.yy",},
+    {"name":"inst_42BF2D0F","path":"rooms/r_tests_01/r_tests_01.yy",},
+    {"name":"inst_72210421","path":"rooms/r_tests_01/r_tests_01.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -225,6 +227,8 @@
         {"$GMRInstance":"","%Name":"inst_112BD684","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_112BD684","objectId":{"name":"o_rat","path":"objects/o_rat/o_rat.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":256.0,"y":323.0,},
         {"$GMRInstance":"","%Name":"inst_315BDEBB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_315BDEBB","objectId":{"name":"o_rat","path":"objects/o_rat/o_rat.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":544.0,"y":707.0,},
         {"$GMRInstance":"","%Name":"inst_18C9E071","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_18C9E071","objectId":{"name":"o_rat","path":"objects/o_rat/o_rat.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1024.0,"y":293.0,},
+        {"$GMRInstance":"","%Name":"inst_42BF2D0F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_42BF2D0F","objectId":{"name":"o_crate_flat","path":"objects/o_crate_flat/o_crate_flat.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":96.0,"y":320.0,},
+        {"$GMRInstance":"","%Name":"inst_72210421","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_72210421","objectId":{"name":"o_crate_large","path":"objects/o_crate_large/o_crate_large.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":96.0,"y":288.0,},
       ],"layers":[],"name":"Enemy","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Interactables","depth":650,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":false,"instances":[
         {"$GMRInstance":"","%Name":"inst_40C9E2C0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_40C9E2C0","objectId":{"name":"o_adventurer_npc","path":"objects/o_adventurer_npc/o_adventurer_npc.yy",},"properties":[

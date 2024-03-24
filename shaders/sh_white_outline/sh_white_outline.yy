@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"sh_white_outline",
+  "name":"sh_white_outline",
+  "parent":{
+    "name":"Interactable",
+    "path":"folders/Shaders/Interactable.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

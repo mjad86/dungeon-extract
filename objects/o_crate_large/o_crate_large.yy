@@ -10,6 +10,7 @@
     {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_parent_entity","path":"objects/o_parent_entity/o_parent_entity.yy",},"propertyId":{"name":"entityShadow","path":"objects/o_parent_entity/o_parent_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
     {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_parent_entity","path":"objects/o_parent_entity/o_parent_entity.yy",},"propertyId":{"name":"entityHitScript","path":"objects/o_parent_entity/o_parent_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"hurt_prop",},
     {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_parent_entity","path":"objects/o_parent_entity/o_parent_entity.yy",},"propertyId":{"name":"hurtSfx","path":"objects/o_parent_entity/o_parent_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"[sfx_crate_impact, sfx_wood_hit, sfx_wood_crackling]",},
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_parent_prop","path":"objects/o_parent_prop/o_parent_prop.yy",},"propertyId":{"name":"propShadow","path":"objects/o_parent_prop/o_parent_prop.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
   ],
   "parent":{
     "name":"Props",

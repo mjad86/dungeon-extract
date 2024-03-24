@@ -1,4 +1,6 @@
-draw_sprite(shadow, 0, x, y);
+if(propShadow) {
+	draw_sprite(shadow, 0, x, y);
+}//end if
 
 if(flash != 0) {
 	shader_set(sh_white_flash);

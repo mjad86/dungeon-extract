@@ -3,6 +3,12 @@ key = generate_unique_key();	//unique key
 activated = false;
 image_speed = 0;
 var _saveData = ds_map_find_value(o_meta.saveData, key);
+interact = false;
+
+uniformHandle = shader_get_uniform(sh_white_outline, "texturePixel");
+alphaValue = shader_get_uniform(sh_white_outline, "alphaValue");
+alpha = 0.0;
+highlight = true;
 
 if(!is_undefined(_saveData) && _saveData == true) {
 	//if data exists and its true then lever is used

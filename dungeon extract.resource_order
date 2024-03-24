@@ -113,6 +113,7 @@
     {"name":"Shaders","order":6,"path":"folders/Shaders.yy",},
     {"name":"Blur","order":5,"path":"folders/Shaders/Blur.yy",},
     {"name":"Dmg shaders","order":6,"path":"folders/Shaders/Dmg shaders.yy",},
+    {"name":"Interactable","order":8,"path":"folders/Shaders/Interactable.yy",},
     {"name":"Lights","order":7,"path":"folders/Shaders/Lights.yy",},
     {"name":"Secrets shader","order":1,"path":"folders/Shaders/Secrets shader.yy",},
     {"name":"Sounds","order":3,"path":"folders/Sounds.yy",},
