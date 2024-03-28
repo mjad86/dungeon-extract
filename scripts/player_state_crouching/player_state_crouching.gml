@@ -12,6 +12,9 @@ function player_state_crouching() {
 		image_speed = 0;
 	}//end if
 	
+	//manually fall through a oneway platform
+	go_through_oneway();
+	
 	//dodge
 	if(global.dodge) {
 		previousState = state;

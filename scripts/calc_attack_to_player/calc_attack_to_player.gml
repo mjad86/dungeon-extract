@@ -13,7 +13,6 @@ function calc_attack_to_player() {
 				//if the id of the instance is not in the list we add it
 				ds_list_add(hitByAttack, _hitId);
 				with(_hitId) {
-					screen_shake(1, 5);
 					//action against attacked instance
 					hurt_player(id,_dmg, other.id); //dmg player
 				}//end with

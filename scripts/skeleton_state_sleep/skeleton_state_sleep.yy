@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"skeleton_state_sleep",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"skeleton_state_sleep",
+  "parent":{
+    "name":"Skeleton",
+    "path":"folders/Scripts/States/Skeleton.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -40,6 +40,7 @@ uFlash = shader_get_uniform(sh_white_flash, "flash");
 shadow = noone;
 state = prop_state_idle;
 currentHp = hp;
+targetList = ds_list_create();
 
 //create audio emiter
 emitter = audio_emitter_create();

@@ -6,6 +6,9 @@ function player_state_crouch() {
 	hSpd = 0;
 	move = (global.right - global.left); //just to set the facing
 	
+	//manually fall through a oneway platform
+	go_through_oneway();
+	
 	//if not touchin ground then change state to fall
 	if(vSpd > 0) {
 		state = player_state_fall;

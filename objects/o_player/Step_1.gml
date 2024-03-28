@@ -11,6 +11,11 @@ if(actionBuffer > 0) {
 	actionBuffer = max(0, actionBuffer - 1);			
 }//end if
 
+if(deadScreen > 0) {
+	//resets deadScreen frames back to 0
+	deadScreen = max(0, deadScreen - 1);			
+}//end if
+
 //reset jumping variables
 if(onGround) {
 	jumpCount = 0;

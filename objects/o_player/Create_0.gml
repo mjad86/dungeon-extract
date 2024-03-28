@@ -55,7 +55,7 @@ activateBar = noone									//flag for activating bar
 inmune = 0											//frames for the player to be inmune
 actionBuffer = 0;									//action buffer to avoid 2 actions atst when 2 buttons are pressed
 wallSlideDust = 0;
-
+deadScreen = 0;
 //Sprites
 playerIdle = s_figther_idle;
 playerMove = s_figther_walk;

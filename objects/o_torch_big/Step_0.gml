@@ -10,6 +10,9 @@ if(audio_group_is_loaded(SFX) && playSfx) {
 if(place_meeting(x, y, o_player)) {
 	depth = o_player.depth+1; //sets light sprite bellow player
 }//end if
+else if(instance_exists(o_deadscreen)) {
+	depth = o_deadscreen.depth+1;
+}//end else if
 else {
 	depth = myDepth; //original depth
 }//end else
