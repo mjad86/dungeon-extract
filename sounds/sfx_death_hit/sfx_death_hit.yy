@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sfx_death_hit",
+  "audioGroupId":{
+    "name":"SFX",
+    "path":"audiogroups/SFX",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":1.187506,
+  "name":"sfx_death_hit",
+  "parent":{
+    "name":"Player",
+    "path":"folders/Sounds/SFX/Player.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sfx_death_hit.wav",
+  "type":0,
+  "volume":1.0,
+}

@@ -7,6 +7,18 @@ function hurt_dummy() {
 		if(state != dummy_state_reset) {
 			hp -= _dmg			//reduce hp by dmg amount
 			entity_hit_solid()	//trigger flash
+			if(!hurt) {
+				//create healthbar
+				healthBar = instance_create_layer(x, y, "Misc", o_enemy_healthbar); //create health bar
+				hurt = true;
+			}//end if
+			with(healthBar) {
+				maxHp = other.maxHp;
+				hp = other.hp;
+				ownerId = other.id;
+				healthBarHeight = other.healthBarHeight;
+				healthBarXPos = other.healthBarXPos;
+			}//end with
 			//hurt or die?
 			if(hp <= 0) {
 				//enemy is dead

@@ -9,9 +9,10 @@ function hurt_player() {
 			//hurt or die?
 			if(hp <= 0) {
 				//player is dead
-				deadScreen = 60; //5 seconds
+				deadScreen = 60; //1 second
 				instance_create_layer(camera_get_view_x(global.cam), camera_get_view_y(global.cam), "Misc", o_deadscreen); //create deadscreen
 				state = player_state_dead;
+				audio_play_sound(sfx_death_hit, 10, false);
 			}//end if
 			else {
 				screen_shake(1, 5);

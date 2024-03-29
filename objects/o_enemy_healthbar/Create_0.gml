@@ -1,0 +1,9 @@
+maxHp = 0;
+hp = 0;
+currentHp = hp;
+ownerId = noone;
+healthBarHeight = 0;
+healthBarXPos = 0;
+displayTimerMax = 600;	//10 seconds in frames
+displayTimer = displayTimerMax;
+alpha = 0;

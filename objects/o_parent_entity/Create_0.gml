@@ -34,6 +34,8 @@ forgetSemiSolid = noone;
 movePlathSpd = 0;
 crushTimer = 0;
 crushDeathTime = 3;
+hurt = false;
+healthBar = noone;
 //vfx and misc
 flash = 0;
 uFlash = shader_get_uniform(sh_white_flash, "flash");
