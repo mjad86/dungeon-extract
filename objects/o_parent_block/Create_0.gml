@@ -1,0 +1,2 @@
+ownerId = noone;
+visible = true;

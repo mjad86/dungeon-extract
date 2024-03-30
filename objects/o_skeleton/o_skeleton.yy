@@ -17,8 +17,8 @@
     {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_parent_entity","path":"objects/o_parent_entity/o_parent_entity.yy",},"propertyId":{"name":"healthBarXPos","path":"objects/o_parent_entity/o_parent_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"17",},
   ],
   "parent":{
-    "name":"Enemy",
-    "path":"folders/Objects/Enemy.yy",
+    "name":"Skeleton",
+    "path":"folders/Objects/Enemy/Skeleton.yy",
   },
   "parentObjectId":{
     "name":"o_parent_enemy",

@@ -12,10 +12,16 @@ skeletonSleep = s_skeleton_sleep;
 skeletonDeath = s_skeleton_death;
 skeletonMask = s_skeleton_mask;
 skeletonMove = s_skeleton_move;
+skeletonBlockIdle = s_skeleton_block_idle;
+skeletonBlock = s_skeleton_block;
 noMask = s_skeleton_mask_sleep;
 
-mask_index = noMask;
+var _block = instance_create_layer(x, y, "Misc", o_skeleton_block);
+with(_block) {
+	ownerId = other.id;
+}//end with
+mask_index = skeletonMask;
 
-state = skeleton_state_sleep;
+state = skeleton_state_block_idle;
 
 

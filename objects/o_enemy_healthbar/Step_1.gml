@@ -17,7 +17,3 @@ else {
 		alpha = max(0, alpha-0.1);	//deduct alpha
 	}//end if
 }//end else
-
-if(ownerId.hp <= 0) {
-	instance_destroy();	//destroy the instance if enemy is dead
-}//end if
