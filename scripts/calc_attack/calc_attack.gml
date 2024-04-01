@@ -4,7 +4,9 @@ function calc_attack() {
 	mask_index = argument0;
 	var _dmg = argument1;
 	var _hitByAttackNow = ds_list_create();
-	var _hits = instance_place_list(x, y, [o_parent_entity, o_parent_prop, o_parent_gate], _hitByAttackNow, true);
+	var _hits = !blocked ? instance_place_list(x, y, [o_parent_entity, o_parent_prop, o_parent_gate], _hitByAttackNow, true) :  instance_place_list(x, y, [o_parent_block], _hitByAttackNow, true);
+
+	//if target is not blocking
 	if(_hits > 0) {
 		for(var _i=0; _i < _hits; _i++) {
 			//if this instance has not yet been hit by this attack, hit it
@@ -12,9 +14,11 @@ function calc_attack() {
 			if(ds_list_find_index(hitByAttack, _hitId) == -1) {
 				//if the id of the instance is not in the list we add it
 				ds_list_add(hitByAttack, _hitId);
+				//attack not blocked
 				with(_hitId) {
 					//action against attacked instance
 					if(object_is_ancestor(object_index, o_parent_prop)) {
+						//dmg prop
 						hurt_prop(id,_dmg, other.id);
 					}//end if
 					else if(object_is_ancestor(object_index, o_parent_enemy)) {

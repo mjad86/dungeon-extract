@@ -1,6 +1,8 @@
 ///@desc skeleton_state_sleep() 
 function skeleton_state_sleep() {
 	
+	move = 0;
+	
 	if(sprite_index != skeletonSleep) {
 		sprite_index = skeletonSleep;
 		image_index = 0;

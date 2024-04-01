@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Skeleton",
-    "path":"folders/Sprites/Enemies/Skeleton.yy",
+    "name":"Masks",
+    "path":"folders/Sprites/Enemies/Skeleton/Masks.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -35,6 +35,7 @@ unstuck_player();
 #endregion
 
 collision();
+blocked = detect_block();
 
 //controls facing of the player
 if(move != 0) {
@@ -93,14 +94,7 @@ var _zone = instance_place(x, y, [o_tutorial_zone, o_parent_lever, o_parent_npc]
 	if(_zone != noone) {
 		var _inst = noone;
 		if(!instance_exists(o_button_tutorial)) {
-			var _height = 0;
-			if(object_get_name(_zone.object_index) == "o_adventurer_npc") {
-				_height = sprite_height;
-			}//end if
-			else {
-				_height = sprite_height * 0.8;
-			}//end else
-			
+			var _height = object_get_name(_zone.object_index) == "o_adventurer_npc" ? sprite_height : sprite_height * 0.8;
 			_inst = instance_create_layer(_zone.x, _zone.y-(_height), "Misc", o_button_tutorial);
 		}//end if
 		if(_inst != noone) {

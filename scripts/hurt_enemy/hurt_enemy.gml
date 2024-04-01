@@ -5,8 +5,8 @@ function hurt_enemy() {
 	var _dmgDealer = argument2;	
 	with(_enemy) {
 		//if(state != dummy_state_reset) {
-			hp -= _dmg			//reduce hp by dmg amount
 			entity_hit_solid()	//trigger flash
+			hp -= _dmg			//reduce hp by dmg amount
 			//hurt or die?
 			if(!hurt) {
 				//create healthbar
@@ -22,12 +22,14 @@ function hurt_enemy() {
 			}//end with
 			if(hp <= 0) {
 				//enemy is dead
-				//state = dummy_state_reset;
+				state = skeleton_state_dead;
 			}//end if
 			else {
 				//enemy still alive
-				//state = dummy_state_strike;	
-				//spr = choose(dummyHit3, dummyHit2, dummyHit1);
+				if(_dmgDealer.staggerEnemy) {
+					state = skeleton_state_hurt;	
+					_dmgDealer.staggerEnemy = false;
+				}//end if
 			}//end else
 		//}//end if			
 	}//end with	

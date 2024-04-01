@@ -3,6 +3,11 @@ function attack_slash1() {
 	//regular movement
 	hSpd = 0;
 	
+	if(!staggerEnemy) {
+		//reset stagger flag
+		staggerEnemy = false;
+	}//end if
+	
 	if(mask_index != playerMask) {
 		mask_index = playerMask;	//set player mask to regular mask
 	}//end if

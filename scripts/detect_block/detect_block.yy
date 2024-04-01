@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"detect_block",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"detect_block",
+  "parent":{
+    "name":"Locomotion",
+    "path":"folders/Scripts/Misc/Locomotion.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

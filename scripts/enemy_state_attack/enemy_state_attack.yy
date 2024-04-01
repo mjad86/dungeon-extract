@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"enemy_state_attack",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"enemy_state_attack",
+  "parent":{
+    "name":"Attacks",
+    "path":"folders/Scripts/States/Attacks.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

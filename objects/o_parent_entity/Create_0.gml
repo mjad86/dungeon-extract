@@ -5,14 +5,24 @@ moveSpd[0] = 3;
 moveSpd[1] = 5;
 hSpd = 0;
 vSpd = 0;
+xTo = 0;
+yTo = 0;
 crouching = false;
+//state
+state = prop_state_idle;
+stateAttack = noone							//state of dynamic attacks
+hitByAttack = -1;							//stores a ds_list for entity id's we hit
+onGround = true;
+blocked = false;
+attackRangeX = 0;
+attackRangeY = 0;
+los = false;
 //jumping
 grav = 0.5;
 gravMax = 10;
 jumpMax = 1;
 jumpCount = 0;
 jumpHoldTimer = 0;
-onGround = true;
 //first jump
 jumpHoldFrames[0] = 12;
 jSpd[0] = 6;
@@ -40,9 +50,7 @@ healthBar = noone;
 flash = 0;
 uFlash = shader_get_uniform(sh_white_flash, "flash");
 shadow = noone;
-state = prop_state_idle;
 currentHp = hp;
-targetList = ds_list_create();
 
 //create audio emiter
 emitter = audio_emitter_create();

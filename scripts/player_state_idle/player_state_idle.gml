@@ -29,7 +29,7 @@ function player_state_idle() {
 	
 	//set sprite
 	set_animation_sprite(playerIdle, 0, 1);
-	
+		
 	//change state to move
 	if(move != 0) {
 		state = player_state_move;
@@ -99,7 +99,7 @@ function player_state_idle() {
 	}//end if
 	
 	//dodge
-	if(global.dodge && actionBuffer <= 0) {
+	if(global.cancel && actionBuffer <= 0) {
 		actionBuffer = ACTION_BUFFER;			//set the value for the action buffer
 		state = player_state_roll;				//change state to roll
 		mask_index = playerRollMask;			//set mask;

@@ -2,7 +2,8 @@
 function player_state_block_idle(){
 	
 	if(!instance_exists(o_player_block)) {
-		instance_create_layer(x, y, "Misc", o_player_block);
+		var _x = image_xscale > 0 ? bbox_right : bbox_left;
+		instance_create_layer(_x, bbox_top, "Misc", o_player_block);
 	}//end if
 	
 	if(sprite_index != playerBlockIdle) {

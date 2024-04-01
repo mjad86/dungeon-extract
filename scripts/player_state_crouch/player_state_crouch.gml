@@ -30,7 +30,7 @@ function player_state_crouch() {
 	}//end if
 		
 	//dodge
-	if(global.dodge) {
+	if(global.cancel) {
 		previousState = state;
 		state = player_state_roll;				//change state to roll
 		mask_index = playerRollMask;			//set mask;

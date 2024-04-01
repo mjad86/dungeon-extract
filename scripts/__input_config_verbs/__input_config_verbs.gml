@@ -22,7 +22,7 @@ function __input_config_verbs()
 			
 			action: input_binding_key("E"),   
 			attack: input_binding_key("K"),  
-			dodge: input_binding_key(vk_lshift), 
+			dodge: input_binding_key("Q"), 
 			block: input_binding_key("J"), 
             jump:  input_binding_key(vk_space),
             cancel:  input_binding_key("Q"),
@@ -53,7 +53,7 @@ function __input_config_verbs()
 			attack:  input_binding_gamepad_button(gp_face3),
             action:  input_binding_gamepad_button(gp_face4),
 			block:  input_binding_gamepad_button(gp_shoulderr),
-			dodge:  input_binding_gamepad_button(gp_shoulderrb),
+			dodge:  input_binding_gamepad_button(gp_face2),
             
             cam_up:    input_binding_gamepad_axis(gp_axisrv, true),
             cam_down:  input_binding_gamepad_axis(gp_axisrv, false),

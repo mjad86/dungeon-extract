@@ -28,3 +28,5 @@ if(shader_current() != -1) {
 }//end if
 
 //draw_sprite_ext(mask_index,0,x,y,1,1,0,c_white,1);	//drawing mask, for debug purposes
+//draw_line_color(x, y-attackRangeY, x+attackRangeX*(sign(image_xscale)), y-attackRangeY, c_teal, c_teal);
+//draw_text(x, y - sprite_height, "blocks: " + string(blocked));
