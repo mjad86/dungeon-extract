@@ -73,21 +73,7 @@ if(state != player_state_dead) {
 }//end if
 #endregion
 	
-#region//OBTAING FOOTSTEP SFX
-if(onGround) {
-	var _floor = instance_place(x, y+1, [o_parent_wall, o_oneway_platform]);
-	if(_floor != noone) {	
-		if(array_length(_floor.footstepSFX) > 1) {
-			//choose random sfx to play if its greater than 1 sfx
-			var _sfx = _floor.footstepSFX[irandom_range(0, array_length(_floor.footstepSFX)-1)];
-			footstep = _sfx;
-		}//end if
-		else {
-			footstep = _floor.footstepSFX[0];						//obtain the footstep sfx
-		}//end else
-	}//end if
-}//end if
-#endregion
+audio_get_footstep(); //gets footstep sfx
 
 #region//TUTORIAL ZONES ACTIVATION
 var _zone = instance_place(x, y, [o_tutorial_zone, o_parent_lever, o_parent_npc]);

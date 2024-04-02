@@ -8,6 +8,7 @@ function skeleton_state_idle() {
 		image_index = 0;
 		image_speed = 1;
 		mask_index = skeletonMask;
+		alerted = false;
 	}//end if
 	
 	timer++	//increase the timer flag
@@ -22,7 +23,7 @@ function skeleton_state_idle() {
 		state = skeleton_state_roam;
 	}//end if
 	
-	if(los && o_player.state != player_state_dead) {
+	if(los || alerted) && (o_player.state != player_state_dead) {
 		//if the player is withing the line of sight of the enemy it starts chase
 		timer = 0;
 		xTo = o_player.x;

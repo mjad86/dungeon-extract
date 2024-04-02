@@ -8,14 +8,15 @@ function skeleton_state_roam() {
 	}//end if
 	
 	timer++	//increase timer flag
+	var _act = 120 //2 seconds or 120 frames
 	
-	if(timer > 120) {
+	if(timer > _act) {
 		//if 2 seconds have passed then go to idle state
 		timer = 0;
 		state = skeleton_state_idle;
 	}//end if
 	
-	if(los && o_player.state != player_state_dead) {
+	if(los || alerted) && (o_player.state != player_state_dead) {
 		//if the player is withing the line of sight of the enemy it starts chase
 		timer = 0;
 		xTo = o_player.x;

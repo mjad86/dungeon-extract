@@ -2,6 +2,7 @@
 function skeleton_state_dead() {
 
 	hSpd = 0;	//stop player from moving
+	move = 0;
 	mask_index = noMask
 	
 	set_animation_sprite(skeletonDeath, 0, 1);	//set sprite

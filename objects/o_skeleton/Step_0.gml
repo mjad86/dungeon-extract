@@ -9,7 +9,7 @@ runType = run;
 
 hSpd = move * moveSpd[runType];	//horizontal movement
 
-vSpd += grav;								//Apply gravity force
+vSpd += grav;							//Apply gravity force
 
 los = line_of_sight();					//line of sight
 collision();							//Apply movement
@@ -20,4 +20,4 @@ if(move != 0) {
 	image_xscale = sign(move);
 }//end if
 
-script_execute(state);										//state machine script execution
+script_execute(state);					//state machine script execution

@@ -10,3 +10,5 @@ if(hp < currentHp) {
 else {
 	currentHp = hp;
 }//end else
+
+audio_get_footstep(); //gets footstep sfx

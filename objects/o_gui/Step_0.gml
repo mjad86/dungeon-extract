@@ -111,11 +111,11 @@ switch(page) {
 		                case 6: rebindingVerb = "jump";		  break;
 		                case 7: rebindingVerb = "block";	  break;
 		                case 8: rebindingVerb = "action";	  break;
-						case 9: rebindingVerb = "cancel";	  break;
-						case 10: rebindingVerb = "cam_left";  break;
-		                case 11: rebindingVerb = "cam_right"; break;
-		                case 12: rebindingVerb = "cam_down";  break;
-		                case 13: rebindingVerb = "cam_up";    break;
+						//case 9: rebindingVerb = "cancel";	  break;
+						case 9: rebindingVerb = "cam_left";  break;
+		                case 10: rebindingVerb = "cam_right"; break;
+		                case 11: rebindingVerb = "cam_down";  break;
+		                case 12: rebindingVerb = "cam_up";    break;
 		            }//end switch
 
 					//Ensure we don't scan for vk_escape as that is used for the "pause" verb (which cancels rebinding)
@@ -192,7 +192,7 @@ if(global.action || global.jump) {
 	}//end if
 }//end if
 
-if(global.cancel) {
+if(global.dodge) {
 	//cancel button logic
 	if(page > 0) {
 		//if not in main menu then return to last page

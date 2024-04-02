@@ -16,7 +16,7 @@ function player_state_crouching() {
 	go_through_oneway();
 	
 	//dodge
-	if(global.cancel) {
+	if(global.dodge) {
 		previousState = state;
 		state = player_state_roll;				//change state to roll
 		moveDistanceRemaining = rollDistance;	//set distance

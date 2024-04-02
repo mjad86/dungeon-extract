@@ -1,8 +1,6 @@
 ///@desc skeleton_state_attack_01()
 function skeleton_state_attack_01() {
-
-	//regular movement
-	hSpd = 0;
+	
 	if(sprite_index != skeletonAttack1) {
 		//set animation sprite, image index and image speed
 		sprite_index = skeletonAttack1;

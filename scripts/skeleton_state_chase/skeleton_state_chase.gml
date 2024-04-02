@@ -13,8 +13,9 @@ function skeleton_state_chase() {
 	}//end if
 	
 	timer++
+	var _act = 600;	//10 seconds or 600 frames
 	
-	if(timer > 600) {
+	if(timer > _act) {
 		//if 10 seconds have passed and we havent reached our target we return to idle state
 		state = skeleton_state_idle;
 		timer = 0;

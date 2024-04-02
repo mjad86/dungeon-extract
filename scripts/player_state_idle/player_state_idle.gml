@@ -99,7 +99,7 @@ function player_state_idle() {
 	}//end if
 	
 	//dodge
-	if(global.cancel && actionBuffer <= 0) {
+	if(global.dodge && actionBuffer <= 0) {
 		actionBuffer = ACTION_BUFFER;			//set the value for the action buffer
 		state = player_state_roll;				//change state to roll
 		mask_index = playerRollMask;			//set mask;

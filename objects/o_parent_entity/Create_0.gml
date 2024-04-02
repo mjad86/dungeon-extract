@@ -7,6 +7,7 @@ hSpd = 0;
 vSpd = 0;
 xTo = 0;
 yTo = 0;
+footstep = noone						//footstep SFX flag, obtained from the parent object we are steping
 crouching = false;
 //state
 state = prop_state_idle;
@@ -17,6 +18,7 @@ blocked = false;
 attackRangeX = 0;
 attackRangeY = 0;
 los = false;
+alerted = false;
 //jumping
 grav = 0.5;
 gravMax = 10;
