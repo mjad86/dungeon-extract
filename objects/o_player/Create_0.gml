@@ -8,6 +8,8 @@ hSpd = 0;
 vSpd = 0;						
 vSpdOnImpact = 0;				//flag for determining if player hits ground from high distance
 crouching = false;
+reSpawnX = 0;
+reSpawny = 0;
 //jumping
 grav = 0.5;
 wallSlideGrav = 0.1;
@@ -76,9 +78,14 @@ playerDead = s_figther_dead;
 playerDeadBlood = s_figther_dead_with_blood;
 playerCrouch = s_figther_crouch;
 playerWallSlide = s_figther_wall_slide;
+playerAirAttack = s_figther_air_attack;
 //masks
 playerMask = s_figther_mask;
 playerRollMask = s_figther_roll_mask;
+playerAttack1= s_figther_attack1_mask;
+playerAttack2= s_figther_attack2_mask;
+playerAttack3= s_figther_attack3_mask;
+playerAirAttackMask= s_figther_air_attack_mask;
 
 //sfx
 swordSwing1 = sfx_sword_swing_1;

@@ -37,7 +37,6 @@ function calc_attack() {
 						}//end if
 					}//end else
 				}//end with
-				screen_shake(2, 2);//apply screen shake effect on hit
 			}//end if
 		}//end for
 	}//end if

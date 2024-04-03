@@ -17,7 +17,7 @@ function attack_slash3() {
 	}//end if
 
 	dmg = 50;			//momentary dmg assignement
-	calc_attack(s_figther_attack3_mask, dmg);	//calculate attack
+	calc_attack(playerAttack3, dmg);	//calculate attack
 	
 	if(animation_end()) {
 		state = player_state_idle;	//if animation done then we return to idle state.

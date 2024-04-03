@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"attack_air",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"attack_air",
+  "parent":{
+    "name":"Attacks",
+    "path":"folders/Scripts/States/Attacks.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

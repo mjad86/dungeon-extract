@@ -21,4 +21,5 @@ function hurt_prop() {
 			}//end else
 		}//end if			
 	}//end with	
+	screen_shake(2, 2);//apply screen shake effect on hit
 }//end script

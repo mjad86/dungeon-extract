@@ -32,6 +32,7 @@ activated = false;									//to determine if trap is activated
 timer = 0;											//timer to activate
 activateSlot = noone;								//trap slot behave to activate
 state = noone;
+blocked = false;
 hitByAttack = -1;	
 dmg = 25;											//default dmg the trap does
 previousMask = mask_index;

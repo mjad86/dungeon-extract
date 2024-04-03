@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"s_figther_attack2_mask",
   "bboxMode":0,
-  "bbox_bottom":43,
+  "bbox_bottom":44,
   "bbox_left":0,
   "bbox_right":96,
   "bbox_top":0,

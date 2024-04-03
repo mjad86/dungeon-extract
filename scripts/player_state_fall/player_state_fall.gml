@@ -28,6 +28,17 @@ function player_state_fall() {
 		state = player_state_jump;						//change state
 	}//end if
 	*/
+	
+	//attack in the air
+	if(global.attack && actionBuffer <= 0) {
+		//sfx
+		actionBuffer = ACTION_BUFFER;			//set the value for the action buffer
+		audio_play_sound(choose(swordSwing1, swordSwing2, swordSwing3), 10, false);
+		previousState = state;
+		state = player_state_attack;			//set player state to attack
+		stateAttack = attack_air;			//set the attack to be done
+	}//end if
+	
 	if(onGround) {
 		jumpCount = 0;									//reset jump count
 		create_particle_dust(1);						//create dust particle
@@ -67,6 +78,7 @@ function player_state_fall() {
 		grav = wallSlideGrav;
 		image_xscale = onWall;
 		state = player_state_wall_slide;
+		vSpdOnImpact = 0;	
 	}//end if
 	
 	//MSG("FALLING");

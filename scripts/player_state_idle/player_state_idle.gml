@@ -2,7 +2,7 @@
 function player_state_idle() {
 	
 	//manual = !down - automatic = !onGround
-	if(crouching) && (vSpd > 0) {
+	if(crouching) && (onGround) {
 		//check if theres room to uncrouch
 		mask_index = playerMask;
 		//uncrouch if no solid wall
