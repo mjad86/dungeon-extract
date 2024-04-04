@@ -9,7 +9,7 @@ vSpd = 0;
 vSpdOnImpact = 0;				//flag for determining if player hits ground from high distance
 crouching = false;
 reSpawnX = 0;
-reSpawny = 0;
+reSpawnY = 0;
 //jumping
 grav = 0.5;
 wallSlideGrav = 0.1;

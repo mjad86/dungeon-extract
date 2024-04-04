@@ -1,3 +1,3 @@
-visible = true; //when releasing this must be false;
+visible = false; //when releasing this must be false;
 reSpawnX = xstart;
 reSpawnY = ystart

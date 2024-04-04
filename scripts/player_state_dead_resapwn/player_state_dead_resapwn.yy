@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"player_state_dead_resapwn",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"player_state_dead_resapwn",
+  "parent":{
+    "name":"Player",
+    "path":"folders/Scripts/States/Player.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

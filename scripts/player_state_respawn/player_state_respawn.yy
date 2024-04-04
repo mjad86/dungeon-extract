@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"player_state_respawn",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"player_state_respawn",
+  "parent":{
+    "name":"Player",
+    "path":"folders/Scripts/States/Player.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
