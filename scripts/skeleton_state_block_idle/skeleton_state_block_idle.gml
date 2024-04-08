@@ -10,6 +10,6 @@ function skeleton_state_block_idle() {
 	
 	//regular speed
 	hSpd = 0;
-	move = image_xscale;
+	move = 0;
 	
 }//end script

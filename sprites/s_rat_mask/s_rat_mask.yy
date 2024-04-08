@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"Animal",
-    "path":"folders/Sprites/Npc/Animal.yy",
+    "name":"Rat",
+    "path":"folders/Sprites/Npc/Creature/Rat.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

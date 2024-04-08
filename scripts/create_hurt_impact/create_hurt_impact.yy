@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"create_hurt_impact",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"create_hurt_impact",
+  "parent":{
+    "name":"VFX",
+    "path":"folders/Scripts/VFX.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -81,6 +81,7 @@
     {"name":"inst_315BDEBB","path":"rooms/r_tests_01/r_tests_01.yy",},
     {"name":"inst_18C9E071","path":"rooms/r_tests_01/r_tests_01.yy",},
     {"name":"inst_7E2E285C","path":"rooms/r_tests_01/r_tests_01.yy",},
+    {"name":"inst_735D6E84","path":"rooms/r_tests_01/r_tests_01.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -246,6 +247,7 @@
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_parent_lever","path":"objects/o_parent_lever/o_parent_lever.yy",},"propertyId":{"name":"activateTimer","path":"objects/o_parent_lever/o_parent_lever.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"60",},
             {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_parent_lever","path":"objects/o_parent_lever/o_parent_lever.yy",},"propertyId":{"name":"slot","path":"objects/o_parent_lever/o_parent_lever.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"3",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":928.0,"y":116.0,},
+        {"$GMRInstance":"","%Name":"inst_735D6E84","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_735D6E84","objectId":{"name":"o_wisp","path":"objects/o_wisp/o_wisp.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":46.0,"y":538.0,},
       ],"layers":[],"name":"Interactables","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Moving_platforms","depth":750,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":false,"instances":[
         {"$GMRInstance":"","%Name":"inst_15B4232A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_15B4232A","objectId":{"name":"o_elevator","path":"objects/o_elevator/o_elevator.yy",},"properties":[

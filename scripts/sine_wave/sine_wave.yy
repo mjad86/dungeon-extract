@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"sine_wave",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sine_wave",
+  "parent":{
+    "name":"VFX",
+    "path":"folders/Scripts/VFX.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

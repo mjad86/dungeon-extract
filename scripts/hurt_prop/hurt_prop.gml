@@ -7,6 +7,7 @@ function hurt_prop() {
 		if(state != prop_state_destroy) {
 			hp -= _dmg			//reduce hp by dmg amount
 			entity_hit_solid()	//trigger flash
+			create_hit_impact();	//create impact particle effect
 			//hurt or die?
 			if(hp <= 0) {
 				//enemy is dead

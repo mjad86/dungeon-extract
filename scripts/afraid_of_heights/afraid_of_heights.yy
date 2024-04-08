@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"afraid_of_heights",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"afraid_of_heights",
+  "parent":{
+    "name":"Locomotion",
+    "path":"folders/Scripts/Misc/Locomotion.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

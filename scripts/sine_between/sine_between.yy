@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"sine_between",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sine_between",
+  "parent":{
+    "name":"VFX",
+    "path":"folders/Scripts/VFX.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

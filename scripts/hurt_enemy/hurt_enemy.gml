@@ -5,8 +5,9 @@ function hurt_enemy() {
 	var _dmgDealer = argument2;	
 	with(_enemy) {
 		//if(state != dummy_state_reset) {
-			entity_hit_solid()	//trigger flash
-			hp -= _dmg			//reduce hp by dmg amount
+			entity_hit_solid()		//trigger flash
+			create_hurt_impact();	//create impact particle effect
+			hp -= _dmg				//reduce hp by dmg amount
 			alerted = true;
 			//hurt or die?
 			if(!hurt) {

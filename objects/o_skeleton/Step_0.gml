@@ -4,10 +4,11 @@ run = 0; //add to controllers as a global.run key and set it there if you wish t
 
 //move = (state == skeleton_state_idle || state == skeleton_state_sleep) ? 0 : choose(-1, 1);
 
-//get hSpd with variable spd's if dimplemented
-runType = run;
+runType = run;							//get hSpd with variable spd's if dimplemented
 
-hSpd = move * moveSpd[runType];	//horizontal movement
+afraid_of_heights()						//dont walk off edges
+
+hSpd = move * moveSpd[runType];			//horizontal movement
 
 vSpd += grav;							//Apply gravity force
 

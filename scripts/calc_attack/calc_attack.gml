@@ -4,10 +4,11 @@ function calc_attack() {
 	mask_index = argument0;
 	var _dmg = argument1;
 	var _hitByAttackNow = ds_list_create();
-	var _hits = !blocked ? instance_place_list(x, y, [o_parent_entity, o_parent_prop, o_parent_gate], _hitByAttackNow, true) :  instance_place_list(x, y, [o_parent_block], _hitByAttackNow, true);
+	var _hits = !blocked ? instance_place_list(x, y, [o_parent_entity, o_parent_prop, o_parent_gate], _hitByAttackNow, true) : instance_place_list(x, y, [o_parent_block], _hitByAttackNow, true);
 
 	//if target is not blocking
 	if(_hits > 0) {
+		MSG(object_get_name(object_index))
 		for(var _i=0; _i < _hits; _i++) {
 			//if this instance has not yet been hit by this attack, hit it
 			var _hitId = _hitByAttackNow[| _i];
@@ -29,11 +30,16 @@ function calc_attack() {
 						//dmg dummy
 						hurt_dummy(id,_dmg, other.id);
 					}//end else if
+					else if(object_is_ancestor(object_index, o_parent_block)) {
+						//blocked particle VFX
+						create_hit_impact();	//create impact particle effect
+					}//end else if
 					else {
 						//execute script
 						if(entityHitScript != -1) {
 							//if script has no arguments
 							script_execute(entityHitScript);
+							create_hit_impact();	//create impact particle effect
 						}//end if
 					}//end else
 				}//end with

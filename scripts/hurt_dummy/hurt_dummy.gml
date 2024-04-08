@@ -7,6 +7,7 @@ function hurt_dummy() {
 		if(state != dummy_state_reset) {
 			hp -= _dmg			//reduce hp by dmg amount
 			entity_hit_solid()	//trigger flash
+			create_hit_impact();	//create impact particle effect
 			if(!hurt) {
 				//create healthbar
 				healthBar = instance_create_layer(x, y, "Misc", o_enemy_healthbar); //create health bar

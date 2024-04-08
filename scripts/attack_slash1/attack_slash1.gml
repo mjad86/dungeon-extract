@@ -24,7 +24,7 @@ function attack_slash1() {
 		ds_list_clear(hitByAttack); //clear hit list
 	}//end if
 
-	dmg = 25;									//momentary dmg assignement
+	dmg = 25;							//momentary dmg assignement
 	calc_attack(playerAttack1, dmg);	//calculate attack
 		
 	if(animation_end()) {

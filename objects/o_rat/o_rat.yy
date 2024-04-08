@@ -11,8 +11,8 @@
     {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_parent_entity","path":"objects/o_parent_entity/o_parent_entity.yy",},"propertyId":{"name":"entityShadow","path":"objects/o_parent_entity/o_parent_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
   ],
   "parent":{
-    "name":"Animal",
-    "path":"folders/Objects/Npc/Animal.yy",
+    "name":"Creature",
+    "path":"folders/Objects/Npc/Creature.yy",
   },
   "parentObjectId":{
     "name":"o_parent_entity",

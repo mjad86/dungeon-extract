@@ -4,7 +4,7 @@ function calc_attack_to_player() {
 	mask_index = argument0;
 	var _dmg = argument1;
 	var _hitByAttackNow = ds_list_create();
-	var _hits = !blocked ? instance_place_list(x, y, [o_player], _hitByAttackNow, true) :  instance_place_list(x, y, [o_parent_block], _hitByAttackNow, true);
+	var _hits = !blocked ? instance_place_list(x, y, [o_player], _hitByAttackNow, true) : instance_place_list(x, y, [o_parent_block], _hitByAttackNow, true);
 
 	//if we are not colliding with a player blocking object
 	if(_hits > 0) {
@@ -15,8 +15,8 @@ function calc_attack_to_player() {
 				//if the id of the instance is not in the list we add it
 				ds_list_add(hitByAttack, _hitId);
 				with(_hitId) {
-					//action against attacked instance
-					hurt_player(id,_dmg, other.id); //dmg player
+					//we hurt the player
+					hurt_player(id,_dmg, other.id); //dmg player	
 				}//end with
 			}//end if
 		}//end for

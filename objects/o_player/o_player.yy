@@ -12,9 +12,8 @@
   "managed":true,
   "name":"o_player",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_light","path":"objects/o_light/o_light.yy",},"propertyId":{"name":"size","path":"objects/o_light/o_light.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"128",},
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_light","path":"objects/o_light/o_light.yy",},"propertyId":{"name":"glowSize","path":"objects/o_light/o_light.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"256",},
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_light","path":"objects/o_light/o_light.yy",},"propertyId":{"name":"str","path":"objects/o_light/o_light.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_light","path":"objects/o_light/o_light.yy",},"propertyId":{"name":"size","path":"objects/o_light/o_light.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"64",},
+    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_light","path":"objects/o_light/o_light.yy",},"propertyId":{"name":"glowSize","path":"objects/o_light/o_light.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"96",},
   ],
   "parent":{
     "name":"Player",

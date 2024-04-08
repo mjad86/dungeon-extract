@@ -38,6 +38,10 @@ draw_surface_ext(application_surface, _vx, _vy, 1, 1, 0, c_white, intensity); //
 			//lantern origin in middle center, no offset required
 			shadow_and_light(_vb, _u_pos, _u_pos2, _u_zz, _u_str, _u_dir, _u_fov, 0, -_sHhalf);
 		}//end if	
+		if(object_get_name(object_index) == "o_wisp") {
+			//wisp fae-miliar origin in bottom center, no offset required
+			shadow_and_light(_vb, _u_pos, _u_pos2, _u_zz, _u_str, _u_dir, _u_fov, 0, 0);
+		}//end if
 		//canvas for drawing the light
 		//draw_rectangle_color(_vx, _vy, _vx + RESOLUTION_W, _vy + RESOLUTION_H, color, color, color, color, 0);
 		draw_surface_ext(application_surface, _vx, _vy, 1, 1, 0, color, 1);

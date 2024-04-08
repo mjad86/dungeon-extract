@@ -31,7 +31,7 @@ previousMask = skeletonMask;
 //}//end with
 mask_index = noMask;
 
-state = skeleton_state_sleep;
+state = skeleton_state_block_idle;
 stateAttack = skeleton_state_attack_01;				//state of dynamic attacks
 
 

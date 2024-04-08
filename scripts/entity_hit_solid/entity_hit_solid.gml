@@ -1,6 +1,5 @@
 ///@desc entity_hit_solid
 function entity_hit_solid() {
-	create_hit_impact();	//create impact particle effect
 	if(hurtSfx != -1) {
 		if(!oneRandomSfx) {
 			if(array_length(hurtSfx) > 1) {

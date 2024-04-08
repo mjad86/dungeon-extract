@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"create_hit_impact",
   "parent":{
-    "name":"Animation",
-    "path":"folders/Scripts/Misc/Animation.yy",
+    "name":"VFX",
+    "path":"folders/Scripts/VFX.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
