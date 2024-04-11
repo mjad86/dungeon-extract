@@ -14,7 +14,7 @@ function skeleton_state_attack_02() {
 	}//end if
 
 	dmg = 25;									    //momentary dmg assignement
-	calc_attack_to_player(s_skeleton_attack_02_mask, dmg);	//calculate attack
+	calc_attack_to_player(skeletonAttack2Mask, dmg);	//calculate attack
 		
 	if(animation_end()) {
 		state = skeleton_state_wait;			//set enemy state to idle

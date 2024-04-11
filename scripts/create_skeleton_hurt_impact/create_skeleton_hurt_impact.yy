@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"create_skeleton_hurt_impact",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"create_skeleton_hurt_impact",
+  "parent":{
+    "name":"Impacts",
+    "path":"folders/Scripts/VFX/Impacts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

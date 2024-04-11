@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"hurt_dummy",
   "parent":{
-    "name":"Dmg calc",
-    "path":"folders/Scripts/Misc/Data/Dmg calc.yy",
+    "name":"Hurt",
+    "path":"folders/Scripts/Misc/Data/Dmg calc/Hurt.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

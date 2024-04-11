@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"create_block_hit_impact",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"create_block_hit_impact",
+  "parent":{
+    "name":"Impacts",
+    "path":"folders/Scripts/VFX/Impacts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

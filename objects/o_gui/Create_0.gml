@@ -16,6 +16,7 @@ dsMenuOptions = create_menu_page(
 				["Brightness", MENU_ELEMENT_TYPE.SLIDER, change_brightness, 0.1, [0, 0.2]],
 				//["Window Size", MENU_ELEMENT_TYPE.SHIFT, change_window_size, 0, ["320x180", "640x360", "1080x720"]],
 				["FullScreen",  MENU_ELEMENT_TYPE.TOGGLE, change_window_mode, 1, [0, 1]],
+				["Screen Shake",  MENU_ELEMENT_TYPE.TOGGLE, change_screenshake_mode, 1, [0, 1]],
 				["Controls", MENU_ELEMENT_TYPE.PAGE_TRANSFER, MENU_PAGE.CONTROLS],
 				["Back",  MENU_ELEMENT_TYPE.PAGE_TRANSFER, MENU_PAGE.MAIN]);
 				

@@ -8,7 +8,6 @@ function calc_attack() {
 
 	//if target is not blocking
 	if(_hits > 0) {
-		MSG(object_get_name(object_index))
 		for(var _i=0; _i < _hits; _i++) {
 			//if this instance has not yet been hit by this attack, hit it
 			var _hitId = _hitByAttackNow[| _i];
@@ -32,6 +31,11 @@ function calc_attack() {
 					}//end else if
 					else if(object_is_ancestor(object_index, o_parent_block)) {
 						//blocked particle VFX
+						create_block_hit_impact();	//create impact particle effect
+					}//end else if
+					else if(object_get_name(object_index) == "o_door_vertical") {
+						//blocked particle VFX
+						entity_hit_solid();
 						create_hit_impact();	//create impact particle effect
 					}//end else if
 					else {
@@ -39,7 +43,6 @@ function calc_attack() {
 						if(entityHitScript != -1) {
 							//if script has no arguments
 							script_execute(entityHitScript);
-							create_hit_impact();	//create impact particle effect
 						}//end if
 					}//end else
 				}//end with

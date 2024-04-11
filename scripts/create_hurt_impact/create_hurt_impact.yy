@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"create_hurt_impact",
   "parent":{
-    "name":"VFX",
-    "path":"folders/Scripts/VFX.yy",
+    "name":"Impacts",
+    "path":"folders/Scripts/VFX/Impacts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

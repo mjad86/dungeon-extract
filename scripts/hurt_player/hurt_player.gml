@@ -4,17 +4,18 @@ function hurt_player() {
 	var _dmg = argument1;
 	var _dmgDealer = argument2;
 	with(_player) {
-		if(state != player_state_dead) {
-			hp -= _dmg				//reduce hp by dmg amount
+		if(state != player_state_dead && state != player_state_roll) {
 			//create hurt particle
+			hp -= _dmg				//reduce hp by dmg amount
 			var _xx = o_player.x + (irandom_range(-10, 10));
 			var _yy = o_player.y - irandom_range(20, 35);		
-			
 			var _particle = instance_create_layer(_xx, _yy, "Particles", o_hurt_impact);
+			
 			with(_particle) {
 				image_xscale = _dmgDealer.image_xscale;
 			}//end if
-			//hurt or die?
+			
+			//hurt or die?			
 			if(hp <= 0) {
 				//player is dead
 				deadScreen = 60; //1 second

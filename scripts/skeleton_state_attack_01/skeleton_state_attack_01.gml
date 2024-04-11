@@ -14,7 +14,7 @@ function skeleton_state_attack_01() {
 	}//end if
 
 	dmg = 25;									//momentary dmg assignement
-	calc_attack_to_player(s_skeleton_attack_01_mask, dmg);	//calculate attack
+	calc_attack_to_player(skeletonAttack1Mask, dmg);	//calculate attack
 		
 	if(animation_end()) {
 		state = enemy_state_attack;					//set enemy state to attack

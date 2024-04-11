@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"change_screenshake_mode",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"change_screenshake_mode",
+  "parent":{
+    "name":"Gui",
+    "path":"folders/Scripts/Misc/Gui.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

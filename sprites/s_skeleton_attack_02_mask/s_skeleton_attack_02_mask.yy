@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"s_skeleton_attack_02_mask",
   "bboxMode":0,
-  "bbox_bottom":91,
+  "bbox_bottom":93,
   "bbox_left":0,
   "bbox_right":147,
   "bbox_top":0,

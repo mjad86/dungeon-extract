@@ -25,13 +25,9 @@ skeletonMask = s_skeleton_mask;
 noMask = s_skeleton_mask_sleep;
 previousMask = skeletonMask;
 
-//var _block = instance_create_layer(bbox_right, bbox_top, "Misc", o_skeleton_block);
-//with(_block) {
-//	ownerId = other.id;
-//}//end with
 mask_index = noMask;
 
-state = skeleton_state_block_idle;
+state = skeleton_state_sleep;
 stateAttack = skeleton_state_attack_01;				//state of dynamic attacks
 
 

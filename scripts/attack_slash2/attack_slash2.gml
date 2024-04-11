@@ -13,6 +13,7 @@ function attack_slash2() {
 			hitByAttack = ds_list_create();
 		}//end if
 		ds_list_clear(hitByAttack); //clear hit list
+		staggerEnemy = false;
 	}//end if
 
 	dmg = 35;			//momentary dmg assignement
