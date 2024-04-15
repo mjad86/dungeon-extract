@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sfx_skeleton_footstep",
+  "audioGroupId":{
+    "name":"SFX",
+    "path":"audiogroups/SFX",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.486939,
+  "name":"sfx_skeleton_footstep",
+  "parent":{
+    "name":"Enemy",
+    "path":"folders/Sounds/SFX/Enemy.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sfx_skeleton_footstep.wav",
+  "type":0,
+  "volume":1.0,
+}

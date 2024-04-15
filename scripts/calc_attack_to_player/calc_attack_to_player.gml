@@ -20,9 +20,11 @@ function calc_attack_to_player() {
 						hurt_player(id,_dmg, other.id); //dmg player	
 					}//end if
 					else {
+						//ahndle block particle creation adn sfx
 						var _xx = o_player_block.x + (irandom_range(1, 5) * sign(image_xscale));	//witdh of player block sprite
 						var _yy = o_player_block.y + irandom_range(1, 13);	//height of player block sprite
-			
+						var _sfx = choose(sfx_shield_block_01, sfx_shield_block_02, sfx_shield_block_03, sfx_shield_block_04);
+						audio_play_sound(_sfx, 10, false);	//sfx
 						var _particle = instance_create_layer(_xx, _yy, "Particles", o_hit_impact);
 						with(_particle) {
 							image_xscale =  other.image_xscale;

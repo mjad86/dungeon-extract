@@ -13,6 +13,7 @@ function skeleton_state_sleep() {
 		if(image_speed == 0) {
 			image_speed = 1;
 			//rise sfx here
+			audio_play_sound_on(emitter, sfx_skeleton_rise, false, 10);
 		}//end if
 	}//end if
 	

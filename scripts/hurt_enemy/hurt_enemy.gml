@@ -25,11 +25,14 @@ function hurt_enemy() {
 			if(hp <= 0) {
 				//enemy is dead
 				state = skeleton_state_dead;
+				audio_play_sound_on(emitter, sfx_skeleton_crumble, false, 10);
+				audio_play_sound_on(emitter, sfx_skeleton_death_grunt, false, 10);
 			}//end if
 			else {
 				//enemy still alive
 				if(_dmgDealer.staggerEnemy) {
 					state = skeleton_state_hurt;	
+					audio_play_sound_on(emitter, sfx_skeleton_hurt_temporary, false, 10);
 					_dmgDealer.staggerEnemy = false;
 				}//end if
 			}//end else

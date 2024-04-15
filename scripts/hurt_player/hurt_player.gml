@@ -14,7 +14,6 @@ function hurt_player() {
 			with(_particle) {
 				image_xscale = _dmgDealer.image_xscale;
 			}//end if
-			
 			//hurt or die?			
 			if(hp <= 0) {
 				//player is dead
@@ -28,7 +27,9 @@ function hurt_player() {
 				//playe still alive
 				state = player_state_hurt;
 				inmune = INMUNE_FRAMES;
-				var _sfx = choose(sfx_swing_blood_hit_11, sfx_swing_blood_hit_4);
+				var _sfx = choose(sfx_figther_grunt, sfx_figther_grunt2);
+				audio_play_sound(_sfx, 10, false);
+				_sfx = choose(sfx_swing_blood_hit_11, sfx_swing_blood_hit_4);
 				audio_play_sound(_sfx, 100, false);
 				//add knockbacks or other effects here
 				
