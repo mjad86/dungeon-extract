@@ -12,6 +12,7 @@ global.iControl = instance_create_layer(0, 0, layer, o_controls);	//Create contr
 global.iDevTools = instance_create_layer(0, 0, layer, o_devtools);	//Create camera object
 global.iMusic = instance_create_layer(0, 0, layer, o_music_and_sfx);//Create music controller object
 global.iGui = instance_create_layer(0, 0, layer, o_gui);			//Create gui controller object
+global.iParallax = instance_create_layer(0, 0, layer, o_parallax);	//creates object parallax to control background movement
 
 global.targetRoom = -1;												//Target room name to go to
 global.targetX = -1;												//target rooms x destination coordinate

@@ -28,11 +28,12 @@
   "properties":[
     {"$GMObjectProperty":"","%Name":"footstepSFX","filters":[],"listItems":[
         "[sfx_rock_footstep]",
-        "[sfx_grass_footstep]",
         "[sfx_stone_footstep]",
         "[sfx_wood_footstep]",
         "[sfx_wood_footstep, sfx_wood_squeak_01]",
         "[sfx_stone_footstep_01, sfx_stone_footstep_02, sfx_stone_footstep_03, sfx_stone_footstep_04]",
+        "[sfx_footstep_grass_01, sfx_footstep_grass_02, sfx_footstep_grass_03, sfx_footstep_grass_04]",
+        "[sfx_footstep_dirt_01, sfx_footstep_dirt_02, sfx_footstep_dirt_03, sfx_footstep_dirt_04]",
       ],"multiselect":false,"name":"footstepSFX","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"[sfx_stone_footstep_01, sfx_stone_footstep_02, sfx_stone_footstep_03, sfx_stone_footstep_04]","varType":6,},
   ],
   "resourceType":"GMObject",

@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sfx_footstep_dirt_01",
+  "audioGroupId":{
+    "name":"SFX",
+    "path":"audiogroups/SFX",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.5,
+  "name":"sfx_footstep_dirt_01",
+  "parent":{
+    "name":"Overworld",
+    "path":"folders/Sounds/SFX/Overworld.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sfx_footstep_dirt_01.wav",
+  "type":0,
+  "volume":1.0,
+}

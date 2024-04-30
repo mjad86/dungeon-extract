@@ -49,6 +49,9 @@ function player_state_wall_slide(){
 	if(wallSlideDust > 4) {
 		//create dust particle
 		var _dust = instance_create_layer(_side, bbox_top, "Particles", o_wall_slide_dust);
+		with(_dust) {
+			image_xscale = o_player.image_xscale;
+		}//end with
 		wallSlideDust = 0;
 	}//end if
 	

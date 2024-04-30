@@ -6,6 +6,14 @@ if(audio_group_is_loaded(Music)) {
 		//sfx when starting dungeon
 		audio_play_sound(ost_drum_dungeon_start, 10, false);
 	}//end if
+	
+	if(room_get_name(room) == "r_dungeon") {
+		audio_bus_main.effects[0].mix = 0.5;	//a value from 0 to 1, how much of the original sound will be heard.
+	}//end if
+	else {
+		audio_bus_main.effects[0].mix = 0;	//a value from 0 to 1, how much of the original sound will be heard.
+	}//end else
+	
 }//end if
 
 
