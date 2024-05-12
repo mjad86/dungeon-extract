@@ -26,7 +26,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"","%Name":"footstepSFX","filters":[],"listItems":[
+    {"$GMObjectProperty":"v1","%Name":"footstepSFX","filters":[],"listItems":[
         "[sfx_rock_footstep]",
         "[sfx_grass_footstep]",
         "[sfx_stone_footstep]",

@@ -5,8 +5,8 @@
   "managed":true,
   "name":"o_door_vertical",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_parent_gate","path":"objects/o_parent_gate/o_parent_gate.yy",},"propertyId":{"name":"sfx","path":"objects/o_parent_gate/o_parent_gate.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sfx_gate_open",},
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_parent_gate","path":"objects/o_parent_gate/o_parent_gate.yy",},"propertyId":{"name":"hurtSfx","path":"objects/o_parent_gate/o_parent_gate.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"[sfx_hit_metal_01, sfx_hit_metal_02, sfx_hit_metal_03, sfx_hit_metal_04]",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_parent_gate","path":"objects/o_parent_gate/o_parent_gate.yy",},"propertyId":{"name":"sfx","path":"objects/o_parent_gate/o_parent_gate.yy",},"resource":null,"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sfx_gate_open",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_parent_gate","path":"objects/o_parent_gate/o_parent_gate.yy",},"propertyId":{"name":"hurtSfx","path":"objects/o_parent_gate/o_parent_gate.yy",},"resource":null,"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"[sfx_hit_metal_01, sfx_hit_metal_02, sfx_hit_metal_03, sfx_hit_metal_04]",},
   ],
   "parent":{
     "name":"Gates & doors",

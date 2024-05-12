@@ -7,8 +7,8 @@
   "managed":true,
   "name":"o_elevator",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_parent_wall","path":"objects/o_parent_wall/o_parent_wall.yy",},"propertyId":{"name":"footstepSFX","path":"objects/o_parent_wall/o_parent_wall.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"[sfx_wood_footstep]",},
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_wall_move","path":"objects/o_wall_move/o_wall_move.yy",},"propertyId":{"name":"rotSpd","path":"objects/o_wall_move/o_wall_move.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"360/180",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_parent_wall","path":"objects/o_parent_wall/o_parent_wall.yy",},"propertyId":{"name":"footstepSFX","path":"objects/o_parent_wall/o_parent_wall.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"[sfx_wood_footstep]",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_wall_move","path":"objects/o_wall_move/o_wall_move.yy",},"propertyId":{"name":"rotSpd","path":"objects/o_wall_move/o_wall_move.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"360/180",},
   ],
   "parent":{
     "name":"Solid",

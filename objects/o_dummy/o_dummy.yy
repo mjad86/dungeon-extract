@@ -8,11 +8,11 @@
   "managed":true,
   "name":"o_dummy",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_parent_entity","path":"objects/o_parent_entity/o_parent_entity.yy",},"propertyId":{"name":"entityShadow","path":"objects/o_parent_entity/o_parent_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_parent_entity","path":"objects/o_parent_entity/o_parent_entity.yy",},"propertyId":{"name":"hurtSfx","path":"objects/o_parent_entity/o_parent_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"[sfx_wood_hit_2, sfx_wood_hit_3]",},
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_parent_entity","path":"objects/o_parent_entity/o_parent_entity.yy",},"propertyId":{"name":"oneRandomSfx","path":"objects/o_parent_entity/o_parent_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_parent_entity","path":"objects/o_parent_entity/o_parent_entity.yy",},"propertyId":{"name":"healthBarHeight","path":"objects/o_parent_entity/o_parent_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sprite_get_height(sprite_index)",},
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_parent_entity","path":"objects/o_parent_entity/o_parent_entity.yy",},"propertyId":{"name":"healthBarXPos","path":"objects/o_parent_entity/o_parent_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"20",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_parent_entity","path":"objects/o_parent_entity/o_parent_entity.yy",},"propertyId":{"name":"entityShadow","path":"objects/o_parent_entity/o_parent_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_parent_entity","path":"objects/o_parent_entity/o_parent_entity.yy",},"propertyId":{"name":"hurtSfx","path":"objects/o_parent_entity/o_parent_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"[sfx_wood_hit_2, sfx_wood_hit_3]",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_parent_entity","path":"objects/o_parent_entity/o_parent_entity.yy",},"propertyId":{"name":"oneRandomSfx","path":"objects/o_parent_entity/o_parent_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_parent_entity","path":"objects/o_parent_entity/o_parent_entity.yy",},"propertyId":{"name":"healthBarHeight","path":"objects/o_parent_entity/o_parent_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sprite_get_height(sprite_index)",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_parent_entity","path":"objects/o_parent_entity/o_parent_entity.yy",},"propertyId":{"name":"healthBarXPos","path":"objects/o_parent_entity/o_parent_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"20",},
   ],
   "parent":{
     "name":"Enemy",

@@ -5,10 +5,10 @@
   "managed":true,
   "name":"o_cone_light",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_light","path":"objects/o_light/o_light.yy",},"propertyId":{"name":"size","path":"objects/o_light/o_light.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"512",},
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_light","path":"objects/o_light/o_light.yy",},"propertyId":{"name":"str","path":"objects/o_light/o_light.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.3",},
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_light","path":"objects/o_light/o_light.yy",},"propertyId":{"name":"dir","path":"objects/o_light/o_light.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"220",},
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_light","path":"objects/o_light/o_light.yy",},"propertyId":{"name":"fov","path":"objects/o_light/o_light.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"90",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_light","path":"objects/o_light/o_light.yy",},"propertyId":{"name":"size","path":"objects/o_light/o_light.yy",},"resource":null,"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"512",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_light","path":"objects/o_light/o_light.yy",},"propertyId":{"name":"str","path":"objects/o_light/o_light.yy",},"resource":null,"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.3",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_light","path":"objects/o_light/o_light.yy",},"propertyId":{"name":"dir","path":"objects/o_light/o_light.yy",},"resource":null,"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"220",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_light","path":"objects/o_light/o_light.yy",},"propertyId":{"name":"fov","path":"objects/o_light/o_light.yy",},"resource":null,"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"90",},
   ],
   "parent":{
     "name":"Ilumination",

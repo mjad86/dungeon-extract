@@ -26,7 +26,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"","%Name":"tutorialSprite","filters":[],"listItems":[
+    {"$GMObjectProperty":"v1","%Name":"tutorialSprite","filters":[],"listItems":[
         "[\"left\", \"right\"]",
         "[\"up\", \"down\"]",
         "[\"down\", \"jump\"]",

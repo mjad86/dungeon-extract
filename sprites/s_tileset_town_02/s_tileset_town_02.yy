@@ -2,24 +2,24 @@
   "$GMSprite":"",
   "%Name":"s_tileset_town_02",
   "bboxMode":0,
-  "bbox_bottom":159,
+  "bbox_bottom":431,
   "bbox_left":16,
-  "bbox_right":333,
-  "bbox_top":12,
+  "bbox_right":1149,
+  "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"55abe19e-02e0-44b6-9412-6fcadba889f0","name":"55abe19e-02e0-44b6-9412-6fcadba889f0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"1e679ff8-f7d4-4290-9b13-4e3b4993e3e0","name":"1e679ff8-f7d4-4290-9b13-4e3b4993e3e0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":192,
+  "height":464,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"52222cee-b3d4-405e-9113-5e091708d274","blendMode":0,"displayName":"default","isLocked":false,"name":"52222cee-b3d4-405e-9113-5e091708d274","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"ec344bdf-96c4-47b1-bb20-65f2e4e3c889","blendMode":0,"displayName":"default","isLocked":false,"name":"ec344bdf-96c4-47b1-bb20-65f2e4e3c889","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"s_tileset_town_02",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"55abe19e-02e0-44b6-9412-6fcadba889f0","path":"sprites/s_tileset_town_02/s_tileset_town_02.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"4bc1e2c0-47f8-42bd-9a58-ea29f4895d98","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1e679ff8-f7d4-4290-9b13-4e3b4993e3e0","path":"sprites/s_tileset_town_02/s_tileset_town_02.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"3bc9807f-46a1-4bb1-ad57-40544087a767","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":352,
+  "width":1168,
 }

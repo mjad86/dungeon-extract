@@ -5,7 +5,7 @@
   "managed":true,
   "name":"o_secret_wall_01",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_parent_gate","path":"objects/o_parent_gate/o_parent_gate.yy",},"propertyId":{"name":"sfx","path":"objects/o_parent_gate/o_parent_gate.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sfx_gate_open",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_parent_gate","path":"objects/o_parent_gate/o_parent_gate.yy",},"propertyId":{"name":"sfx","path":"objects/o_parent_gate/o_parent_gate.yy",},"resource":null,"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sfx_gate_open",},
   ],
   "parent":{
     "name":"Gates & doors",

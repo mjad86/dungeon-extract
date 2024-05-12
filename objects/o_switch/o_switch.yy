@@ -5,10 +5,10 @@
   "managed":true,
   "name":"o_switch",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_parent_lever","path":"objects/o_parent_lever/o_parent_lever.yy",},"propertyId":{"name":"activateTimer","path":"objects/o_parent_lever/o_parent_lever.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"60",},
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_parent_lever","path":"objects/o_parent_lever/o_parent_lever.yy",},"propertyId":{"name":"sfx","path":"objects/o_parent_lever/o_parent_lever.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sfx_lever_activate",},
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_parent_lever","path":"objects/o_parent_lever/o_parent_lever.yy",},"propertyId":{"name":"spriteUsed","path":"objects/o_parent_lever/o_parent_lever.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"s_switch_used",},
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_parent_lever","path":"objects/o_parent_lever/o_parent_lever.yy",},"propertyId":{"name":"spriteUnused","path":"objects/o_parent_lever/o_parent_lever.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"s_switch_unused",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_parent_lever","path":"objects/o_parent_lever/o_parent_lever.yy",},"propertyId":{"name":"activateTimer","path":"objects/o_parent_lever/o_parent_lever.yy",},"resource":null,"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"60",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_parent_lever","path":"objects/o_parent_lever/o_parent_lever.yy",},"propertyId":{"name":"sfx","path":"objects/o_parent_lever/o_parent_lever.yy",},"resource":null,"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sfx_lever_activate",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_parent_lever","path":"objects/o_parent_lever/o_parent_lever.yy",},"propertyId":{"name":"spriteUsed","path":"objects/o_parent_lever/o_parent_lever.yy",},"resource":null,"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"s_switch_used",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_parent_lever","path":"objects/o_parent_lever/o_parent_lever.yy",},"propertyId":{"name":"spriteUnused","path":"objects/o_parent_lever/o_parent_lever.yy",},"resource":null,"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"s_switch_unused",},
   ],
   "parent":{
     "name":"Levers & switches",

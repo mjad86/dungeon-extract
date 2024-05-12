@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"acceleration_and_friction",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"acceleration_and_friction",
+  "parent":{
+    "name":"Locomotion",
+    "path":"folders/Scripts/Misc/Locomotion.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

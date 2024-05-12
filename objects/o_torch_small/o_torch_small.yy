@@ -10,11 +10,11 @@
   "managed":true,
   "name":"o_torch_small",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_light","path":"objects/o_light/o_light.yy",},"propertyId":{"name":"size","path":"objects/o_light/o_light.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"256",},
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_light","path":"objects/o_light/o_light.yy",},"propertyId":{"name":"glowSize","path":"objects/o_light/o_light.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"512",},
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_light","path":"objects/o_light/o_light.yy",},"propertyId":{"name":"color","path":"objects/o_light/o_light.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"$FF2A71B2",},
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_light","path":"objects/o_light/o_light.yy",},"propertyId":{"name":"str","path":"objects/o_light/o_light.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.5",},
-    {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"o_light","path":"objects/o_light/o_light.yy",},"propertyId":{"name":"effect","path":"objects/o_light/o_light.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"LIGHTFX.FLICKER",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_light","path":"objects/o_light/o_light.yy",},"propertyId":{"name":"size","path":"objects/o_light/o_light.yy",},"resource":null,"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"256",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_light","path":"objects/o_light/o_light.yy",},"propertyId":{"name":"glowSize","path":"objects/o_light/o_light.yy",},"resource":null,"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"512",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_light","path":"objects/o_light/o_light.yy",},"propertyId":{"name":"color","path":"objects/o_light/o_light.yy",},"resource":null,"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"$FF2A71B2",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_light","path":"objects/o_light/o_light.yy",},"propertyId":{"name":"str","path":"objects/o_light/o_light.yy",},"resource":null,"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.5",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"o_light","path":"objects/o_light/o_light.yy",},"propertyId":{"name":"effect","path":"objects/o_light/o_light.yy",},"resource":null,"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"LIGHTFX.FLICKER",},
   ],
   "parent":{
     "name":"Ilumination",

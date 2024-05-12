@@ -27,9 +27,9 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"","%Name":"entityHitScript","filters":[],"listItems":[],"multiselect":false,"name":"entityHitScript","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"entity_hit_solid","varType":0,},
-    {"$GMObjectProperty":"","%Name":"hurtSfx","filters":[],"listItems":[],"multiselect":false,"name":"hurtSfx","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"[sfx_hit_metal_01, sfx_hit_metal_02, sfx_hit_metal_03, sfx_hit_metal_04]","varType":0,},
-    {"$GMObjectProperty":"","%Name":"oneRandomSfx","filters":[],"listItems":[],"multiselect":false,"name":"oneRandomSfx","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"True","varType":3,},
+    {"$GMObjectProperty":"v1","%Name":"entityHitScript","filters":[],"listItems":[],"multiselect":false,"name":"entityHitScript","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"entity_hit_solid","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"hurtSfx","filters":[],"listItems":[],"multiselect":false,"name":"hurtSfx","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"[sfx_hit_metal_01, sfx_hit_metal_02, sfx_hit_metal_03, sfx_hit_metal_04]","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"oneRandomSfx","filters":[],"listItems":[],"multiselect":false,"name":"oneRandomSfx","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"True","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
