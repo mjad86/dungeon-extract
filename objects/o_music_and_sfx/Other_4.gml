@@ -14,6 +14,18 @@ if(audio_group_is_loaded(Music)) {
 		audio_bus_main.effects[0].mix = 0;	//a value from 0 to 1, how much of the original sound will be heard.
 	}//end else
 	
+	if(room_get_name(room) == "r_town") {
+		if(!audio_is_playing(ost_town_melancholic_loop)) {
+			audio_play_sound(ost_town_melancholic_loop, 10, true);
+		}//end if
+	}//end if
+	
+	if(room_get_name(room) == "r_swamp") {
+		if(!audio_is_playing(ost_forgotten_swamps)) {
+			audio_play_sound(ost_forgotten_swamps, 10, true);
+		}//end if
+	}//end if
+	
 }//end if
 
 

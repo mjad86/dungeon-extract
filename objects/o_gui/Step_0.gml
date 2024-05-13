@@ -57,9 +57,6 @@ switch(page) {
 							//add SFX here if required when changing the option
 							case 0:
 								//Music
-								if(!audio_is_playing(sfx_rock_footstep)) {
-									audio_play_sound(sfx_rock_footstep, 1, false);
-								}//end if
 							break;
 							case 1:
 								//SFX

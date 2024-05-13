@@ -5,6 +5,7 @@ audio_emitter_position(emitter, x, y, 0); //update emitter position
 
 if(place_meeting(x, y, o_player)) {
 	taken = true;
+	audio_play_sound_on(emitter, sfx_pickup_faemiliar, false, 10);
 }//end if
 
 if(!blink) {

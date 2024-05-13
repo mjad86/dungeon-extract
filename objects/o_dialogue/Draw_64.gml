@@ -1,7 +1,14 @@
 ///@desc Draw text box
 //Draw variables
 var _xBox = 64;
-var _yBox = 232;
+var _yBox;
+var _playerGuiPos = world_to_gui_coordinates(o_player.x, o_player.y);
+if(_playerGuiPos[1] >= 232) {
+	_yBox = 32;
+}//end if
+else {
+	_yBox = 232;
+}//end else
 var _boxW = 512;
 var _boxH = 96;
 var _xoffSet = 10;
